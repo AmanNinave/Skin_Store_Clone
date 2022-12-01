@@ -1,0 +1,568 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+    padding: 0px;
+}
+div {
+    border: 0px solid;
+}
+
+#ANParent {
+
+  /* border: 1px solid; */
+  width: 100%;
+}
+
+ /* <<<<<<<<<<<<<----------------Main Section Top ------------------------------>>>>>>>>>> */
+
+ #TopHeader {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 3;
+ } 
+
+ #TopHeader + div {
+    height: 160px;
+ }
+
+ 
+#MainSec {
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    border: 1px solid;
+    width: 100%;
+}
+
+#MainSec > div:first-child {
+    width: 16%;
+    margin-left: 33px;
+    
+}
+
+#MainSec > div:first-child > h1 {
+   text-align: center;
+   font-size: 45px;
+    margin-top: 15px;
+
+}
+
+#MainSec > div:first-child > p {
+    text-align: center;
+    font-size: 12.8px;
+   
+ }
+
+ 
+#MainSec > div:first-child > p > span {
+    font-weight: 700;
+   
+ }
+
+#MainSec > div:nth-child(2) {
+    width: 40%;
+    padding-top: 34px;
+    margin: 0px 15%;
+    margin-left: 13%;
+    display: flex;
+    
+}
+
+#MainSec > div:nth-child(2) > input {
+    width: 98%;
+    height: 38px;
+   
+}
+
+#MainSec > div:nth-child(2) > img {
+        width: 33px;
+        height: 32px;
+        /* border: 1px solid; */
+        margin-left: -39px;
+        margin-top: 5px;
+}
+
+#MainSec > div:nth-child(3) {
+    width: 9%;
+    padding-top: 35px;
+    margin-right:0%;
+    
+}
+
+#MainSec > div:nth-child(3) > button {
+    width: 100%;
+    height: 35px;
+    font-size: 19px;
+    border: none;
+    background-color: white;
+    color: rgb(219, 32, 32);
+    font-weight: 545;
+}
+
+#MainSec > div:nth-child(3) > button:hover {
+    background-color: rgba(235, 226, 226, 0.418);
+}
+
+#MainSec > div:nth-child(4) {
+    width: 9%;
+    padding-top: 35px;
+    margin-right: 45px ;
+}
+
+#MainSec > div:nth-child(4) > button {
+    width: 100%;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 18px;
+    border: none;
+    background-color: white;
+    color: rgb(219, 32, 32);
+    font-weight: 545;
+}
+
+#MainSec > div:nth-child(4) > button:hover {
+    background-color: rgba(235, 226, 226, 0.418);
+} 
+
+#MainSec > div:nth-child(4) > button > img {
+    height: 20px;
+    width: 20px;
+}
+
+ #TopHeader > hr {
+    border: 1px solid;
+}
+
+#AnAccount {
+    z-index: 1;
+    width: 300px;
+    
+    border: 0px solid green;
+    margin-bottom: 30px;
+    margin-top: -38px;
+    margin-left: 66.5%;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    height: fit-content;
+    
+}
+#AnAccount > div:first-child {
+    background-color: grey;
+    padding: 5px;
+    border: brown;
+}
+
+#AnAccount > div:first-child > button{
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border:1px solid teal;
+    /* margin: 5px 0px 5px 0px; */
+}
+
+
+#AnAccount > div:last-child > button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border: 1px solid grey;
+    margin-top: 5px;
+    margin: 5px 10px 5px 0px;
+}
+
+#AnAccount > div > button:hover{
+        background-color: brown;
+        color: white;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#TopNav {
+    border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+    
+    padding-left: 16px;
+    height: 36px;
+    
+}
+
+#TopNav > button {
+    height: 35px;
+    padding: 5px 12px;
+    font-size: 14.2px;
+    font-weight: 300;
+    padding-top: px;
+    padding-bottom:6px;
+    border: none;
+    color: gray;
+    background-color: white;
+}
+
+#TopNav > button:hover {
+    background-color: black;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Sliding Image Section Started ------------>>>>>>>>>>>>> */
+
+
+#SlidingImageButtons {
+    display: flex;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#SlidingImageButtons > button {
+   font-size: 30px;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+#SlidingImageButtons > button:hover {
+    font-size: 30px;
+    font-weight: 1000;
+    color: red;
+
+}
+
+/* #SlidingBox {
+    border: 1px solid;
+    position: absolute;
+    margin-bottom: -80px;
+} */
+
+#other {
+    width: 100%;
+    height: 530px;
+    padding: 0px;
+}
+
+#slidingFrame {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px ;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Category Section Started ------------>>>>>>>>>>>>> */
+
+#CategoryHeading{
+    text-align: center;
+    border: 0px solid;
+    
+}
+
+#CategoryDiv {
+    border: 0px solid;
+    width: 99.8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin: 15px 0px 10px 1px;
+    
+}
+
+#CategoryDiv > img {
+    width: 15%;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------BrandBox Section Started ------------>>>>>>>>>>>>> */
+
+
+#BrandBox {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    border: 0px solid ;
+    margin-top: 30px;
+    gap: 8px;
+    padding: 10px;
+}
+
+#BrandBox > div{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 0px solid;
+}
+
+#BrandBox > div > img {
+    width: 100%;
+}
+
+#BrandBox > div > h2 {
+    font-size: 20px;
+    font-weight: 547;
+    margin: 10px;
+}
+
+#BrandBox > div > div {
+    height: 70px;
+    border: 0px solid;
+}
+
+#BrandBox > div > div > p {
+    margin: 10px;
+}
+
+
+#BrandBox > div > button {
+    padding: 12px;
+    font-size: 17px;
+    margin-top: 20px;
+    border: 1px solid rgb(15, 12, 12);
+    
+    font-weight: 50;
+    border-radius: 3px;
+    background-color: rgb(12, 15, 15);
+    color: white;
+}
+
+
+#BrandBox > div > button:hover {
+    background-color: rgba(223, 211, 211, 0.644);
+    color: rgb(32, 26, 23);
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------TrendingBox Section Started ------------>>>>>>>>>>>>> */
+
+#TrendingBox > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 545;
+}
+
+#TrendingBox > div {
+    display: flex;
+    justify-content: space-evenly;
+    border: 0px solid;
+
+}
+#TrendingBox > div > div {
+    border: 0px solid;
+    width: 23%;
+    text-align: center;
+}
+
+#TrendingBox > div > div >img {
+    
+    border: 0px solid;
+    height: 310px;
+    width: 307px;
+}
+
+#TrendingBox > div > div > p {
+    font-size: 17px;
+    border: 0px solid;
+    margin: 10px 0px 10px 0px;
+}
+
+#TrendingBox > div > div > div > p:first-child {
+    font-size: 12px;
+    border: 0px solid;
+    text-decoration: line-through;
+    
+}
+
+#TrendingBox > div > div > div > p:last-child {
+    font-size: 25px;
+    border: 0px solid;
+    
+}
+
+#TrendingBox > div > div >button {
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    border: 0px;
+    color: wheat;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------DiscountBrand Section Started ------------>>>>>>>>>>>>> */
+
+#DiscBrands {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+
+}
+
+#DiscBrands + div {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+
+}
+
+#DiscBrands + div >img {
+    width: 15%;
+    height: 60px;
+    margin: 18px;
+}
+ 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer Section Started ------------>>>>>>>>>>>>> */
+
+#footer1 {
+    display: flex;
+    padding-top: 20px ;
+}
+
+#footer1 > div:first-child {
+    width: 49%;
+    padding: 0px ;
+}
+#footer1 > div:first-child > p {
+    margin: 0px 0px 0px 20px;
+    font-size: 14px;
+}
+
+#footer1 > div:first-child > button {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px 10px 20px;
+    padding: 10px 0px 10px 0px;
+    font-size: 27x;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+
+#footer1 > div:last-child {
+    width: 49%;
+}
+
+#footer1 > div:last-child >div {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+
+}
+
+#footer1 > div:last-child >div >img {
+    width: 35px;
+    height: 35px;
+    margin: 5px 10px ;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer2 Section Started ------------>>>>>>>>>>>>> */
+
+
+#footer2 {
+    display: flex;
+    padding-top: 20px ;
+}
+
+#footer2 > div:first-child {
+    width: 49%;
+    padding-left: 10px ;
+}
+
+#footer2 > div:first-child > h5 {
+    font-size: 16px;
+    color: brown;
+}
+
+#footer2 > div:first-child >div:first-child {
+        border: 1px solid;
+        width: 96%;
+        margin-bottom: 20px;
+}
+
+#footer2 > div:first-child > div ~ div {
+    display: flex;
+    border: 0px solid;
+    margin-top: 5px;
+}
+
+#footer2 > div:first-child > div > img {
+    width: 35px;
+    height: 35px;
+    display: inline;
+}
+#footer2 > div:first-child > div > p {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: teal;
+}
+
+#footer2 > div:last-child  {
+    width: 49%;
+    height: 300px;
+    border: 0px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer2 > div:last-child > div{
+    border: 0px solid;
+    width: 200px;
+    
+}
+
+#footer2 > div:last-child > div > h5 {
+    font-size:  16px;
+    color: brown;
+}
+
+#footer2 > div:last-child > div> div:first-child {
+    border: 1px solid;
+    margin-bottom: 10px;
+}    
+
+#footer2 > div:last-child > div > p {
+    margin: 15px 0px  10px 5px ;
+    font-size: 14px;
+    color: teal;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer3 Section Started ------------>>>>>>>>>>>>> */
+
+#footer3 {
+    display: flex;
+    padding-top: 20px ;
+    border-top: 1px solid;
+    margin-top: 30px;
+}
+
+#footer3 > div:first-child {
+    width: 48%;
+    padding-left: 20px ;
+    padding-top: 20px;
+}
+#footer3 > div:last-child > p {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#footer3 > div:last-child > div {
+    width: 49%;
+    height: 100px;
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    column-gap: 10px;
+    
+    
+}
+
+#footer3 > div:last-child > div  > img {
+    width: 65px ;
+    height: 33px;
+    
+}
