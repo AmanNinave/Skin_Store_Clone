@@ -11,36 +11,28 @@ Moisturizer - 5
 */
 
 var arr = [ 
-    {   name : "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg",
-        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-7504876690381737.jpg",
-        gift : "20% off + $135 SkinMedica Gift",
-        StrikedoffPrice :  "48"  ,
-        sellingPrice : "38.4" ,
-        Category : "Clenser" ,
-        rating :  "4.8",
-        link : "https://www.skinstore.com/skinmedica-aha-bha-exfoliating-cleanser/11289657.html"
-    }, 
-    {   name : "SkinMedica Procedure 360 System 38oz (Worth $410)",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12062429-2064870995672366.jpg",
-        alt_url : "",
-        gift : "20% off + $135 SkinMedica Gift",
-        StrikedoffPrice :  "326"  ,
-        sellingPrice : "260.8" ,
-        Category : "Clenser" ,
-        rating :  "4.1",
-        link : "https://www.skinstore.com/skinmedica-procedure-360-system-38oz/12062429.html"
-    },
-    {   name : "SkinMedica Purifying Foaming Wash 5oz",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11325073-1564871019659259.jpg",
-        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11325073-4104864824880119.jpg",
-        gift : "20% off + $135 SkinMedica Gift",
-        StrikedoffPrice :  "46"  ,
-        sellingPrice : "36.8" ,
-        Category : "Clenser" ,
-        rating :  "3.3",
-        link : "https://www.skinstore.com/skinmedica-purifying-foaming-wash-5oz/11325073.html"
-    },
+    {   name : "SkinMedica LYTERA 2.0 Pigment Correcting Serum and Retinol Complex 0.5 (Worth $231)",
+    img_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-6204494372463164.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-1364494372613290.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "226.5"  ,
+    sellingPrice : "181.2" ,
+    Category : "Serum" ,
+    rating :  "4.8",
+    link : "https://www.skinstore.com/skinmedica-lytera-2.0-pigment-correcting-serum-and-retinol-complex-0.5/11492784.html"
+},
+    
+{   name : "SkinMedica Procedure 360 System 38oz (Worth $410)",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12062429-2064870995672366.jpg",
+    alt_url : "",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "326"  ,
+    sellingPrice : "260.8" ,
+    Category : "Clenser" ,
+    rating :  "4.1",
+    link : "https://www.skinstore.com/skinmedica-procedure-360-system-38oz/12062429.html"
+}
+   ,
     {   name : "SkinMedica Facial Cleanser",
         img_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11289661-1794453993724103.jpg",
         alt_url : "",
@@ -68,7 +60,7 @@ var arr = [
         StrikedoffPrice :  "46"  ,
         sellingPrice : "36.8" ,
         Category : "Exfoliator" ,
-        rating :  "",
+        rating :  "3.2",
         link : "https://www.skinstore.com/skinmedica-aha-bha-cream/11289656.html"
     },
     {   name : "SkinMedica TNS Eye Repair (0.5oz)",
@@ -88,7 +80,7 @@ var arr = [
         StrikedoffPrice :  "92"  ,
         sellingPrice : "73.6" ,
         Category : "Eyecare" ,
-        rating :  "",
+        rating :  "3.7",
         link : "https://www.skinstore.com/skinmedica-instant-bright-eye-cream-5-oz/12378444.html"
     },
     {   name : "SkinMedica Instant Bright Eye Mask (6 Pack)",
@@ -171,16 +163,7 @@ var arr = [
         rating :  "4.3",
         link : "https://www.skinstore.com/skinmedica-lytera-2.0-pigment-correcting-serum/11396212.html"
     },
-    {   name : "SkinMedica LYTERA 2.0 Pigment Correcting Serum and Retinol Complex 0.5 (Worth $231)",
-        img_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-6204494372463164.jpg",
-        alt_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-1364494372613290.jpg",
-        gift : "20% off + $135 SkinMedica Gift",
-        StrikedoffPrice :  "226.5"  ,
-        sellingPrice : "181.2" ,
-        Category : "Serum" ,
-        rating :  "2.8",
-        link : "https://www.skinstore.com/skinmedica-lytera-2.0-pigment-correcting-serum-and-retinol-complex-0.5/11492784.html"
-    },
+   
     {   name : "SkinMedica Essential Defense Mineral Shield Broad Spectrum SPF 32 Tinted (1.85oz)",
         img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290741-2554870995987858.jpg",
         alt_url : "https://static.thcdn.com/images/small/webp//productimg/130/130/11290741-3044870996038549.jpg",
@@ -230,6 +213,27 @@ var arr = [
         Category : "Moisturizer" ,
         rating :  "5",
         link : "https://www.skinstore.com/skinmedica-aha-bha-cream/11289656.html"
-    }
+    },
+
+    {   name : "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-7504876690381737.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "48"  ,
+    sellingPrice : "38.4" ,
+    Category : "Clenser" ,
+    rating :  "4.8",
+    link : "https://www.skinstore.com/skinmedica-aha-bha-exfoliating-cleanser/11289657.html"
+},
+{   name : "SkinMedica Purifying Foaming Wash 5oz",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11325073-1564871019659259.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11325073-4104864824880119.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "46"  ,
+    sellingPrice : "36.8" ,
+    Category : "Clenser" ,
+    rating :  "3.3",
+    link : "https://www.skinstore.com/skinmedica-purifying-foaming-wash-5oz/11325073.html"
+}
 
 ]
