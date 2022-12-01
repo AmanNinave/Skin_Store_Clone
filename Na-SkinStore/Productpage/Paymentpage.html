@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="Paymentpage.css" />
+    <div id="Pay_container">
+      <div id="parent_payment_lft">
+        <div id="parent_payment_lft_login">
+          <div>
+            <h2>Login or sign up</h2>
+            <p>
+              Checkout faster with saved details and get access to exclusive
+              offers
+            </p>
+          </div>
+          <div>
+            <button>LOGIN/SIGNUP</button>
+          </div>
+        </div>
+        <div id="parent_payment_lft_guest">
+         
+          <h2>Checkout as a guest</h2>
+          <p>
+            Complete your order without signing up, or sign up after payment.
+          </p>
+          <h3>1.Email and delivery address</h3>
+          <form>
+            <p>*Email address</p>
+            <input type="email" />
+            <p>We'll send the purchase receipt to this email.</p>
+            <p>*Country/Region</p>
+            <select name="Country" id="Choose_Country">
+              <option value="">India(India)</option>
+              <option value="india">India</option>
+              <option value="qatar">Qatar</option>
+              <option value="bhutan">Bhutan</option>
+              <option value="nepal">Nepal</option>
+              <option value="England">England</option>
+            </select>
+            <p>*Full Name</p>
+            <input type="text" />
+            <p>*Zip Code/Postcode</p>
+            <input type="text" />
+            <p>Company name</p>
+            <input type="text" />
+            <p>*Address</p>
+            <input type="text" />
+            <p>Address 2</p>
+            <input type="text" />
+            <p>*Apartment/Suite number</p>
+            <input type="text" />
+            <p>*Apartment/Suite number</p>
+            <input type="text" />
+            <p>*Town/City</p>
+            <input type="text" />
+            <p>*Country</p>
+            <input type="text" placeholder="Start typing your country" />
+            <p>Contact Number</p>
+            <input type="text" />
+            <div id="parent_quest">
+              <button><a href="">Why do we need your number?</a></button>
+            </div>
+          </form>
+        </div>
+        <div id="parent_payment_lft_delivery">
+          <h2>2. Select Delivery Option</h2>
+          <div>
+            <p><i class="fa-solid fa-circle-info"></i> enter your address so we can calculate your delivery options.</p>
+          </div>
+        </div>
+        <div id="parent_payment_lft_paymentMethod">
+          <div>
+            <h2>3. Select Payment Method</h2>
+            <div>
+              <form id="border_select">
+                <h3>Credit/Debit Card</h3>
+                <div>
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/3c2e42cbf9d0b0df0d3b3bb81aa41d6a.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/0528692e7541ff3755880b3408793969.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg"
+                    alt="miss pic"
+                  />
+                  <img
+                    src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg"
+                    alt="miss pic"
+                  />
+                  <p>*Card Number</p>
+                  <input type="text" />
+
+                  <p>*Name on card</p>
+                  <input type="text" />
+                  <p>*Expiry Date</p>
+                  <div id="expiry">
+                    <select name="Expiry" id="Expiry_Month">
+                      <option value="">Month</option>
+                      <option value="">01</option>
+                      <option value="">02</option>
+                      <option value="">03</option>
+                      <option value="">04</option>
+                      <option value="">05</option>
+                      <option value="">06</option>
+                      <option value="">07</option>
+                      <option value="">08</option>
+                      <option value="">09</option>
+                      <option value="">10</option>
+                      <option value="">12</option>
+                    </select>
+                    <select name="Expiry" id="Expiry_year">
+                      <option value="">Year</option>
+                      <option value="">22</option>
+                      <option value="">23</option>
+                      <option value="">24</option>
+                      <option value="">25</option>
+                      <option value="">26</option>
+                      <option value="">27</option>
+                      <option value="">28</option>
+                      <option value="">29</option>
+                      <option value="">30</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p>*Security Code (CV2)</p>
+                    <input type="text" id="security_code"  />
+                    <button id="question_btn">?</button>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="checkBox_method" />
+                    <label for="vehicle1"
+                      >Use my shipping address as my cardholder address</label
+                    >
+                  </div>
+                    
+                  </div>
+                </div>
+              </form>
+              <div id="Method_card_image">
+                <div>
+                <h2>Use a different payment method</h2>
+              </div>
+              
+                <img
+                  src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg"
+                  alt=""
+                />
+             
+                <img
+                  src="https://s1.thcdn.com/checkout/resources/images/52c235cfc21b037c320712891df2cffc.svg"
+                  alt=""
+                />
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0My4xIDE2IiB3aWR0aD0iNDMiIGhlaWdodD0iMTYiPgogICAgPHRpdGxlPlppcFBheTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsPSIjQUE4RkZGIiBkPSJNMTQuNjcgNC45MjdsMS4zNDUgMTEuMDMyaDEzLjE1NkwyNy44MjUgNC45MjdIMTQuNjdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik0xOC40MjMuNzE4Yy44NC43OTQuOTU0IDIuMDQ1LjI1NyAyLjc5Mi0uNjk3Ljc0Ny0xLjk0Mi43MDktMi43ODEtLjA4NS0uODQtLjc5Ny0uOTU1LTIuMDQ2LS4yNTctMi43OTQuNjk3LS43NDYgMS45NDEtLjcwOSAyLjc4MS4wODdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik00Mi45NTkgOC44OTljLS4zMDMtMi40ODEtMi4yMzctMy45OC00Ljg2My0zLjk3MmgtOC43NDdsMS4zNDQgMTEuMDMxaDMuOTM3bC0uMjY4LTIuMjA1aDQuMTY3YzMuMjc1IDAgNC43NzYtMi4wNiA0LjQzLTQuODUzaDB2LS4wMDF6TTM4LjEgMTAuNjZsLTQuMTIuMDA0LS4zMjMtMi42NDYgNC4xNC4wMDRjLjk3My4wMTMgMS40Ny41NjIgMS41NTIgMS4zMi4wNTMuNDg0LS4xNjggMS4zMTgtMS4yNSAxLjMxOHoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiAgICA8cGF0aCBmaWxsPSIjMUEwODI2IiBkPSJNLjk2OSAxMi44NzZsLjM3NiAzLjA4M2gxMy4xNDNsLS40MzMtMy41MjhINy45M2wtLjA1Ny0uNDQgNS42NDctMy45NzItLjM3Ny0zLjA5MkgwbC40MjggMy41MzJoNi4xNGwuMDU1LjQ0LTUuNjU0IDMuOTc3aDB6Ii8+Cjwvc3ZnPgo="
+                  alt=""
+                />
+                <img
+                  src="https://s1.thcdn.com/checkout/resources/images/3c5574b5e1fe1470a49f46bc08828ef4.svg"
+                  alt=""
+                />
+                <img
+                  src="https://s1.thcdn.com/checkout/resources/images/61199182e45613b7932d163ec9ad823c.svg"
+                  alt=""
+                />
+             
+              </div>
+            </div>
+        
+          <div id="parent_payment_lft_submit">
+            <button>SUMBIT MY ORDER</button>
+          </div>
+          <div id="termCondition">
+            <p>
+              By placing this order, you are confirming that you agree to our
+              <a href=""> Terms and Conditions </a> and
+              <a href=""> Privacy Policy. </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="parent_payment_right">
+        <div>
+          <div>Order Summary</div>
+          <div>2 items</div>
+        </div>
+
+        <div>Order Number : 453949850</div>
+
+        <div >
+          <div id="payment_image">
+            <img
+              src="https://s1.thcdn.com/productimg/70/70/11649733-6254669919487285.jpg"
+              alt="miss pic"
+            />
+          </div>
+          <div>
+            <p>SkinCeuticals Resveratrol BE 4ml (Worth $21.00</p>
+            <p>Quantity: 1</p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://s1.thcdn.com//productimg/70/70/13547804-8725001921814146.jpg"
+              alt="miss pic"
+            />
+          </div>
+          <div>
+            <p>Anti-Aging Radiance Duo (Worth $305.00)</p>
+            <p>Quantity: 1</p>
+            <p>$259.25</p>
+          </div>
+        </div>
+        <div class="horizontal_lines"></div>
+        <div>
+          <div>Delivery</div>
+          <div>Calculated at next step</div>
+        </div>
+        <div class="horizontal_lines"></div>
+        <div ><button>Saving</button></div>
+        <div class="horizontal_lines"></div>
+        <div>
+          <div>Total to pay</div>
+          <div>$259.25</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+   <div id="down_tag">
+    <p>THGPP LLC</p>
+    
+    <p>1209 Orange Street, Wilmington, New Castle, DE 19801. United States</p>
+    </div>
+  </body>
+</html>
