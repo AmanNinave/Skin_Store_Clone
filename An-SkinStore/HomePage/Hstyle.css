@@ -270,15 +270,24 @@ div {
     border: 0px solid;
     width: 99.8%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
     margin: 15px 0px 10px 1px;
     
 }
 
-#CategoryDiv > img {
-    width: 15%;
+#CategoryDiv > div {
+    border: 0px solid;
+    width: 99.8%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin: 15px 10px 10px 10px;
+    
+}
+
+#CategoryDiv > div > img {
+    width: 30%;
 }
 
 
@@ -564,5 +573,56 @@ div {
 #footer3 > div:last-child > div  > img {
     width: 65px ;
     height: 33px;
+    
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-------Media Query Section Started ------------>>>>>>>>>>>>> */
+
+
+
+@media only screen and (min-width:571px) and (max-width:868px) {
+   
+#CategoryDiv {
+    border: 0px solid;
+    width: 99.8%;
+    display: block;
+    margin: auto;
+    margin: 15px 0px 10px 1px;
+    
+}
+
+#CategoryDiv > div {
+    border: 0px solid;
+    width: 99.8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin: 15px 0px 10px 1px;
+    
+} 
+
+#CategoryDiv > div > img {
+    width: 30%;
+}
+
+
+}
+
+@media only screen and  (max-width:570px) {
+
+       
+#CategoryDiv {
+    border: 0px solid;
+    width: 99.8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin: 15px 0px 10px 1px;
+    
+}
     
 }
