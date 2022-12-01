@@ -7,3 +7,5 @@ doubt ???
 
 footer needed for register and login page ?
 need to make terry brand page, from which we will access terry products ?
+
+wirte content in read me page 
