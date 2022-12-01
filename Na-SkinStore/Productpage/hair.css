@@ -22,7 +22,7 @@
     display: flex;
     /* border: 1px solid red; */
     justify-content: space-around;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     padding: 20px;
     font-family: sans-serif;
     font-weight: 400;
@@ -70,7 +70,7 @@
     display: flex;
     /* border: 1px dashed black; */
     justify-content: space-around;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     padding: 20px;
     font-family: sans-serif;
     font-weight: 400;

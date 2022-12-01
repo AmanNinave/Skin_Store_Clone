@@ -50,9 +50,12 @@
   padding: 15px;
   margin-top: 10px;
   border: 1px solid black;
+  cursor: pointer;
 }
 #parent > div > div > button:hover {
   background-color: rgb(213, 237, 237);
+  cursor: pointer;
+
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----parent1 section----->>>>>>>>>>>>>>>> */
 #parent1 {
@@ -83,9 +86,13 @@
   padding: 15px;
   margin-top: 10px;
   border: 1px solid black;
+  cursor: pointer;
+
 }
 #parent1 > div > div > button:hover {
   background-color: rgb(213, 237, 237);
+  cursor: pointer;
+
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----serums masks section ----->>>>>>>>>>>>>>>> */
@@ -106,9 +113,13 @@
   margin-bottom: 20px;
   font-family: sans-serif;
   font-weight: 400;
+  cursor: pointer;
+
 }
 #serums-masks > button:hover {
   background-color: rgb(143, 140, 140);
+  cursor: pointer;
+
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----ingred section----->>>>>>>>>>>>>>>> */
@@ -157,10 +168,14 @@
   border: none;
   background-color: black;
   color: white;
+  cursor: pointer;
+
 }
 #bottom > div > div > button:hover {
   background-color: rgb(5, 141, 141);
   color: black;
+  cursor: pointer;
+
 }
 #bottom > div > h3 {
   margin-bottom: 10px;
@@ -196,9 +211,13 @@
   margin-top: 10px;
   font-family: sans-serif;
   font-weight: normal;
+  cursor: pointer;
+
 }
 #readMore > div > div > button:hover {
   background-color: rgb(213, 237, 237);
+  cursor: pointer;
+
 }
 #readMore > div > p {
   margin-top: 10px;
