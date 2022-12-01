@@ -1,0 +1,11 @@
+login page - > less border radius
+                correct facebook logo
+                coloful logo for facebook and google
+                css for final product page
+                
+doubt ???
+
+footer needed for register and login page ?
+need to make terry brand page, from which we will access terry products ?
+
+wirte content in read me page 

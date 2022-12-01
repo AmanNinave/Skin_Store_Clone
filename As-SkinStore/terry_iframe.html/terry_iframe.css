@@ -1,0 +1,96 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 450;
+}
+
+body {
+    background-color: white
+}
+
+#terry_container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap : 10px;
+    margin : auto;
+    padding : 5px;
+    /* border : 1px yellow solid; */
+    background-color: rgb(248, 248, 245);
+    width : 80%;
+}
+
+/* ------------- ------------  Terry Card section begins ------------------ --------- */
+
+.t-card-class{
+    /* background-color: blue; */
+    width:100%;
+    margin-top : 20px;
+}
+
+/* ------------- ------------  Top section begins ------------------ --------- */
+
+.t-img-Top {
+    display : flex;
+}
+
+.t-img{
+    margin-top: 5px;
+    width: 85%;
+    margin : auto;
+    border-radius: 10px;
+}
+
+/* ------------- ------------  middle section begins ------------------ --------- */
+
+.t-info-Middle{
+    /* background-color: yellowgreen; */
+    margin : auto;
+    width : 86%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.t-card-name{
+    color : rgb(31, 27, 27);
+    font-weight: 550;
+    margin-bottom: 15px;
+    margin-left : 1px;
+}
+
+.t-card-offer{
+    margin-bottom: 10px;
+    padding : 3px;
+    margin-left : 1px;
+}
+
+.t-card-strikedoff-para{
+    color : grey;
+    margin-bottom : 5px;
+    font-size: 95%;
+    margin-left : 1px;
+}
+
+.t-card-price-now{
+    font-size: x-large;
+    margin-bottom: 5px;
+    margin-left : 1px;
+}
+
+/* ------------- ------------  Bottom section begins ------------------ --------- */
+
+.t-button-Bottom{
+    display : flex;
+    margin : auto;
+    justify-content: center;
+}
+
+.t-button{
+    width : 85%;
+    height : 40px;
+    background-color: grey;
+    color : white;
+    border : none;
+    margin : 5px;
+}
