@@ -87,8 +87,8 @@
         <h1 id="CategoryHeading">Shop by Category</h1>
 
         <div id="CategoryDiv">
-
-            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/34/original-Page-001%5B1%5D-092134.png"
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/34/original-Page-001%5B1%5D-092134.png"
                 alt="">
 
             <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/53/original-Page-002%5B1%5D-092153.png"
@@ -96,7 +96,9 @@
 
             <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/51/original-tools.ss-054451.png" alt="">
 
-            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/57/original-makeup.ss-054457.png"
+            </div>
+            <div>
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/57/original-makeup.ss-054457.png"
                 alt="">
 
             <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/23/original-Page-005%5B1%5D-092223.png"
@@ -105,6 +107,10 @@
             <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/28/original-Page-006%5B1%5D-092228.png"
                 alt="">
 
+            </div>
+
+            
+           
         </div>
 
         <div id="BrandBox">
@@ -473,7 +479,7 @@
 
     //For Your Skincare page
     document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click" , GoSkinCare);
-    document.querySelector("#CategoryDiv > img:nth-child(1) ").addEventListener("click" ,GoSkinCare );
+    document.querySelector("#CategoryDiv > div> img:nth-child(1) ").addEventListener("click" ,GoSkinCare );
    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click" , GoSkinCare);
     function GoSkinCare(){
         window.location.href="./../../Na-SkinStore/Productpage/Productpage.html";
@@ -481,7 +487,7 @@
 
     //For Hair Page
     document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
-    document.querySelector("#CategoryDiv > img:nth-child(2) ").addEventListener("click" , GoHair);
+    document.querySelector("#CategoryDiv > div> img:nth-child(2) ").addEventListener("click" , GoHair);
   //  document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
 
     function GoHair(){
@@ -490,7 +496,7 @@
 
     //For MakeUp page
     document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
-    document.querySelector("#CategoryDiv > img:nth-child(4) ").addEventListener("click" , GoMakeUP);
+    document.querySelector("#CategoryDiv > div> img:nth-child(1) ").addEventListener("click" , GoMakeUP);
    // document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
     function GoMakeUP(){
         window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
