@@ -1,0 +1,452 @@
+/* medium screen */
+@media only screen and (min-width: 500px) and (max-width: 90px) {
+    #teachers{
+          grid-template-columns: repeat(2, 1fr);
+    }
+    #courses{
+          grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    #teachers{
+          grid-template-columns: repeat(1, 1fr);
+    }
+    #courses{
+          grid-template-columns: repeat(1, 1fr);
+    }
+}
+        
+        
+        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<   FOOTER   >>>>>>>>>>>>>>>>>>>>>>> */
+        #footer1 {
+            display: flex;
+            padding-top: -5px;
+            border: px solid;
+        }
+
+        #footer1>div:first-child {
+            width: 49%;
+            padding: 0px;
+            border: 0px solid;
+        }
+
+        #footer1>div:first-child>p {
+            margin: 13px 0px 0px 20px;
+            font-size: 14px;
+        }
+
+        #footer1>div:first-child>button {
+            width: 100px;
+            height: 40px;
+            margin: 20px 0px 10px 20px;
+            padding: 10px 0px 10px 0px;
+            font-size: 27x;
+            background-color: brown;
+            border: none;
+            color: white;
+        }
+
+
+        #footer1>div:last-child {
+            width: 49%;
+            border: 0px solid;
+        }
+
+        #footer1>div:last-child>div {
+            display: flex;
+            margin: 10px 0px 10px 0px;
+
+        }
+
+        #footer1>div:last-child>div>img {
+            width: 35px;
+            height: 35px;
+            margin: 5px 10px;
+        }
+        
+        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer2 Section Started ------------>>>>>>>>>>>>> */
+
+
+        #footer2 {
+            display: flex;
+            padding-top: 20px;
+        }
+
+        #footer2>div:first-child {
+            width: 49%;
+            padding-left: 10px;
+        }
+
+        #footer2>div:first-child>h5 {
+            font-size: 16px;
+            margin: 20px;
+            color: brown;
+            /* background-color: blue; */
+        }
+
+        #footer2>div:first-child>div:first-child {
+            border: 1px solid;
+            width: 96%;
+            margin-bottom: 0px;
+        }
+
+        #footer2>div:first-child>div~div {
+            display: flex;
+            border: 0px solid;
+            margin-top: -10px;
+            border: 0px solid;
+        }
+
+        #footer2 > div:first-child>div>img {
+            width: 30px;
+            height: 30px;
+            display: inline;
+            border: 0px solid;
+            padding-top: 10px;
+        }
+
+        #footer2>div:first-child>div>p {
+            padding-bottom: 0px;
+            padding-left: 10px;
+            color: teal;
+            border: 0px solid;
+            font-size: 16px;
+        }
+
+        #footer2>div:last-child {
+            width: 49%;
+            height: 300px;
+            border: 0px solid;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #footer2>div:last-child>div {
+            border: 0px solid;
+            width: 200px;
+
+        }
+
+        #footer2>div:last-child>div>h5 {
+            font-size: 16px;
+            color: brown;
+        }
+
+        #footer2>div:last-child>div>div:first-child {
+            border: 1px solid;
+            margin-bottom: 0px;
+        }
+
+        #footer2>div:last-child>div>p {
+            margin: 15px 0px 10px 5px;
+            font-size: 14px;
+            color: teal;
+        }
+
+        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer3 Section Started ------------>>>>>>>>>>>>> */
+
+        #footer3 {
+            display: flex;
+            padding-top: 10px;
+            border-top: 1px solid;
+            margin-top: 5px;
+        }
+
+        #footer3>div:first-child {
+            width: 48%;
+            padding-left: 20px;
+            padding-top: 0px;
+            /* background-color: blue; */
+        }
+
+        #footer3>div:last-child>p {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        #footer3>div:last-child>div {
+            width: 49%;
+            height: 100px;
+            border: 0px solid;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            column-gap: 10px;
+
+
+        }
+
+        #footer3>div:last-child>div>img {
+            width: 65px;
+            height: 33px;
+
+        }
+
+           
+        #cartparent{
+            /* border: 4px solid green; */
+            /* background-color: rgb(242,242,245); */
+            padding-right: 40px;
+            padding-left: 40px;
+            
+        }
+        #cartparent div{
+            margin: 10px;
+        }
+        #twoparts{
+            /* border: 2px solid rgb(122, 30, 202); */
+            display: flex;
+        }
+        #tableandgifts{
+            /* border: 2px solid rgb(12, 3, 73); */
+            display: flex;
+            
+        }
+        #twoparts{
+            /* border: 2px solid rgb(9, 76, 106); */
+            /* width: 60%; */
+            display: flex;
+        }
+        #twoparts > div:nth-child(1){
+            /* border: 2px solid green; */
+            width: 60%;
+        }
+        #twoparts > div:nth-child(2){
+            /* border: 2px solid green; */
+            background-color: rgb(242,242,242);
+        }
+        .gifts{
+            /* border: 2px solid blue; */
+            display: flex;
+            margin-top: 10px;
+
+        }
+        .gifts p{
+            text-align: center;
+            color: brown;
+            margin-top: 20px;
+            margin-left: 8px;
+        }
+        /* .gifts > div:nth-child(2){
+            border: 1px solid red;
+            background-color: rgb(255,255,255);
+            width: 100%;
+            text-align: left;
+            margin-left: -10px;
+            padding: 10px;
+        } */
+        .gifts > div{
+            display: flex;
+            background-color: rgb(255,255,255);
+            width: 100%;
+            padding: 2px;
+        }
+        .gifts > img{
+            border: 1px solid green;
+            background-color: rgb(255,255,255);
+            /* width: 100%; */
+            /* margin: auto; */
+            
+        }
+        #carttitle{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            /* margin: 15px; */
+            gap: 57%;
+            /* font-family: sans-serif; */
+            font-size: x-large;
+        }
+        .buttoncheckout{
+            background-color: rgb(51,51,51);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .buttoncheckout:hover{
+            background-color: rgb(58,177,219);
+        }
+        #cartnotify{
+            border: 2px solid rgb(232,243,255);
+            width: 95.5%;
+            display: inline-block;
+            background-color: rgb(58,130,158);
+            color: rgb(251, 254, 255);
+            font-size: bold;
+            /* border: #2332d7; */
+            font-family: sans-serif;
+        }
+        /* #carttable{
+            /* border: 2px solid blue; 
+            height: 400px;
+            width: 97%;
+        } */
+        #carttable{
+            height: 400px;
+        }
+        #carttable div{
+            display: flex;
+            /* border: 1px solid green; */
+            /* margin-top: -.1px; */
+            /* margin-bottom: -.1px; */
+            /* align-items: center; */
+        }
+        #carttable div div:nth-child(2){
+            width: 40%;
+        }
+        #carttable div div:nth-child(4){
+            width: 4%;
+        }
+        #carttable div div:nth-child(6){
+            width: 4%;
+        }
+        #carttable div div:nth-child(7){
+            width: 12%;
+        }
+        #carttable div div:nth-child(8){
+            width: 3%;
+        }
+
+
+        #cartsubtotal{
+            border: 0px solid palevioletred;
+        }
+        #cartsubtotal h4{
+            /* margin: 10px; */
+            padding-right: 40px;
+            text-align: right;
+        }
+        #carttotalsavings{
+            border: 0px solid orange;
+        }
+        #carttotalsavings form{
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(171, 41, 41); */
+            /* padding-left: 400px 0 400px 0; */
+            margin: auto;
+            width: 70%;
+            /* border: 3px solid #73AD21; */
+            /* padding: 10px; */
+        }
+        #carttotalsavings h3{
+            text-align: left;
+            padding: 40px;
+        }
+        #cartextra{
+            /* border: 2px solid violet; */
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            /* gap: 70%; */
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            /* border: 2px solid #4CAF50; */
+            }
+
+            .button1:hover {
+            background-color: rgb(58,177,219);
+            color: white;
+        }
+        table, td {
+        text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+            /* margin-top: 50px; */
+        }
+
+        th,
+        td {
+        padding: 15px;
+        }
+
+        tr > th {
+        /* background-color: rgb(207, 195, 191); */
+        color: black;
+        }
+        #paymentImages{
+            display: flex;
+            /* margin-top: -5px; */
+            justify-content: right;
+            /* justify-content: space-between; */
+            /* gap: -100px; */
+            padding: 8px;
+            padding-top: -7px;
+            width: -50%;
+        }
+        #paymentImages div{
+
+             height: 25px;
+             /* width: 10%; */
+            display: flex;
+            padding: 5px 5px 5px 5px;
+            border-radius: 2px;
+            /* padding-left: -10px; */
+            gap: -300px;
+            border: 1px solid rgb(76,79,82);
+        }
+        #payment div:nth-child(4){
+            width: 2%;
+        }
+        #otherstitle{
+            margin-top: 20px;
+            text-align: center;
+            font-size: xxx-large;
+            width: 90%;
+        }
+        #suggestionproduct{
+            display: flex;
+            /* border: 2px solid rgb(63, 8, 80); */
+            margin-top: 30px;
+        }
+        #suggestionproduct img{
+            height: 300px;
+            width: auto;
+        }
+        #suggestionproduct div{
+            /* border: 2px solid green; */
+            margin: 10px;
+        }
+        #suggestionproduct > div > button{
+            background-color: rgb(51,51,51);
+            border: none;
+            color: white;
+            padding: 15px 110px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            align-items: center;
+            width: 95%;
+        }
+        #suggestionproduct > div > p:nth-child(3){
+            margin-top: 8px;
+            margin-bottom: -15px;
+            display: inline-block;
+            border: 1px solid red;
+            color: red;
+            padding: 3px;
+        }
+        #suggestionproduct > div > p:nth-child(4){
+            margin-top: 8px;
+        }
+        #suggestionproduct div button:hover{
+            background-color: rgb(58,177,219);
+            color: white;
+        }
