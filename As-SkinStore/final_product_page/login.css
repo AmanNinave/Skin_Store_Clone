@@ -1,0 +1,150 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    font-family: sans-serif;
+}   
+
+#login-header{
+    background-color: white;
+    padding : 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+body {
+    background-color: rgb(242,242,242);
+}
+#login-body{
+    width : 75%;
+    display : flex;
+    background-color: none;
+    margin : 50px auto 20px auto;
+    justify-content: space-around;
+    padding : 20px;
+}
+
+#login-body-left{
+    background-color: white;
+    padding : 30px;
+    width : 35%;
+    
+}
+
+#login-body-left > form > p:nth-child(2){
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+#login-body-left > form > p:nth-child(4){
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+#login-body-left > form > p:nth-child(6){
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left : 5px;
+}
+#login-body-left > form > input:nth-child(3){
+    width : 100%;
+    height : 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin:5px;
+    border : 1px solid black;
+}
+
+#login-body-left > form > div > input:nth-child(1){
+    width : 100%;
+    height : 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin:5px;
+    border : 1px solid black;
+}
+
+#login-body-left > form > div {
+    display : flex;
+    justify-content: space-between;
+    background-color: white;
+    border : 1px solid black;
+    height : 60px;
+    border-radius: 5px;
+    width : 100%;
+    margin-left : 5px;
+}
+
+#login-body-left > form > div > input:nth-child(1){
+    border : none;
+}
+
+#login-body-left > form > div > button:nth-child(2){
+    border : none;
+    background-color: white;
+    height : 30px;
+    border-radius: 20px;
+    margin-top : 15px;
+    padding : 5px;
+}
+
+#login-body-left > p {
+    margin-left : 6px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#login-body-left-submit {
+    background-color: grey;
+    width : 100%;
+    height : 50px;
+    border : none;
+    margin:5px;
+    width : 100%;
+}
+
+#login-body-left-buttons{
+    display : flex;
+    justify-content: space-around;
+    margin-left : 5px;
+}
+
+#login-body-left-buttons > button {
+    width : 45%;
+    height : 40px;
+    display : flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#login-body-left-buttons > button > img {
+    width : 30px;
+    padding :2px;
+    text-align: center;
+}   
+
+#login-body-left-buttons > button > span {
+    width : 30px;
+    text-align: center;
+    margin-left: -5px;
+}   
+
+/* right side div */ 
+
+#login-body-right{
+    background-color: white;
+    padding : 30px;
+    width : 35%;
+    height : 150px;
+}
+
+#login-body-right > div > h2 {
+    margin-bottom: 30px;
+}
+
+#login-body-right > div > input {
+    width: 100%;
+    background-color: grey;
+    height : 50px;
+    border : none;
+}
+
