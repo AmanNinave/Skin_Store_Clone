@@ -39,7 +39,7 @@
 
             <div id="AnAccount">
                 <div>
-                    <button> Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT </button>
+                    <button> Hello &nbsp &nbsp <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT </button>
                     <button> My Account</button>
                 </div>
                 <div>
@@ -842,8 +842,7 @@
 
 <script>
 
-var amanninave = "Aman"
-    localStorage.setItem("username" , amanninave);
+var amanninave =  localStorage.getItem("username" );
     var userN = localStorage.getItem("username");
 
     document.querySelector("#userName").textContent = userN;
