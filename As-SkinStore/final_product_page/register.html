@@ -26,37 +26,37 @@
         </div>
 
         <hr>
-        <form action="" id ="register-main-form">
+        <form action="./login.html" id ="register-main-form">
             <h3>Or create an email account </h3> 
             <div id="register-main-name">
                 <p> Full Name * </p>
-                <input type="text"/> 
+                <input  id="name" type="text"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Email Address * </p>
-                <input type="email"/> 
+                <input id="email" type="email"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Confirm Email Address * </p>
-                <input type="email"/> 
+                <input id="email2" type="email"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Password * </p>
-                <input type="password"/> 
+                <input  id="pass" type="password"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Cellphone Number (Optional) </p>
-                <input type="tel"/> 
+                <input id="mnum" type="tel"/> 
                 <p> We will use this number to send occasional promotional messages. </p>
             </div>
 
             <div id="register-main-refer">
                 <p> Referral Code (Optional) </p>
-                <input type="text"/> 
+                <input id="ref" type="text"/> 
                 <p> * Your referrals discount is automatically applied at cart </p>
             </div>
 
@@ -70,3 +70,31 @@
     
 </body>
 </html>
+
+<script>      
+  var JobData = JSON.parse(localStorage.getItem("userdetails")) || [];
+
+document.querySelector("#register-main-form").addEventListener("submit", AddData);
+
+function AddData() {
+
+  event.preventDefault();
+  var Name = document.getElementById("name").value;
+  var Desc = document.getElementById("email").value;
+  var Start = document.getElementById("pass").value;
+  var End = document.getElementById("mnum").value;
+  
+  var obj = { name: Name, email: Desc, password: Start, mnum: End  };
+
+  var check = true;
+
+  if (check) {
+    JobData.push(obj);
+    localStorage.setItem("userdetails", JSON.stringify(JobData));
+  }
+
+//   location.reload();
+
+}
+
+</script>

@@ -12,12 +12,14 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color: rgba(255, 255, 255, 0);
+            background-color: white;
+            position: fixed;
             /* padding-top: 150px; */
             height: fit-content;
             margin-left: 20px;
             width: 85%;
-
+            
+           
         }
 
         .skin_container_hover h3 {
@@ -44,8 +46,8 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color:  rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -76,8 +78,8 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color: rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -107,8 +109,8 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color:  rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -133,13 +135,13 @@
         }
 
         .blogHover_container {
-            display: grid;
+            display: none;
             grid-template-columns: repeat(5, 1fr);
             /* margin: auto; */
             /* border: 1px solid; */
             z-index: 4;
-            background-color: rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -153,7 +155,8 @@
         }
 
         .blogHover_container>div {
-            box-shadow:  rgba(255, 255, 255, 0);
+            background-color: white;
+            position: fixed;
             width: 90%;
             height: 90%;
             text-align: start;
@@ -178,8 +181,8 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color:  rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -210,8 +213,8 @@
             font-weight: lighter;
 
             z-index: 4;
-            background-color: rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -243,8 +246,8 @@
 
 
             z-index: 4;
-            background-color: rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -276,8 +279,8 @@
 
             
             z-index: 4;
-            background-color:rgba(255, 255, 255, 0);
-            /* padding-top: 150px; */
+            background-color: white;
+            position: fixed;
             height: fit-content;
             margin-left: 20px;
             width: 85%;
@@ -299,6 +302,7 @@
         }
 
         .selfcareHover_cotaine {
+            
             display: none;
         }
 
@@ -334,7 +338,7 @@ div {
     z-index: 3;
  } 
 
- #TopHeader + div {
+ #spacediv {
     height: 160px;
  }
 
