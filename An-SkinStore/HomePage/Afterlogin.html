@@ -842,10 +842,15 @@
 
 <script>
 
-var amanninave =  localStorage.getItem("username" );
-    var userN = localStorage.getItem("username");
+var amanninave =""
+var Wishlst = localStorage.getItem("wishlist") || [];
 
-    document.querySelector("#userName").textContent = userN;
+
+var userN = localStorage.getItem("username");
+
+document.querySelector("#userName").textContent = userN;
+
+
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -970,7 +975,7 @@ var amanninave =  localStorage.getItem("username" );
             x.style.display = "none";
         }
 
-        ANAccount.style.zIndex = "10";
+        x.style.zIndex = "10";
        
     }
 

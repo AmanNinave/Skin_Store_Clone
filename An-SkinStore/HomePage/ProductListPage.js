@@ -1,7 +1,7 @@
 var amanninave =""
 var Wishlst = localStorage.getItem("wishlist") || [];
 
-localStorage.setItem("username" , amanninave);
+
 var userN = localStorage.getItem("username");
 
 document.querySelector("#userName").textContent = userN;
