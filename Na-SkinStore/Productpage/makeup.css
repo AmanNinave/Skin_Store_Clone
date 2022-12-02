@@ -1,3 +1,209 @@
+
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  padding: 0px;
+}
+
+div {
+  border: 0px solid;
+}
+
+#ANParent {
+  /* border: 1px solid; */
+  width: 100%;
+}
+
+/* <<<<<<<<<<<<<----------------Main Section Top ------------------------------>>>>>>>>>> */
+
+#TopHeader {
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  margin-top: -10px;
+  z-index: 3;
+}
+
+#TopHeader + div {
+  height: 900px;
+}
+
+#MainSec {
+  display: flex;
+  justify-content: space-between;
+  height: 105px;
+  border: 1px solid;
+  width: 100%;
+}
+
+#MainSec > div:first-child {
+  width: 16%;
+  margin-left: 33px;
+}
+
+#MainSec > div:first-child > h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+#MainSec > div:first-child > p {
+  text-align: center;
+  font-size: 12.8px;
+}
+
+#MainSec > div:first-child > p > span {
+  font-weight: 700;
+}
+
+#MainSec > div:nth-child(2) {
+  width: 40%;
+  padding-top: 34px;
+  margin: 0px 15%;
+  margin-left: 13%;
+  display: flex;
+}
+
+#MainSec > div:nth-child(2) > input {
+  width: 98%;
+  height: 38px;
+}
+
+#MainSec > div:nth-child(2) > img {
+  width: 33px;
+  height: 32px;
+  /* border: 1px solid; */
+  margin-left: -39px;
+  margin-top: 5px;
+}
+
+#MainSec > div:nth-child(3) {
+  width: 9%;
+  padding-top: 35px;
+  margin-right: 0%;
+}
+
+#MainSec > div:nth-child(3) > button {
+  width: 100%;
+  height: 35px;
+  font-size: 19px;
+  border: none;
+  background-color: white;
+  color: rgb(219, 32, 32);
+  font-weight: 545;
+}
+
+#MainSec > div:nth-child(3) > button:hover {
+  background-color: rgba(235, 226, 226, 0.418);
+}
+
+#MainSec > div:nth-child(4) {
+  width: 9%;
+  padding-top: 35px;
+  margin-right: 45px;
+}
+
+#MainSec > div:nth-child(4) > button {
+  width: 100%;
+  height: 35px;
+  font-size: 19px;
+  padding-left: 18px;
+  border: none;
+  background-color: white;
+  color: rgb(219, 32, 32);
+  font-weight: 545;
+}
+
+#MainSec > div:nth-child(4) > button:hover {
+  background-color: rgba(235, 226, 226, 0.418);
+}
+
+#MainSec > div:nth-child(4) > button > img {
+  height: 20px;
+  width: 20px;
+}
+
+#TopHeader > hr {
+  border: 1px solid;
+}
+
+#AnAccount {
+  z-index: 1;
+  width: 300px;
+
+  border: 0px solid green;
+  margin-bottom: 30px;
+  margin-top: -38px;
+  margin-left: 66.5%;
+  position: fixed;
+  overflow: hidden;
+  display: none;
+  height: fit-content;
+}
+
+#AnAccount > div:first-child {
+  background-color: grey;
+  padding: 5px;
+  border: brown;
+}
+
+#AnAccount > div:first-child > button {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid teal;
+  /* margin: 5px 0px 5px 0px; */
+}
+
+#AnAccount > div:last-child > button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border: 1px solid grey;
+  margin-top: 5px;
+  margin: 5px 10px 5px 0px;
+}
+
+#AnAccount > div > button:hover {
+  background-color: brown;
+  color: white;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#TopNav {
+  border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+
+  padding-left: 16px;
+  height: 36px;
+}
+
+#TopNav > button {
+  height: 35px;
+  padding: 5px 12px;
+  font-size: 14.2px;
+  font-weight: 300;
+  padding-top: px;
+  padding-bottom: 6px;
+  border: none;
+  color: gray;
+  background-color: white;
+}
+
+#TopNav > button:hover {
+  background-color: black;
+}
+
+
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---General section------>>>>>>>>>>>>>>>>>>>> */
 * {
   margin: 0px;
