@@ -2,8 +2,12 @@
     margin : 0px;
     padding : 0px;
     font-family: sans-serif;
+    
 }
 
+p{
+    font-size: 15px;
+}
 #pp-main{
     width: 98%;
     border: 1px dotted black;
@@ -124,6 +128,12 @@
 #pp-main-top-left-desc > p:nth-child(1){
     font-size: large;
     font-weight: 550;
+    margin-bottom: 20px;
+}
+
+#pp-main-top-left-desc > p:nth-child(2){
+    font-size: 15px;
+    font-weight: 500;
 }
 
 #pp-main-top-left-desc > ul {
@@ -134,6 +144,8 @@
 #pp-main-top-left-desc > ul > li {
     padding-top : 5px;
     padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .text-capitalize {
     font-weight: 600;
@@ -161,13 +173,41 @@
     padding : 10px;
 }
 
-#pp-main-top-left-deets > table > tr:nth-child(1) {
-    background-color: black;
+.odd-table{
+    background-color: rgb(248,248,248);
     margin-bottom: 10px;
-    border: 1px solid blue;
+    padding : 10px;
 }
 
+.even-table{
+    background-color: white;
+    margin-bottom: 10px;
+    padding : 10px;
+}
 
+.odd-table > td:nth-child(1){
+    padding : 20px;
+    font-size : 50;
+    width: 30%;
+    font-weight: 550;
+}
+
+.odd-table > td:nth-child(2){
+    padding : 20px;
+    font-size : 50;
+}
+
+.even-table > td:nth-child(1){
+    padding : 20px;
+    width: 30%;
+    font-weight : 550;
+    font-size : 50;
+}
+
+.even-table > td:nth-child(2){
+    padding : 20px;
+    font-size : 50;
+}
 /* main top hotizontal right side - > product logo + pricing + quantity + add to cart */ 
 
 #pp-main-top-h-right {
@@ -175,15 +215,23 @@
    width : 175%;
    padding : 20px;
    margin-left : 30px;
-}
-#pp-main-top-h-right-pLogo > img{
-    width : 35%;
+   border: 2px blue solid; 
 }
 
+#pp-main-top-h-right-pLogo > img{
+    width : 35%;
+    margin-bottom: 15px;
+}
+
+#pp-main-top-h-right-pName{
+    font-weight : 500;
+    color : teal;
+    font-size: 36px;
+}
 #pp-main-top-h-right-pRating{
     background-color: azure;
     display : flex;
-    justify-content: left;
+    justify-content: right;
     margin : 0px;
     width : 100%;
 }
@@ -209,4 +257,271 @@
 
 #pp-main-top-h-right-pRating > ul > li > span {
     
+}
+
+/* ------------------- mid section - freqntly bought products -----------------*/
+
+#pp-main-mid-bundle{
+    display : flex;
+}
+
+#pp-main-mid-left-bundle{
+    width : 65%;
+    margin-top: 20px;
+}
+
+#pp-main-mid-left-bundle > div {
+    display : flex;
+    justify-content: left;
+    border: 1px solid black;
+}
+
+#pp-main-mid-left-bundle > div > div:nth-child(1)  {
+    background-color: red;
+    width : 20%;
+    margin: 10px;
+    padding-left : 10px;
+}   
+
+#pp-main-mid-left-bundle > div > div:nth-child(2) {
+    background-color: ;
+    width : 70%;
+    margin: 10px;
+}
+
+#pp-main-mid-left-bundle > div > div:first-child > img {
+    width : 90%;
+
+}
+
+#pp-main-mid-left-bundle > div > div:nth-child(2) > p:nth-child(1){
+    margin-bottom: 10px;
+}
+
+#pp-main-mid-left-bundle > div > div:nth-child(2) > p:nth-child(2){
+    margin-bottom: 10px;
+    font-size : 18x;
+    font-weight: 550;
+    color : rgb(72,51,55);
+}
+
+#pp-main-mid-left-bundle > div > div:nth-child(2) > p:nth-child(3){
+    margin-bottom: 10px;
+    font-weight: 550;
+    font-size: 21px;
+}
+/* --------------- bundle price for frqently bought products --------------*/ 
+
+#pp-main-mid-right-bundle-price{
+    margin : auto;
+    text-align: center;
+}
+
+#pp-main-mid-right-bundle-price > h1 {
+    margin-bottom : 10px;
+}
+
+#pp-main-mid-right-bundle-price > button {
+    margin-bottom : 10px;
+    margin-top : 10px;
+    width : 70%;
+    height : 50px;
+    background-color: grey;
+    color : white;
+    border : none;
+}
+
+/* -------------------- other customers bought ----------------------*/
+
+#pp-main-mid-customer-bought{
+    margin-top: 10px;
+}
+
+#pp-main-mid-customer-bought > h2:nth-child(1) {
+    padding : 10px;
+}
+
+#pp-main-mid-customer-bought-images {
+    display : flex;
+    justify-content: space-between;
+    width : 100%;
+    background-color: blue;
+}
+
+#pp-main-mid-customer-bought-images > div {
+    padding : 20px;
+}
+
+#pp-main-mid-customer-bought-images > div > img {
+    width : 90%;
+    background-color: red;
+}
+
+#pp-main-mid-customer-bought-images > div > h3 {
+    margin-top : 10px;
+    font-size: 15px;
+    margin-bottom : 10px;
+}
+
+#pp-main-mid-customer-bought-images > div > button:nth-child(3) {
+    margin-top : 5px;
+    height : 30px;
+    padding : 3px;
+    margin-bottom : 10px;
+}
+
+#pp-main-mid-customer-bought-images > div > div {
+    display : flex;
+    justify-content: flex-start;
+    margin-top : 5px;
+    margin-bottom : 10px;
+}
+
+#pp-main-mid-customer-bought-images > div > div > i {
+    color : yellow;
+}
+
+#pp-main-mid-customer-bought-images > div > p:nth-child(5) {
+    color : teal;
+    margin-top: 20px;
+}
+
+#pp-main-mid-customer-bought-images > div > p:nth-child(5) > span {
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+
+#pp-main-mid-customer-bought-images > div > p:nth-child(6) {
+    margin-top : 5px;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+#pp-main-mid-customer-bought-images > div > button:nth-child(7) {
+    background-color: rgb(39, 46, 46);
+    color : white;
+    width : 100%;
+    height : 45px;
+    margin-top: 5px;
+    margin-left : 0px;
+    border : none;
+}
+
+/* ---------------- bottom section - main / bottom / customer reviews ----------------*/
+
+#pp-main-bottom{
+    margin-top: 20px;
+}
+
+#pp-main-bottom-customer-reviews{
+    width: 90%;
+    background-color: blueviolet;
+    margin:auto;
+
+}
+
+#pp-main-bottom-customer-reviews > div:nth-child(1) {
+    background-color:rgb(235,235,235);
+    height: 60px; 
+    display : flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#pp-main-bottom-customer-reviews > div:nth-child(1) > h2 {
+    font-size: xx-large;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: Helvetica;
+}
+
+#pp-main-bottom-customer-reviews-flex{
+    display : flex;
+    justify-content: space-around;
+    padding : 30px;
+  
+}
+
+#pp-main-bottom-customer-reviews-flex > div:nth-child(1){
+    width:100%;
+    position : sticky;
+    top : 0;
+    margin-right: 20px;
+    background-color: beige;
+    height : 250px;
+}
+
+#pp-main-bottom-customer-reviews-flex > div:nth-child(2) > div:nth-child(1) {
+    margin-bottom : 10px;
+    margin-top: 10px;
+} 
+
+.pp-main-bottom-customer-reviews-card {
+    margin-bottom : 20px;
+    margin-top: 20px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(1) {
+    display : flex;
+    justify-content: flex-start;
+    margin-bottom : 10px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(1) > h3{
+    margin-right : 10px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(1) > span > i{
+    color: yellow;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(2) {
+    margin-bottom : 15px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(3) {
+    margin-bottom : 10px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(3) > span:nth-child(1){
+    color : teal;
+    margin-right : 10px;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(3) > span:nth-child(2){
+    color : teal
+}
+.pp-main-bottom-customer-reviews-card > div:nth-child(3) > span:nth-child(3){
+    color : green;
+    font-weight: 600;
+}
+
+.pp-main-bottom-customer-reviews-card > p:nth-child(4){
+    margin-bottom: 10px;
+} 
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(5){
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(5) > button:nth-child(1) {
+    margin-right : 4px;
+    width : 10%;
+    height: 40px;
+    color : green;
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(5) > button:nth-child(2) {
+    margin-right : 4px;
+    width : 10%;
+    height: 40px;
+    color : rgb(17, 15, 15);
+}
+
+.pp-main-bottom-customer-reviews-card > div:nth-child(5) > p:nth-child(3){
+    margin-left: 10px;
+    margin-bottom: -10px;
 }
