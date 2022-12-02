@@ -13,10 +13,10 @@ var dataofaddedcart = [
 ];
 
 console.log(arr);
-// var dataofaddedcart = JSON.parse(localStorage.getItem("cartdata")) || [];
+ var dataofaddedcart = JSON.parse(localStorage.getItem("cartdata")) || [];
 
 window.addEventListener("load", function(){
-    displayData(arr);
+    displayData(dataofaddedcart);
 });
 
 
@@ -31,8 +31,8 @@ function displayData(dataofaddedcart){
     console.log("eneteredfunction")
     var sub = document.querySelector("#subtotal");
     console.log("check", sub);
-    dataofaddedcart.map(function (elem){
-        console.log("123");
+    dataofaddedcart.map(function (elem, index){
+        // console.log("123");
 
         var cartdivs = document.createElement("div"); 
         cartdivs.classList.add("cart_divs");    
@@ -62,6 +62,12 @@ function displayData(dataofaddedcart){
         var decramtdiv = document.createElement("div");
         var damt = document.createElement("button");
         damt.textContent = "-";
+
+        damt.addEventListener("click", function(){
+            decrease_qty(qty, elem.sellingPrice, total, sub, index);
+        });
+
+
         decramtdiv.append(damt);
 
         var qtydiv = document.createElement("div");
@@ -92,11 +98,21 @@ function displayData(dataofaddedcart){
         ttldiv.append(total);
         // console.log("total=", total);
 
-        // var crossdiv = document.createElement("div");
-        // var cross = document.createElement("button");        
+        var crossdiv = document.createElement("div");
+        var cross = document.createElement("button");      
+        cross.textContent = "X"  ;
+
+        cross.addEventListener("click", function(){
+            removeProduct(index);
+        });
+
+        crossdiv.append(cross);
+
+        var wishbtndiv = document.createElement("div");
+        wishbtndiv.classList.add("cart_divs");  
 
 
-        cartdivs.append(imgdiv, desdiv, pricediv, decramtdiv, qtydiv, incramtdiv, ttldiv);
+        cartdivs.append(imgdiv, desdiv, pricediv, decramtdiv, qtydiv, incramtdiv, ttldiv, crossdiv);
         document.getElementById("cartdatadisplay").append(cartdivs);
 
         totally_total = totally_total + t;
@@ -110,6 +126,12 @@ function displayData(dataofaddedcart){
     
    
 
+}
+
+function removeProduct(index){
+    dataofaddedcart.splice(index, 1);
+    localStorage.setItem("cartdata", JSON.stringify(dataofaddedcart));
+    location.reload();
 }
 
 
@@ -132,6 +154,32 @@ function increase_qty(q, sp, total, sub){
     
 
 }
+
+function decrease_qty(q, sp, total, sub, index){
+    // console.log(q);
+    var qtemp = Number(q.textContent);
+    console.log(qtemp);
+    if(qtemp > 1){
+        
+        console.log(q);
+        console.log(q.textContent);
+        var q1 = (Number)(q.textContent) - 1;
+        console.log(q1);
+        q.textContent = q1;
+        console.log(q);
+        var pret = Number(total.textContent);
+        var newtotal = (q1*sp);
+        total.textContent = newtotal.toFixed(1);
+    
+        totally_total = totally_total - pret;
+        totally_total = totally_total + newtotal;
+        sub.textContent = totally_total.toFixed(1);
+        // console.log("sub", sub);  
+    }else{
+        removeProduct(index);
+    }
+ 
+ }
 
 var count = 1;
 

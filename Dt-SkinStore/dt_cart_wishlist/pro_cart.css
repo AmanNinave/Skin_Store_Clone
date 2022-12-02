@@ -301,18 +301,23 @@
         }
         #carttable > div:nth-child(2) > div:nth-child(1){
             width: 40%;
+            border: 1px solid green;
         }
         #carttable  > div:nth-child(2) > div:nth-child(4){
             width: 4%;
+            border: 1px solid green;
         }
         #carttable  > div:nth-child(2) >div:nth-child(6){
             width: 4%;
+            border: 1px solid green;
         }
         #carttable  > div:nth-child(2) > div:nth-child(7){
             width: 12%;
+            border: 1px solid green;
         }
         #carttable  > div:nth-child(2) > div:nth-child(8){
             width: 3%;
+            border: 1px solid green;
         }
 
 
