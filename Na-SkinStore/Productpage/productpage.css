@@ -212,6 +212,7 @@ div {
   padding: 20px 0px 20px 0px;
   /* margin: auto; */
   cursor: pointer;
+  padding-top: 140px;
 }
 /* div {
   border: 1px solid black;
@@ -221,7 +222,7 @@ div {
   margin-bottom: 10px;
   font-family: sans-serif;
   font-weight: 400;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----parent section----->>>>>>>>>>>>>>>>>>>> */
@@ -278,7 +279,7 @@ div {
 #parent1 > div {
   text-align: center;
   /* border: 1px solid black; */
-  margin: 10px;
+  /* margin: 10px; */
   /* margin-bottom: -120px; */
 }
 #parent1 > div > p {
@@ -314,7 +315,7 @@ div {
   width: 97.5%;
   font-family: sans-serif;
   font-weight: 400;
-  margin-bottom: -110px;
+  /* margin-bottom: -110px; */
 }
 #serums-masks > button {
   width: 20%;
@@ -338,7 +339,7 @@ div {
   /* border: 1px dashed green; */
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
-  margin-bottom: -120px;
+  /* margin-bottom: -120px; */
 }
 #ingred img {
   width: 80%;
@@ -362,7 +363,7 @@ div {
   margin: 15px;
   text-align: center;
   width: 24%;
-  margin-bottom: -100px;
+  /* margin-bottom: -100px; */
 }
 #bottom > div > h2 {
   text-align: center;
@@ -408,7 +409,7 @@ div {
   margin: 10px;
   font-family: sans-serif;
   font-weight: 300;
-  margin-bottom: -100px;
+  /* margin-bottom: -100px; */
 }
 #readMore > div > img {
   width: 85%;
@@ -456,3 +457,175 @@ div {
   font-weight: normal;
   /* margin-top: -50px; */
 }
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer Section Started ------------>>>>>>>>>>>>> */
+
+#footer1 {
+    display: flex;
+    padding-top: -5px;
+    border: px solid;
+}
+
+#footer1>div:first-child {
+    width: 49%;
+    padding: 0px;
+    border: 0px solid;
+}
+
+#footer1>div:first-child>p {
+    margin: 13px 0px 0px 20px;
+    font-size: 14px;
+}
+
+#footer1>div:first-child>button {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px 10px 20px;
+    padding: 10px 0px 10px 0px;
+    font-size: 27x;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+
+#footer1>div:last-child {
+    width: 49%;
+    border: 0px solid;
+}
+
+#footer1>div:last-child>div {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+
+}
+
+#footer1>div:last-child>div>img {
+    width: 35px;
+    height: 35px;
+    margin: 5px 10px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer2 Section Started ------------>>>>>>>>>>>>> */
+
+
+#footer2 {
+    display: flex;
+    padding-top: 10px;
+}
+
+#footer2>div:first-child {
+    width: 49%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#footer2>div:first-child>h5 {
+    font-size: 16px;
+    color: brown;
+    /* background-color: blue; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#footer2>div:first-child>div:first-child {
+    border: 1px solid;
+    width: 96%;
+    margin-bottom: 10px;
+}
+
+#footer2>div:first-child>div~div {
+    display: flex;
+    border: 0px solid;
+    margin-top: -10px;
+    border: 0px solid;
+}
+
+#footer2 > div:first-child>div>img {
+    width: 30px;
+    height: 30px;
+    display: inline;
+    border: 0px solid;
+    padding-top: 10px;
+}
+
+#footer2>div:first-child>div>p {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    color: teal;
+    border: 0px solid;
+    font-size: 16px;
+}
+
+#footer2>div:last-child {
+    width: 49%;
+    height: 300px;
+    border: 0px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer2>div:last-child>div {
+    border: 0px solid;
+    width: 200px;
+
+}
+
+#footer2>div:last-child>div>h5 {
+    font-size: 16px;
+    color: brown;
+    margin-top: 10px;
+}
+
+#footer2>div:last-child>div>div:first-child {
+    border: 1px solid;
+    margin-bottom: 0px;
+}
+
+#footer2>div:last-child>div>p {
+    margin: 15px 0px 10px 5px;
+    font-size: 14px;
+    color: teal;
+    margin-top: 10px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer3 Section Started ------------>>>>>>>>>>>>> */
+
+#footer3 {
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid;
+    margin-top: 5px;
+}
+
+#footer3>div:first-child {
+    width: 48%;
+    padding-left: 20px;
+    padding-top: 0px;
+    /* background-color: blue; */
+}
+
+#footer3>div:last-child>p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#footer3>div:last-child>div {
+    width: 49%;
+    height: 100px;
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 10px;
+
+
+}
+
+#footer3>div:last-child>div>img {
+    width: 65px;
+    height: 33px;
+
+}
+
+
