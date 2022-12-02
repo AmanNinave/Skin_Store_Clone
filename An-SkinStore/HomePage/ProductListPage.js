@@ -9,6 +9,12 @@ function displayData(showdata) {
 
         var imgage = document.createElement("img");
         imgage.setAttribute("src", elem.img_url);
+        imgage.addEventListener("mouseover", function () {
+            changeImage(elem.alt_url,imgage);
+        });
+        imgage.addEventListener("mouseout", function () {
+            orgImage(elem.img_url,imgage);
+        });
 
         var namebox = document.createElement("div");
 
@@ -44,7 +50,17 @@ function displayData(showdata) {
 
 }
 
+function changeImage(aama,baba) {
+    if(aama != "" && aama!= " "){
+        baba.src = aama;
+    }
+}
 
+function orgImage(aama,baba) {
+    if(aama != "" && aama!= " "){
+        baba.src = aama;
+    }
+}
 
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Adding Element to cart >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -275,6 +291,54 @@ function careFilter7() {
     displayData(Data1);
 }
 
+document.querySelector("#Rating-Dropdown > button:nth-child(1)").addEventListener("click", reFilter1)
+function reFilter1() {
+
+    document.querySelector("#ProductsDisplayGrid").textContent = "";
+
+    var Data1 = arr.filter(function (elem) {
+        var temp = Number(elem.rating);
+
+        return temp >= 2 && temp <= 3;
+
+
+    })
+
+    displayData(Data1);
+}
+
+document.querySelector("#Rating-Dropdown > button:nth-child(2)").addEventListener("click", reFilter2)
+function reFilter2() {
+
+    document.querySelector("#ProductsDisplayGrid").textContent = "";
+
+    var Data1 = arr.filter(function (elem) {
+        var temp = Number(elem.rating);
+
+        return temp >= 3 && temp <= 4;
+
+
+    })
+
+    displayData(Data1);
+}
+
+document.querySelector("#Rating-Dropdown > button:nth-child(3)").addEventListener("click", reFilter3)
+function reFilter3() {
+
+    document.querySelector("#ProductsDisplayGrid").textContent = "";
+
+    var Data1 = arr.filter(function (elem) {
+        var temp = Number(elem.rating);
+
+        return temp >= 4 && temp <= 5;
+
+
+    })
+
+    displayData(Data1);
+}
+
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<       Applying sorting to skincare products         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -294,15 +358,9 @@ function sortName() {
 
       })
 
-    } else if (temp == "descending") {
+    } else if (temp == "d") {
 
-      JobData.sort(function (a, b) {
-        if (a.name > b.name) { return -1; }
-        if (a.name < b.name) { return 1; }
-        else { return 0; };
-
-      })
-
+      location.reload();
     }
 
     displayData(arr);
@@ -329,7 +387,7 @@ function sortName() {
       })
       displayData(arr);
     }
-    else if(temp == "") {
+    else if(temp == "d") {
         displayData(arr);
      }
 
@@ -359,3 +417,4 @@ function sortName() {
 
     displayData(arr);
   }
+

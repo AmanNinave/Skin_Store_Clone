@@ -1,3 +1,313 @@
+        /* 
+        #hoverframe {
+            z-index: 4;
+            height: 500px;
+            width: 400px;
+            margin-top: 500px;
+        } */
+        .skin_container_hover {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+
+        }
+
+        .skin_container_hover h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .skin_container_hover p {
+            margin: 10px;
+        }
+
+        .skin_container_hover div {
+            width: 17%;
+        }
+
+        .skin_container {
+            display: none;
+        }
+
+        .makeupHover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color:  rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+        }
+
+        .makeupHover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .makeupHover_container p {
+            margin: 10px;
+        }
+
+        .makeupHover_container div {
+            width: 18%;
+        }
+
+        .makeupHover_containe {
+            display: none;
+        }
+
+
+        .toolsHover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+        }
+
+        .toolsHover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .toolsHover_container p {
+            margin: 10px;
+        }
+
+        .toolsHover_container div {
+            width: 18%;
+        }
+
+        .toolsHover_containe {
+            display: none;
+        }
+
+        .bathandbody_Hover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color:  rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+
+        }
+
+        .bathandbody_Hover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .bathandbody_Hover_container p {
+            margin: 10px;
+        }
+
+        .bathandbody_Hover_container div {
+            width: 18%;
+        }
+
+        .bathandbody_Hover_containe {
+            display: none;
+        }
+
+        .blogHover_container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* margin: auto; */
+            /* border: 1px solid; */
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+        }
+
+        .blogHover_container>div>img {
+            width: 100%;
+            /* margin: 20px; */
+            height: 82%;
+            margin-top: -8px;
+        }
+
+        .blogHover_container>div {
+            box-shadow:  rgba(255, 255, 255, 0);
+            width: 90%;
+            height: 90%;
+            text-align: start;
+            margin: 15px;
+            padding-top: 10px;
+        }
+
+        .blogHover_container>div>div>h3 {
+            margin-top: -3px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .blogHover_containe {
+            display: none;
+        }
+
+        .routineHover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color:  rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+        }
+
+        .routineHover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .routineHover_container p {
+            margin: 10px;
+        }
+
+        .routineHover_container div {
+            width: 30%;
+        }
+
+        .routineHover_containe {
+            display: none;
+        }
+
+
+        .frangrance_Hover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+
+        }
+
+        .frangrance_Hover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .frangrance_Hover_container p {
+            margin: 10px;
+        }
+
+        .frangrance_Hover_container div {
+            width: 18%;
+        }
+
+        .frangrance_Hover_containe {
+            display: none;
+        }
+
+        .newtrandingHover_container {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+        }
+
+
+        .newtrandingHover_container h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .newtrandingHover_container p {
+            margin: 10px;
+        }
+
+        .newtrandingHover_container div {
+            width: 30%;
+        }
+
+        .newtrandingHover_containe {
+            display: none;
+        }
+
+        .selfcareHover_cotainer {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            font-weight: lighter;
+
+            
+            z-index: 4;
+            background-color:rgba(255, 255, 255, 0);
+            /* padding-top: 150px; */
+            height: fit-content;
+            margin-left: 20px;
+            width: 85%;
+            overflow: hidden;
+        }
+
+
+        .selfcareHover_cotainer h3 {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .selfcareHover_cotainer p {
+            margin: 10px;
+        }
+
+        .selfcareHover_cotainer div {
+            width: 20%;
+        }
+
+        .selfcareHover_cotaine {
+            display: none;
+        }
+
+        
+
+
+
+
+
 *{
     margin: 0px;
     font-family: sans-serif;
