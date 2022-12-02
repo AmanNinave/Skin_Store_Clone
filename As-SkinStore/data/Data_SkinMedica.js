@@ -24,7 +24,7 @@ var arr = [
     
 {   name : "SkinMedica Procedure 360 System 38oz (Worth $410)",
     img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12062429-2064870995672366.jpg",
-    alt_url : "",
+    alt_url : " ",
     gift : "20% off + $135 SkinMedica Gift",
     StrikedoffPrice :  "326"  ,
     sellingPrice : "260.8" ,
