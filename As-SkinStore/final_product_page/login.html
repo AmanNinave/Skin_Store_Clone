@@ -14,15 +14,15 @@
 
     <div id="login-body">
         <div id="login-body-left">
-                <form >
+                <form id="loginsucess" >
                     <h2> Existing Customers </h2>
 
                     <p> *Email Address</p>
-                    <input type="text" />
+                    <input id="enteremail" type="text" />
 
                     <p> *Password</p>
                     <div>
-                        <input type="text"/>
+                        <input id="enterPass" type="text"/>
                         <button>SHOW</button>
                     </div>
                     <p> <a href="" > FORGOT YOUR PASSWORD? </a></p>
@@ -44,6 +44,9 @@
             <div> 
                 <h2> New Customers </h2>
                 <input type="button" id="gotoregister" value="Continue"/>
+
+
+
             </div>
         </div>
     </div>
@@ -57,4 +60,36 @@
     function GoRegister(){
         window.location.href="./../../As-SkinStore/final_product_page/register.html";
     }
+
+    var JData = JSON.parse(localStorage.getItem("userdetails")) || [];
+
+   
+
+    document.querySelector("form").addEventListener("submit" , callcheck);
+    function callcheck(){
+        event.preventDefault();
+        var temp1 = document.querySelector("#enteremail").value;
+        var temp3 = document.querySelector("#enterPass").value;
+        var check = false;
+        var temp = JData.map(function (elem) {
+
+
+            if(elem.email  == temp1){
+                localStorage.setItem("username", elem.name);
+                check = true;
+            }
+            
+        })
+        
+        if(!check){
+            alert("Wrong Id or Password")
+        }else {
+            alert("login sucessful");
+            window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
+        }
+
+
+    }
+
+    
 </script>
