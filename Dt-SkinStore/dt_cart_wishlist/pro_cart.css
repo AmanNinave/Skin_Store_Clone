@@ -19,169 +19,175 @@
 }
         
         
-        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<   FOOTER   >>>>>>>>>>>>>>>>>>>>>>> */
-        #footer1 {
-            display: flex;
-            padding-top: -5px;
-            border: px solid;
-        }
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer Section Started ------------>>>>>>>>>>>>> */
 
-        #footer1>div:first-child {
-            width: 49%;
-            padding: 0px;
-            border: 0px solid;
-        }
+    #footer1 {
+        display: flex;
+        padding-top: -5px;
+        border: px solid;
+    }
 
-        #footer1>div:first-child>p {
-            margin: 13px 0px 0px 20px;
-            font-size: 14px;
-        }
+    #footer1>div:first-child {
+        width: 49%;
+        padding: 0px;
+        border: 0px solid;
+    }
 
-        #footer1>div:first-child>button {
-            width: 100px;
-            height: 40px;
-            margin: 20px 0px 10px 20px;
-            padding: 10px 0px 10px 0px;
-            font-size: 27x;
-            background-color: brown;
-            border: none;
-            color: white;
-        }
+    #footer1>div:first-child>p {
+        margin: 13px 0px 0px 20px;
+        font-size: 14px;
+    }
+
+    #footer1>div:first-child>button {
+        width: 100px;
+        height: 40px;
+        margin: 20px 0px 10px 20px;
+        padding: 10px 0px 10px 0px;
+        font-size: 27x;
+        background-color: brown;
+        border: none;
+        color: white;
+    }
 
 
-        #footer1>div:last-child {
-            width: 49%;
-            border: 0px solid;
-        }
+    #footer1>div:last-child {
+        width: 49%;
+        border: 0px solid;
+    }
 
-        #footer1>div:last-child>div {
-            display: flex;
-            margin: 10px 0px 10px 0px;
+    #footer1>div:last-child>div {
+        display: flex;
+        margin: 10px 0px 10px 0px;
 
-        }
+    }
 
-        #footer1>div:last-child>div>img {
-            width: 35px;
-            height: 35px;
-            margin: 5px 10px;
-        }
+    #footer1>div:last-child>div>img {
+        width: 35px;
+        height: 35px;
+        margin: 5px 10px;
+    }
+
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer2 Section Started ------------>>>>>>>>>>>>> */
+
+
+    #footer2 {
+        display: flex;
+        padding-top: 10px;
         
-        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer2 Section Started ------------>>>>>>>>>>>>> */
+    }
+
+    #footer2>div:first-child {
+        width: 49%;
+        padding-left: 10px;
+    }
+
+    #footer2>div:first-child>h5 {
+        margin-top: 20px;
+        font-size: 16px;
+        color: brown;
+        /* background-color: blue; */
+    }
+
+    #footer2>div:first-child>div:first-child {
+        border: 1px solid;
+        width: 96%;
+        margin-bottom: 0px;
+        border: 1px solid saddlebrown;
+    }
+
+    #footer2>div:first-child>div~div {
+        display: flex;
+        border: 0px solid;
+        margin-top: -10px;
+        border: 0px solid;
+    }
+
+    #footer2 > div:first-child>div>img {
+        width: 30px;
+        height: 30px;
+        display: inline;
+        border: 0px solid;
+        padding-top: 10px;
+    }
+
+    #footer2>div:first-child>div>p {
+        padding-bottom: 0px;
+        padding-left: 10px;
+        color: teal;
+        border: 0px solid;
+        font-size: 16px;
+        /* border: 1px solid green; */
+        padding-top: 18px;
+    }
+
+    #footer2>div:last-child {
+        width: 49%;
+        height: 300px;
+        border: 0px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer2>div:last-child>div {
+        border: 0px solid;
+        width: 200px;
+
+    }
+
+    #footer2>div:last-child>div>h5 {
+        margin-top: 20px;
+        font-size: 16px;
+        color: brown;
+    }
+
+    #footer2>div:last-child>div>div:first-child {
+        border: 1px solid;
+        margin-bottom: 0px;
+    }
+
+    #footer2>div:last-child>div>p {
+        margin: 15px 0px 10px 5px;
+        font-size: 14px;
+        color: teal;
+    }
+
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer3 Section Started ------------>>>>>>>>>>>>> */
+
+    #footer3 {
+        display: flex;
+        padding-top: 10px;
+        border-top: 1px solid;
+        margin-top: 30px;
+    }
+
+    #footer3>div:first-child {
+        width: 48%;
+        padding-left: 20px;
+        padding-top: 0px;
+        /* background-color: blue; */
+    }
+
+    #footer3>div:last-child>p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #footer3>div:last-child>div {
+        width: 49%;
+        height: 100px;
+        border: 0px solid;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        column-gap: 10px;
 
 
-        #footer2 {
-            display: flex;
-            padding-top: 20px;
-        }
+    }
 
-        #footer2>div:first-child {
-            width: 49%;
-            padding-left: 10px;
-        }
+    #footer3>div:last-child>div>img {
+        width: 65px;
+        height: 33px;
 
-        #footer2>div:first-child>h5 {
-            font-size: 16px;
-            margin: 20px;
-            color: brown;
-            /* background-color: blue; */
-        }
-
-        #footer2>div:first-child>div:first-child {
-            border: 1px solid;
-            width: 96%;
-            margin-bottom: 0px;
-        }
-
-        #footer2>div:first-child>div~div {
-            display: flex;
-            border: 0px solid;
-            margin-top: -10px;
-            border: 0px solid;
-        }
-
-        #footer2 > div:first-child>div>img {
-            width: 30px;
-            height: 30px;
-            display: inline;
-            border: 0px solid;
-            padding-top: 10px;
-        }
-
-        #footer2>div:first-child>div>p {
-            padding-bottom: 0px;
-            padding-left: 10px;
-            color: teal;
-            border: 0px solid;
-            font-size: 16px;
-        }
-
-        #footer2>div:last-child {
-            width: 49%;
-            height: 300px;
-            border: 0px solid;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #footer2>div:last-child>div {
-            border: 0px solid;
-            width: 200px;
-
-        }
-
-        #footer2>div:last-child>div>h5 {
-            font-size: 16px;
-            color: brown;
-        }
-
-        #footer2>div:last-child>div>div:first-child {
-            border: 1px solid;
-            margin-bottom: 0px;
-        }
-
-        #footer2>div:last-child>div>p {
-            margin: 15px 0px 10px 5px;
-            font-size: 14px;
-            color: teal;
-        }
-
-        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<--------Footer3 Section Started ------------>>>>>>>>>>>>> */
-
-        #footer3 {
-            display: flex;
-            padding-top: 10px;
-            border-top: 1px solid;
-            margin-top: 5px;
-        }
-
-        #footer3>div:first-child {
-            width: 48%;
-            padding-left: 20px;
-            padding-top: 0px;
-            /* background-color: blue; */
-        }
-
-        #footer3>div:last-child>p {
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-
-        #footer3>div:last-child>div {
-            width: 49%;
-            height: 100px;
-            border: 0px solid;
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            column-gap: 10px;
-
-
-        }
-
-        #footer3>div:last-child>div>img {
-            width: 65px;
-            height: 33px;
-
-        }
+    }
 
            
         #cartparent{
@@ -294,35 +300,61 @@
         } */
         #carttable > div:nth-child(2){
             display: flex;
-            border: 1px solid green;
+            /* border: 1px solid green; */
+            width: 100%;
             /* margin-top: -.1px; */
             /* margin-bottom: -.1px; */
             /* align-items: center; */
         }
+        #carttable > div{
+            border: 0px solid black;
+            width: 100%;
+
+        }
         #carttable > div:nth-child(2) > div:nth-child(1){
-            width: 40%;
-            border: 1px solid green;
+            width: 20%;
+            font-weight: bolder;
+            font-size: larger;
+            /* border: 1px solid green; */
+        }
+        #carttable > div:nth-child(2) > div:nth-child(2){
+            width: 34.5%;
+            /* border: 1px solid green; */
+        }
+        #carttable > div:nth-child(2) > div:nth-child(3){
+            font-weight: bolder;
+            font-size: larger;
+            /* border: 1px solid green; */
         }
         #carttable  > div:nth-child(2) > div:nth-child(4){
-            width: 4%;
-            border: 1px solid green;
+            width: 2%;
+            /* border: 1px solid green; */
+        }
+        #carttable > div:nth-child(2) > div:nth-child(5){
+            font-weight: bolder;
+            font-size: larger;
+            /* border: 1px solid green; */
         }
         #carttable  > div:nth-child(2) >div:nth-child(6){
-            width: 4%;
-            border: 1px solid green;
+            width: 2%;
+            /* border: 1px solid green; */
         }
         #carttable  > div:nth-child(2) > div:nth-child(7){
             width: 12%;
-            border: 1px solid green;
+            font-weight: bolder;
+            font-size: larger;
+            /* border: 1px solid green; */
         }
         #carttable  > div:nth-child(2) > div:nth-child(8){
             width: 3%;
-            border: 1px solid green;
+            /* border: 1px solid green; */
         }
 
 
         #cartsubtotal{
             border: 0px solid palevioletred;
+            font-weight: bolder;
+            font-size: x-large;
         }
         #cartsubtotal h4{
             /* margin: 10px; */
@@ -331,6 +363,8 @@
         }
         #carttotalsavings{
             border: 0px solid orange;
+            font-weight: bolder;
+            font-size: x-large;
         }
         #carttotalsavings form{
             justify-content: center;

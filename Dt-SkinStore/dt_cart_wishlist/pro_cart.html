@@ -9,7 +9,9 @@
     <script src="./../../As-SkinStore/data/Data_SkinMedica.js"></script>
     <!-- <script src="./../../As-SkinStore/data/data_Terry.js"></script> -->
     <script src="./pro_cart.js"></script>
+    <script src="https://kit.fontawesome.com/99963d12d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./addedcart.css">
+   
     <style>
         * {
             margin: 0px;
@@ -22,6 +24,7 @@
         }
 
         #ANParent {
+
             /* border: 1px solid; */
             width: 100%;
             font-family: sans-serif;
@@ -37,7 +40,6 @@
             width: 100%;
             margin-top: -10px;
             z-index: 3;
-            font-family: sans-serif;
         }
 
         #TopHeader+div {
@@ -63,20 +65,19 @@
             text-align: center;
             font-size: 45px;
             margin-top: 15px;
-            font-family: sans-serif;
 
         }
 
         #MainSec>div:first-child>p {
             text-align: center;
             font-size: 12.8px;
-            font-family: sans-serif;
+
         }
 
 
         #MainSec>div:first-child>p>span {
             font-weight: 700;
-            font-family: sans-serif;
+
         }
 
         #MainSec>div:nth-child(2) {
@@ -85,11 +86,13 @@
             margin: 0px 15%;
             margin-left: 13%;
             display: flex;
+
         }
 
         #MainSec>div:nth-child(2)>input {
             width: 98%;
             height: 38px;
+
         }
 
         #MainSec>div:nth-child(2)>img {
@@ -104,6 +107,7 @@
             width: 9%;
             padding-top: 35px;
             margin-right: 0%;
+
         }
 
         #MainSec>div:nth-child(3)>button {
@@ -153,18 +157,19 @@
         #AnAccount {
             z-index: 1;
             width: 300px;
-            height: 239px;
-            border: 1px solid green;
+
+            border: 0px solid green;
             margin-bottom: 30px;
             margin-top: -38px;
             margin-left: 66.5%;
             position: fixed;
             overflow: hidden;
             display: none;
+            height: fit-content;
         }
 
         #AnAccount>div:first-child {
-            background-color: aqua;
+            background-color: grey;
             padding: 5px;
             border: brown;
         }
@@ -187,21 +192,26 @@
             text-align: center;
             margin: auto;
             background-color: white;
-            color: green;
+            color: black;
             padding: 15px;
-            border: none;
+            border: 1px solid grey;
+            margin-top: 5px;
+            margin: 5px 10px 5px 0px;
         }
 
         #AnAccount>div>button:hover {
             background-color: brown;
             color: white;
-        } 
+        }
+
         /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
         #TopNav {
             border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+
             padding-left: 16px;
             height: 36px;
+
         }
 
         #TopNav>button {
@@ -218,8 +228,14 @@
 
         #TopNav>button:hover {
             background-color: black;
-        }        
+        }
+
+
+
+
+
     </style>
+
     <link rel="stylesheet" href="./pro_cart.css">
 </head>
 <body>
@@ -320,6 +336,7 @@
                     <div id="cartdatadisplay">
                         
                     </div>
+                   
                 </div>
                 <hr>
                 <div id="cartsubtotal">
@@ -328,7 +345,7 @@
                 </div>
                 <hr>
                 <div id="carttotalsavings">
-                    <h3>Total Savings : -$<span id="tsaving" >0</span></h3>
+                    <h3>Total Savings : - $<span id="tsaving" >0</span></h3>
                     <form >
                         <div>
                             <input id="cinput" type="text" placeholder="Got a coupon code? Enter it here: " style = "height: 40px; width: 70%;">
@@ -587,6 +604,7 @@
         </div>
 
     </footer>
+
     
 
     </script>

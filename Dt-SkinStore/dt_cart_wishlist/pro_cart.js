@@ -50,12 +50,14 @@ function displayData(dataofaddedcart){
         var desdiv = document.createElement("div");
         var desname = document.createElement("p");
         desname.textContent = elem.name;
+        desname.classList.add("p_cls");
         desdiv.append(desname);
         // console.log(desname);
 
         var pricediv = document.createElement("div");
         var price = document.createElement("p");
-        price.textContent = +elem.sellingPrice;
+        price.textContent = "$" +elem.sellingPrice;
+        price.classList.add("sp_cls");
         pricediv.append(price);
         
 
@@ -67,12 +69,13 @@ function displayData(dataofaddedcart){
             decrease_qty(qty, elem.sellingPrice, total, sub, index);
         });
 
-
+        damt.classList.add("dec_cls");
         decramtdiv.append(damt);
 
         var qtydiv = document.createElement("div");
         var qty = document.createElement("p");
         qty.textContent = Number(1);
+        qty.classList.add("q_cls");
         qtydiv.append(qty);
 
         var incramtdiv = document.createElement("div");
@@ -82,7 +85,7 @@ function displayData(dataofaddedcart){
         iamt.addEventListener("click", function(){
             increase_qty(qty, elem.sellingPrice, total, sub);
         });
-        
+        iamt.classList.add("inc_cls");
         incramtdiv.append(iamt);
 
         var ttldiv = document.createElement("div");
@@ -105,7 +108,7 @@ function displayData(dataofaddedcart){
         cross.addEventListener("click", function(){
             removeProduct(index);
         });
-
+        cross.classList.add("cross_cls");
         crossdiv.append(cross);
 
         var wishbtndiv = document.createElement("div");
