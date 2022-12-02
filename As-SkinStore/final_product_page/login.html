@@ -43,9 +43,18 @@
         <div id="login-body-right">
             <div> 
                 <h2> New Customers </h2>
-                <input type="button" value="Continue"/>
+                <input type="button" id="gotoregister" value="Continue"/>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+
+       // for Register page 
+       document.querySelector("#gotoregister").addEventListener("click" , GoRegister);
+    function GoRegister(){
+        window.location.href="./../../As-SkinStore/final_product_page/register.html";
+    }
+</script>

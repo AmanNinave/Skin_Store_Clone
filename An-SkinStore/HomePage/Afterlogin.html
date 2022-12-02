@@ -39,8 +39,8 @@
 
             <div id="AnAccount">
                 <div>
-                    <button> LOGIN </button>
-                    <button> REGISTER</button>
+                    <button> Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT </button>
+                    <button> My Account</button>
                 </div>
                 <div>
                     <button>Wishlist</button>
@@ -842,6 +842,12 @@
 
 <script>
 
+var amanninave = "Aman"
+    localStorage.setItem("username" , amanninave);
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     // for Home page
@@ -867,7 +873,7 @@
     // for Register page 
     document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click" , GoRegister);
     function GoRegister(){
-        window.location.href="./../../As-SkinStore/final_product_page/register.html";
+        window.location.href="./../../As-SkinStore/final_product_page/MyAcc.html";
     }
 
     // for Wishlist page
