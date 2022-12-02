@@ -19,7 +19,7 @@
             </p>
           </div>
           <div>
-            <button>LOGIN/SIGNUP</button>
+            <button  id="GotoLogin">LOGIN/SIGNUP</button>
           </div>
         </div>
         <div id="parent_payment_lft_guest">
@@ -31,7 +31,7 @@
           <h3>1.Email and delivery address</h3>
           <form>
             <p>*Email address</p>
-            <input type="email" />
+            <input id="EnterEmail" type="email" />
             <p>We'll send the purchase receipt to this email.</p>
             <p>*Country/Region</p>
             <select name="Country" id="Choose_Country">
@@ -43,25 +43,24 @@
               <option value="England">England</option>
             </select>
             <p>*Full Name</p>
-            <input type="text" />
+            <input id="FullName" type="text" />
             <p>*Zip Code/Postcode</p>
-            <input type="text" />
+            <input  id="ZipCode" type="text" />
             <p>Company name</p>
-            <input type="text" />
+            <input id="Compny" type="text" />
             <p>*Address</p>
-            <input type="text" />
+            <input id="Addrs" type="text" />
             <p>Address 2</p>
-            <input type="text" />
+            <input id="Addrs2" type="text" />
             <p>*Apartment/Suite number</p>
-            <input type="text" />
-            <p>*Apartment/Suite number</p>
-            <input type="text" />
+            <input id="Apprt" type="text" />
+            
+
             <p>*Town/City</p>
-            <input type="text" />
-            <p>*Country</p>
-            <input type="text" placeholder="Start typing your country" />
+            <input id="Town" type="text" />
+            
             <p>Contact Number</p>
-            <input type="text" />
+            <input id="ContactNo" type="text" />
             <div id="parent_quest">
               <button><a href="">Why do we need your number?</a></button>
             </div>
@@ -109,10 +108,10 @@
                     alt="miss pic"
                   />
                   <p>*Card Number</p>
-                  <input type="text" />
+                  <input id="CardNO" type="text" />
 
                   <p>*Name on card</p>
-                  <input type="text" />
+                  <input id="NameonCard" type="text" />
                   <p>*Expiry Date</p>
                   <div id="expiry">
                     <select name="Expiry" id="Expiry_Month">
@@ -188,7 +187,7 @@
             </div>
         
           <div id="parent_payment_lft_submit">
-            <button>SUMBIT MY ORDER</button>
+            <button  id="Submit_my_Order">SUMBIT MY ORDER</button>
           </div>
           <div id="termCondition">
             <p>
@@ -257,3 +256,51 @@
     </div>
   </body>
 </html>
+
+
+
+<script>
+
+    // for login page 
+    document.querySelector("#GotoLogin").addEventListener("click" , GoLogin);
+    function GoLogin(){
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
+    }
+
+
+    var JobData = JSON.parse(localStorage.getItem("paymentdetails")) || [];
+
+document.querySelector("#Submit_my_Order").addEventListener("click", AddData);
+
+function AddData() {
+
+  event.preventDefault();
+  var Email = document.getElementById("EnterEmail").value;
+  var  Country  = document.getElementById("Choose_Country").value;
+  var Fullnme = document.getElementById("FullName").value;
+  var Zip = document.getElementById("ZipCode").value;
+  var Compeny = document.getElementById("Compny").value;
+  var Adrs = document.getElementById("Addrs").value;
+  var Adrs2 = document.getElementById("Addrs2").value;
+  var Aprt = document.getElementById("Apprt").value;
+  var Twn = document.getElementById("Town").value;
+  var CntctNo = document.getElementById("ContactNo").value;
+  var CrdNo = document.getElementById("CardNO").value;
+  var Nmeoncard = document.getElementById("NameonCard").value;
+  var Expirymonth = document.getElementById("Expiry_Month").value;
+  var Expiryyear = document.getElementById("Expiry_year").value;
+  var Securitycode = document.getElementById("security_code").value;
+  
+  var obj = { pemail :Email , pcountry : Country , pfullname : Fullnme , pzip : Zip , pcompeny :  Compeny , paddress : Adrs , paddress2 : Adrs2 , pappartment : Aprt , ptown : Twn , pcontactno : CntctNo  , pcardno : CrdNo , pnameoncard : Nmeoncard , pexpmonth : Expirymonth  , pexpyear : Expiryyear  , psecuritycode : Securitycode   };
+
+    JobData.push(obj);
+    localStorage.setItem("paymentdetails", JSON.stringify(JobData));
+  
+
+  alert(" Your Order has been placed, Explore More ");
+//   location.reload();
+window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
+}
+
+
+</script>
