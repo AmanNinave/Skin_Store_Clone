@@ -42,8 +42,8 @@
 
             <div id="AnAccount">
                 <div>
-                    <button>LOGIN</button>
-                    <button>REGISTER</button>
+                    <button>Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT</button>
+                    <button>My Account</button>
                 </div>
                 <div>
                     <button>Wishlist</button>
@@ -109,13 +109,13 @@
                         <div></div>
                     </button>
                     <div id="Price-Dropdown">
-                        <button ><input type="radio" name="aman" class="p30-50" > <label > $ 30 - $ 50 </label>
+                        <button><input type="radio" name="aman" class="p30-50"> <label> $ 30 - $ 50 </label>
                         </button>
-                        <button> <input type="radio" name="aman"  value="50"> <label > $ 50 - $ 100 </label>
+                        <button> <input type="radio" name="aman" value="50"> <label> $ 50 - $ 100 </label>
                         </button>
-                        <button> <input type="radio" name="aman" value="100"> <label > $ 100 - $ 150 </label>
+                        <button> <input type="radio" name="aman" value="100"> <label> $ 100 - $ 150 </label>
                         </button>
-                        <button> <input type="radio"  name="aman" value="150"> <label >More than $ 150 </label>
+                        <button> <input type="radio" name="aman" value="150"> <label>More than $ 150 </label>
                         </button>
                     </div>
 
@@ -123,21 +123,23 @@
                         <div></div>
                     </button>
                     <div id="Skincare-Dropdown">
-                        <button><input type="radio"  name="aman" id="clenser"> <label for="clenser"> Clenser </label>
+                        <button><input type="radio" name="aman" id="clenser"> <label for="clenser"> Clenser </label>
                         </button>
-                        <button> <input type="radio"  name="aman"id="exfoliator"> <label for="exfoliator"> Exfoliator </label>
+                        <button> <input type="radio" name="aman" id="exfoliator"> <label for="exfoliator"> Exfoliator
+                            </label>
                         </button>
                         <button> <input type="radio" name="aman" id="eyecare"> <label for="eyecare"> Eye Care </label>
                         </button>
                         <button> <input type="radio" name="aman" id="gel"> <label for="gel">Gel</label>
                         </button>
-                        <button><input type="radio" name="aman"  id="clenser"> <label for="clenser"> Lip Care</label>
+                        <button><input type="radio" name="aman" id="clenser"> <label for="clenser"> Lip Care</label>
                         </button>
-                        <button> <input type="radio" name="aman" id="moisturizer"> <label for="exfoliator"> Moisturizer</label>
+                        <button> <input type="radio" name="aman" id="moisturizer"> <label for="exfoliator">
+                                Moisturizer</label>
                         </button>
                         <button> <input type="radio" name="aman" id="serum"> <label for="eyecare"> Serum </label>
                         </button>
-                       
+
                     </div>
                     <button id="SkinConsernBtn"> <span>Skin Consern</span>
                         <div></div>
@@ -223,8 +225,8 @@
                         <button>&nbsp&nbsp Clenser &nbsp&nbsp</button>
                         <button>Moisturizer</button>
                         <button> &nbsp&nbsp Eye Care &nbsp&nbsp</button>
-                        <button>&nbsp&nbsp Serum  &nbsp&nbsp</button>
-                        <button>&nbsp Lip Care  &nbsp</button>
+                        <button>&nbsp&nbsp Serum &nbsp&nbsp</button>
+                        <button>&nbsp Lip Care &nbsp</button>
                         <button>Retinol Range</button>
                         <button>GlyPro Range</button>
                     </div>
@@ -246,7 +248,7 @@
 
 
                 </div>
-            
+
 
             </div>
 
@@ -296,36 +298,51 @@
 <script src="ProductListPage.js"></script>
 
 <script>
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     // for Home page
-    document.querySelector("#MainSec > div:first-child").addEventListener("click" , BackToHome);
-    function BackToHome(){
-        window.location.href="index.html";
+    document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+    function BackToHome() {
+        if (userN == "") {
+            window.location.href = "index.html";
+        } else {
+            window.location.href = "Afterlogin.html";
+        }
     }
 
+
     // for cart page 
-    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click" , Gocart);
-    function Gocart(){
-        window.location.href="./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
+    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
+    function Gocart() {
+        window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
     }
 
     // for login page 
-    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click" , GoLogin);
+    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
     function GoLogin(){
-        window.location.href="./../../amans_SkinStore/login.html";
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
     }
 
     // for Register page 
-    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click" , GoRegister);
-    function GoRegister(){
-        window.location.href="./../../amans_SkinStore/register.html";
+    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click", GoRegister);
+    function GoRegister() {
+        window.location.href = "./../../amans_SkinStore/register.html";
     }
 
     // for Wishlist page
-    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click" , GoWishlist);
-    function GoWishlist(){
-        window.location.href="./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
+    function GoWishlist() {
+        if(Wishlst.length == 0){
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+            
+        }else{
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+            
+        }
+        
+        
     }
 
     //For Your orders page        NOt made
@@ -335,56 +352,54 @@
     // }
 
     //For Your Skincare page
-    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click" , GoSkinCare);
-    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click" , GoSkinCare);
-    function GoSkinCare(){
-        window.location.href="./../../Na-SkinStore/Productpage/Productpage.html";
+    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click", GoSkinCare);
+    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click", GoSkinCare);
+    function GoSkinCare() {
+        window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
     }
 
     //For Hair Page
-    document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
-   
-    function GoHair(){
-        window.location.href="./../../Na-SkinStore/Productpage/hair.html";
+    document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click", GoHair);
+
+    function GoHair() {
+        window.location.href = "./../../Na-SkinStore/Productpage/hair.html";
     }
 
     //For MakeUp page
-    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
-    
-    function GoMakeUP(){
-        window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click", GoMakeUP);
+
+    function GoMakeUP() {
+        window.location.href = "./../../Na-SkinStore/Productpage/makeup.html";
     }
 
     //From Search to product page for Skin medica
-    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click" , GoToSkinMedica2);
-    function GoToSkinMedica2(){
+    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
+    function GoToSkinMedica2() {
         var ip = document.querySelector("#TopSearch").value;
-          
-        if(ip == "skin medica" ||ip == "Skin Medica" || ip == "skin Medica" ||ip == "SKIN MEDICA" || ip == "skinmedica" ||ip == "SKIN MEDICA" || ip == "SkinMedica") {
-            window.location.href="ProductListPage.html";
+
+        if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
+            window.location.href = "ProductListPage.html";
         }
     }
 
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-        document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
+    document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
     function showAcc() {
         var x = document.querySelector("#AnAccount");
-            
+
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
             x.style.display = "none";
         }
 
-        ANAccount.style.zIndex = "10";
-       
+        x.style.zIndex = "10";
+
     }
 
 
-</script>
 
-<script>
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --For Dropdown Button -- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     document.querySelector("#Price-DropdownBtn").addEventListener("click", callPrice);
     function callPrice() {
@@ -456,4 +471,5 @@
         }
 
     }
+
 </script>

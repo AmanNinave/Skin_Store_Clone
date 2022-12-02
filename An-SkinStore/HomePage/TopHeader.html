@@ -307,7 +307,10 @@
 
 
 <script>
-    var amanninave = "Aman"
+    
+    var Wishlst = localStorage.getItem("wishlist");
+    var amanninave = ""
+
     localStorage.setItem("username" , amanninave);
     var userN = localStorage.getItem("username");
 
@@ -319,12 +322,17 @@
     // for Home page
     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
     function BackToHome() {
+        if(userN == ""){
+            window.location.href = "index.html";
+        }else{
         window.location.href = "Afterlogin.html";
+    }
     }
 
     // for cart page 
     document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
     function Gocart() {
+        id()
         window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
     }
 
@@ -343,7 +351,17 @@
     // for Wishlist page
     document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
     function GoWishlist() {
-        window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+        if(Wishlst.length == 0){
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+            
+        }else{
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+            
+        }
+        
+        
     }
 
     //For Your orders page        NOt made
@@ -395,7 +413,7 @@
             x.style.display = "none";
         }
 
-        ANAccount.style.zIndex = "10";
+        x.style.zIndex = "10";
 
     }
 
