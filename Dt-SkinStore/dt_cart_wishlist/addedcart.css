@@ -1,0 +1,21 @@
+.imgcls{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    
+}
+#cartdatadisplay{
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: red;
+}
+.cart_divs{
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.ttldiv_dollar{
+    display: flex;
+}
