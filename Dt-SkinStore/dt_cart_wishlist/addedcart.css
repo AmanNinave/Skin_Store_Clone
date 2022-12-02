@@ -1,21 +1,88 @@
 .imgcls{
-    width: 50px;
-    height: 60px;
-    padding: 3px;
+    width: 120px;
+    height: 120px;
+    /* padding: 3px; */
+    /* border: 1px solid red; */
+    padding: -10px 0 -10px -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 #cartdatadisplay{
     width: 100%;
     /* overflow: hidden; */
-    background-color: red;
+    /* background-color: red; */
 }
 .cart_divs{
-    width: 100%;
+    width: 98%;
     display: flex;
-    background-color: blue;
-    padding: 5px;
-    justify-content: space-evenly;
+    /* background-color: yellow; */
+    
+    /* padding: 5px; */
+    /* justify-content: space-evenly; */
+    /* border: 1px solid rgb(59, 54, 54); */
 }
 .ttldiv_dollar{
     display: flex;
+    width: 95px;
+    margin-top: 30px;
+    justify-content: center;
+    /* border: 2px solid blue;
+    background-color: blue; */
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: larger;
+}
+.p_cls{
+    width: 180px;
+    /* border: 1px solid brown; */
+    width: 260px;
+    margin-top: 15px;
+    /* font-weight: bold; */
+}
+.cart_divs div{
+    border: 0px solid black;
+}
+.sp_cls{
+    width: 80px;
+    margin-top: 15px;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.dec_cls{
+    width: 20px;
+    border: 1px solid black;
+    margin-top: 15px;
+    background-color: white;
+}
+.dec_cls:hover{
+    background-color: red;
+    color: aliceblue;
+    border: none;
+
+}
+.q_cls{
+    width: 30px;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.inc_cls{
+    width: 20px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+.inc_cls:hover{
+    background-color: green;
+    color: aliceblue;
+     border: none;
+
+}
+.cross_cls{
+    width: 30px;
+    height: 30px;
+    margin-top: 39px;
+    border-radius: 20px;
+    background-color: rgb(234, 59, 59);
+    border: none;
+    color: aliceblue;
 }
