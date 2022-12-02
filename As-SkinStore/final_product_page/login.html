@@ -74,7 +74,7 @@
         var temp = JData.map(function (elem) {
 
 
-            if(elem.email  == temp1){
+            if(elem.email  == temp1 && elem.password == temp3){
                 localStorage.setItem("username", elem.name);
                 check = true;
             }
