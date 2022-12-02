@@ -308,7 +308,7 @@
 
 <script>
     
-    var Wishlst = localStorage.getItem("wishlist");
+    var Wishlst = localStorage.getItem("wishlist") || [];
     var amanninave = ""
 
     localStorage.setItem("username" , amanninave);
@@ -319,27 +319,27 @@
 
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    // for Home page
-    document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+     // for Home page
+     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
     function BackToHome() {
-        if(userN == ""){
+        if (userN == "") {
             window.location.href = "index.html";
-        }else{
-        window.location.href = "Afterlogin.html";
+        } else {
+            window.location.href = "Afterlogin.html";
+        }
     }
-    }
+
 
     // for cart page 
     document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
     function Gocart() {
-        id()
         window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
     }
 
     // for login page 
     document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
-    function GoLogin() {
-        window.location.href = "./logout.html";
+    function GoLogin(){
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
     }
 
     // for Register page 
@@ -377,18 +377,18 @@
         window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
     }
 
-    //For Hair Page
-    document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click", GoHair);
-
-    function GoHair() {
-        window.location.href = "./../../Na-SkinStore/Productpage/hair.html";
+     //For Hair Page
+     document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
+    
+    function GoHair(){
+        window.location.href="./../../Na-SkinStore/Productpage/hair.html";
     }
 
     //For MakeUp page
-    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click", GoMakeUP);
-
-    function GoMakeUP() {
-        window.location.href = "./../../Na-SkinStore/Productpage/makeup.html";
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
+    
+    function GoMakeUP(){
+        window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
     }
 
     //From Search to product page for Skin medica
