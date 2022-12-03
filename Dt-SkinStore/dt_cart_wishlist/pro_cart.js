@@ -1,17 +1,4 @@
-var dataofaddedcart = [
-    {
-        Category : "Clenser",
-        StrikedoffPrice :"48",
-        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-7504876690381737.jpg",
-        gift : "20% off + $135 SkinMedica Gift",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg",
-        link : "https://www.skinstore.com/skinmedica-aha-bha-exfoliating-cleanser/11289657.html",
-        name : "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
-        rating : "4.8",
-        sellingPrice : "38.4",
-    }
-];
-
+var Wishlst = localStorage.getItem("wishlist") || [];
 console.log(arr);
  var dataofaddedcart = JSON.parse(localStorage.getItem("cartdata")) || [];
 
@@ -103,7 +90,7 @@ function displayData(dataofaddedcart){
 
         var crossdiv = document.createElement("div");
         var cross = document.createElement("button");      
-        cross.textContent = "X"  ;
+        cross.textContent = "X";
 
         cross.addEventListener("click", function(){
             removeProduct(index);
@@ -111,12 +98,21 @@ function displayData(dataofaddedcart){
         cross.classList.add("cross_cls");
         crossdiv.append(cross);
 
-        var wishbtndiv = document.createElement("div");
-        wishbtndiv.classList.add("cart_divs");  
-
-
+        
         cartdivs.append(imgdiv, desdiv, pricediv, decramtdiv, qtydiv, incramtdiv, ttldiv, crossdiv);
-        document.getElementById("cartdatadisplay").append(cartdivs);
+        
+        var wishbtn = document.createElement("button");
+        wishbtn.textContent =  "Add to Wishlist";
+         
+        // wishbtn.addEventListener("click", function(){
+        //     addToWishlist(index);
+        // })
+        wishbtn.classList.add("wish_divs");
+
+        var line = document.createElement("hr");
+        line.classList.add("linecls");
+
+        document.getElementById("cartdatadisplay").append(cartdivs, wishbtn, line);
 
         totally_total = totally_total + t;
         document.getElementById("aplpmo").addEventListener("click", function(){
@@ -208,3 +204,71 @@ function reducePrice(totally_total){
     }
 }
 
+
+// var datafreegift = [
+//     {
+//         img_url : "https://s1.thcdn.com//productimg/70/70/13349819-1014933208639550.jpg",
+//         name : "Verso- Night Cream with Retinol 8 (Worth $15.00)",
+//         sellingPrice : "0",
+//     },
+//     {
+//         img_url : "https://s1.thcdn.com//productimg/70/70/12932355-9254884444095754.jpg",
+//         name : "NEST Fragrances Bamboo Mini Votive Candle. Worth $6",
+//         sellingPrice : "0",
+//     },
+//     {
+//         img_url : "https://s1.thcdn.com//productimg/70/70/12749763-1764835275242666.jpg",
+//         name : "Erborian Pink Primer & Care - MPP - 5ml. Worth $16",
+//         sellingPrice : "0",
+//     },
+//     {
+//         img_url = "https://s1.thcdn.com//productimg/70/70/13148814-1744978317333738.jpg",
+//         name : "Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)",
+//         sellingPrice : "0",
+//     },
+//     {
+//         img_url : "https://s1.thcdn.com//productimg/70/70/13172028-1614875468446094.jpg";
+//         name : "First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)",
+//         sellingPrice : "0",
+//     },
+//     {
+//         img_url : "https://s1.thcdn.com/productimg/70/70/12063634-1714661296587924.jpg",
+//         name : "Rituals Beauty To Go - Ayurveda Pouch",
+//         sellingPrice : "0",
+//     }
+// ];
+
+var AddToCart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var rs = -1;
+function addCart(elem) {
+    alert("Item Added to Cart");
+    location.reload();
+    var check = false;
+    var idxc = -1;
+    AddToCart.map(function (ele, idx) {
+
+        if (ele.name == elem.name) {
+            check = true;
+            idxc = idx;
+        }
+
+    });
+
+    rs = Number(elem.qty);
+
+
+    if (check) {
+        elem.qty = Number(elem.qty) + Number(1);
+        AddToCart.splice(idxc, 1);
+    } else {
+        elem.qty = 1;
+    }
+
+    AddToCart.push(elem);
+
+    localStorage.setItem("cartdata", JSON.stringify(AddToCart));
+
+    // location.reload();
+
+    console.log(rs);
+}
