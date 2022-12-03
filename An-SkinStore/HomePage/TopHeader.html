@@ -332,9 +332,9 @@
     // for cart page 
     document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
 
-    var CartValue = localStorage.getItem("totalcartvalue") || 0 ;
+    var CartValue =JSON.parse( localStorage.getItem("cartdata") ) || [] ;
     function Gocart() {
-        if(CartValue == 0){
+        if(CartValue.length == 0){
             window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptycart.html";
         }else{
 
