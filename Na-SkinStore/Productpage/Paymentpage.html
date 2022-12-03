@@ -330,10 +330,15 @@
       })
 
       document.querySelector("#itemsspan").textContent = displayData.length;
-      localStorage.setItem("totalsavings", 79);
-      localStorage.setItem("totalprice", 579);
+      // localStorage.setItem("totalsavings", 79);
+      // localStorage.setItem("totalcartvalue", 579);
       document.querySelector("#savingvalue").textContent = localStorage.getItem("totalsavings");
-      document.querySelector("#totalamt").textContent = localStorage.getItem("totalprice");
+      document.querySelector("#totalamt").textContent = localStorage.getItem("totalcartvalue");
+
+      var Temp30 = Math.floor((Math.random() * 10) +  4594598595);
+
+      document.querySelector("#orderNumber").textContent = Temp30 ;
+
     }
 
 
