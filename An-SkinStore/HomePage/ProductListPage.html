@@ -300,6 +300,14 @@
 <script>
     // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    var amanninave = ""
+
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
+    var Wishlst = localStorage.getItem("wishlist") || [];
+
     // for Home page
     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
     function BackToHome() {
@@ -319,8 +327,8 @@
 
     // for login page 
     document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
-    function GoLogin(){
-        window.location.href="./../../As-SkinStore/final_product_page/login.html";
+    function GoLogin() {
+        window.location.href = "./../../As-SkinStore/final_product_page/login.html";
     }
 
     // for Register page 
@@ -332,17 +340,17 @@
     // for Wishlist page
     document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
     function GoWishlist() {
-        if(Wishlst.length == 0){
-            
+        if (Wishlst.length == 0) {
+
             window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
-            
-        }else{
-            
+
+        } else {
+
             window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
-            
+
         }
-        
-        
+
+
     }
 
     //For Your orders page        NOt made
