@@ -7,14 +7,13 @@ window.addEventListener("load", function(){
 });
 
 // displayData(dataofaddedcart);
-var totally_total = 0;
-
+var totally_total =  0;           
 
 
 function displayData(dataofaddedcart){
-    console.log("eneteredfunction");
+    // console.log("eneteredfunction");
     var sub = document.querySelector("#subtotal");
-    console.log("check", sub);
+    // console.log("check", sub);
     dataofaddedcart.map(function (elem, index){
         // console.log("123");
 
@@ -50,7 +49,7 @@ function displayData(dataofaddedcart){
         damt.textContent = "-";
 
         damt.addEventListener("click", function(){
-            decrease_qty(qty, elem.sellingPrice, total, sub, index);
+            decrease_qty(qty, elem.sellingPrice, total, sub, index , elem);
         });
 
         damt.classList.add("dec_cls");
@@ -58,7 +57,11 @@ function displayData(dataofaddedcart){
 
         var qtydiv = document.createElement("div");
         var qty = document.createElement("p");
-        qty.textContent = Number(1);
+                                            // Please Dont Delete below three commented lines need for future
+                                            // var Local_storage_Qty = elem.qty ;                    // Added by aman at 3.42
+                                            // console.log(Local_storage_Qty );                      // Added by aman at 3.42   
+                                            // qty.textContent = Number(Local_storage_Qty);          // Added by aman at 3.42
+        qty.textContent = Number(1);                       // Removed at 3.45  
         qty.classList.add("q_cls");
         qtydiv.append(qty);
 
@@ -67,7 +70,7 @@ function displayData(dataofaddedcart){
         iamt.textContent = "+";
         
         iamt.addEventListener("click", function(){
-            increase_qty(qty, elem.sellingPrice, total, sub);
+            increase_qty(qty, elem.sellingPrice, total, sub , elem ,index);
         });
         iamt.classList.add("inc_cls");
         incramtdiv.append(iamt);
@@ -119,11 +122,16 @@ function displayData(dataofaddedcart){
     });
     
     sub.textContent = totally_total;
-    console.log("sub", sub);  
+    // console.log("sub", sub);  
     
-   
+   localStorage.setItem("totalcartvalue" , totally_total);
+   localStorage.setItem("giftitems" , JSON.stringify( giftArray ));              // line added to store data to of gift after display call 
 
 }
+
+localStorage.setItem("totalcartvalue" , totally_total);
+
+
 // remove function with cross button
 function removeProduct(index){
     dataofaddedcart.splice(index, 1);
@@ -133,13 +141,15 @@ function removeProduct(index){
 
 
 // increase function
-function increase_qty(q, sp, total, sub){
+function increase_qty(q, sp, total, sub , elem , index){
    console.log(q);
    console.log(q.textContent);
     var q1 = (Number)(q.textContent) + 1;
     console.log(q1);
     q.textContent = q1;
     console.log(q);
+
+    
     var pret = Number(total.textContent);
     var newtotal = (q1*sp);
     total.textContent = newtotal.toFixed(1);
@@ -149,10 +159,15 @@ function increase_qty(q, sp, total, sub){
     sub.textContent = totally_total.toFixed(1);
     // console.log("sub", sub);  
     
+    elem.qty = Number(q1);                       //added by aman
+    localStorage.setItem("cartdata" ,JSON.stringify( dataofaddedcart));     // Added by aman
+    localStorage.setItem("totalcartvalue" , totally_total.toFixed(1));
+    // localStorage.setItem("totalsavings" , )
+
 
 }
 // decrease function
-function decrease_qty(q, sp, total, sub, index){
+function decrease_qty(q, sp, total, sub, index , elem){
     // console.log(q);
     var qtemp = Number(q.textContent);
     console.log(qtemp);
@@ -164,14 +179,20 @@ function decrease_qty(q, sp, total, sub, index){
         console.log(q1);
         q.textContent = q1;
         console.log(q);
-        var pret = Number(total.textContent);
+                var pret = Number(total.textContent);
         var newtotal = (q1*sp);
         total.textContent = newtotal.toFixed(1);
     
         totally_total = totally_total - pret;
         totally_total = totally_total + newtotal;
         sub.textContent = totally_total.toFixed(1);
-        // console.log("sub", sub);  
+        // console.log("sub", sub); 
+
+        elem.qty = Number(q1);                       //added by aman
+        localStorage.setItem("cartdata" ,JSON.stringify( dataofaddedcart));     // Added by aman
+
+        localStorage.setItem("totalcartvalue" , totally_total.toFixed(1));
+
     }else{
         removeProduct(index);
     }
@@ -179,6 +200,8 @@ function decrease_qty(q, sp, total, sub, index){
  }
 
 var count = 1;
+var save = 0;
+localStorage.setItem("totalsavings" , save);                 // Added by aman at 3.53
 
 // apply promo code
 function reducePrice(totally_total){
@@ -188,12 +211,12 @@ function reducePrice(totally_total){
     // console.log("cc", cc);
     
     if(cc.value == "Masai-DNA" ){
-        var save = 0.4 * totally_total;
+         save = 0.4 * totally_total;
        var totally_total = (60/100) * (totally_total);
         
         var savings = document.querySelector("#tsaving");
         savings.textContent = save.toFixed(2);
-        console.log(save);
+        // console.log(save);
         document.querySelector("#subtotal").textContent = totally_total.toFixed(2);
         // count++;
         // console.log(typeof(totally_total));
@@ -210,6 +233,10 @@ function reducePrice(totally_total){
     }else {
         alert("Not valid Coupon");
     }
+
+    localStorage.setItem("totalcartvalue" , totally_total.toFixed(1));
+    localStorage.setItem("totalsavings" , save.toFixed(1) );
+
 }
 
 // apply promo joy code 
@@ -262,38 +289,44 @@ function addWishlist(elem) {
 //     rating : "4.9",
 //     link : "https://www.skinstore.com/by-terry-ombre-blackstar-eye-shadows-1-.64g-various-shades/11307158.html"
 // },
+
 var datafreegift = [
     {
         img_url : "https://s1.thcdn.com//productimg/70/70/13349819-1014933208639550.jpg",
         name : "Verso- Night Cream with Retinol 8 (Worth $15.00)",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     },
     {
         img_url : "https://s1.thcdn.com//productimg/70/70/12932355-9254884444095754.jpg",
         name : "NEST Fragrances Bamboo Mini Votive Candle. Worth $6",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     },
     {
         img_url : "https://s1.thcdn.com//productimg/70/70/12749763-1764835275242666.jpg",
         name : "Erborian Pink Primer & Care - MPP - 5ml. Worth $16",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     },
     {
         img_url : "https://s1.thcdn.com//productimg/70/70/13148814-1744978317333738.jpg",
         name : "Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     },
     {
         img_url : "https://s1.thcdn.com//productimg/70/70/13172028-1614875468446094.jpg",
         name : "First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     },
     {
         img_url : "https://s1.thcdn.com/productimg/70/70/12063634-1714661296587924.jpg",
         name : "Rituals Beauty To Go - Ayurveda Pouch",
-        sellingPrice : "0",
+        sellingPrice : "FREE",
     }
 ];
+
+//<<<<<<<<<<<<<<<<<<<<<<< below lines used to store gift items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+var giftArray = [] ;
+
+
 
 // add to cart function for gifts
 var giftcounter = 0;
@@ -304,6 +337,8 @@ function press(){
         txt.style.color = "white";
         giftcounter++;
         document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[0]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 
@@ -314,6 +349,8 @@ function press1(){
         txt.style.color = "white";
         giftcounter++;
         document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[1]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 
@@ -324,6 +361,8 @@ function press2(){
         txt.style.color = "white";
         giftcounter++;
         document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[2]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 
@@ -334,6 +373,8 @@ function press3(){
         txt.style.color = "white";
         giftcounter++;
         document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[3]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 
@@ -343,7 +384,9 @@ function press4(){
         txt.style.backgroundColor = "green";
         txt.style.color = "white";
         giftcounter++;
-document.querySelector("#giftnumber").textContent = giftcounter;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[4]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 
@@ -353,7 +396,9 @@ function press5(){
         txt.style.backgroundColor = "green";
         txt.style.color = "white";
         giftcounter++;
-document.querySelector("#giftnumber").textContent = giftcounter;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+        giftArray.push(datafreegift[5]);
+        localStorage.setItem("giftitems", JSON.stringify( giftArray));
     }
 }
 

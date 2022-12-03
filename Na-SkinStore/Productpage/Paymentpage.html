@@ -211,7 +211,7 @@
       <div class="horizontal_lines"></div>
       <div id="savingdiv"  class="flexdata">
         <button>Saving &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button> 
-         <button > $ <span id="savingvalue">0</span> </button> </div>
+         <button > - $ <span id="savingvalue">0</span> </button> </div>
       <div class="horizontal_lines"></div>
       <div id="ammountDiv"   class="flexdata">
         <button>Total to pay</button>
@@ -296,7 +296,7 @@
 
 
     var displayData = JSON.parse(localStorage.getItem("cartdata")) || [] ;
-
+    var giftData = JSON.parse(localStorage.getItem("giftitems")) || [] ;
     displayCart() ;
 
     function displayCart () {
@@ -318,6 +318,35 @@
 
             var pricebox = document.createElement("p");
             pricebox.textContent = " $ " + elem.sellingPrice;
+
+        desDiv.append(desc,quantity, pricebox);
+
+        outDiv.append(image, desDiv);
+
+        document.querySelector("#cartdatainpaymentpage").append(outDiv);
+
+
+
+      })
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<   FOR SHOWING FREE GIFTS  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      var run1 = giftData.map (function ( elem , index ){
+        
+        var outDiv = document.createElement("div");
+
+        var image = document.createElement("img");
+        image.src = elem.img_url;
+        
+        var desDiv = document.createElement("div");
+
+            var desc = document.createElement("p");
+            desc.textContent = elem.name;
+            var quantity = document.createElement("p");
+            quantity.textContent = " Quantity : " + 1 ;
+
+            var pricebox = document.createElement("p");
+            pricebox.textContent = " $ FREE" ;
 
         desDiv.append(desc,quantity, pricebox);
 

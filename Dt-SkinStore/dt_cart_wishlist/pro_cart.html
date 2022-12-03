@@ -86,7 +86,7 @@
         <div id="carttitle">
             <!-- title -->
             <h1>Your Cart</h1>
-            <button class="buttoncheckout" id="goforpayment" style="height: 60px; margin-top: 9px; padding-right: -3px;"> CHECKOUT SECURELY NOW </button>
+            <button class="buttoncheckout" id="goforpayment1" style="height: 60px; margin-top: 9px; padding-right: -3px;"> CHECKOUT SECURELY NOW </button>
             
         </div>
         <div id="cartnotify">
@@ -134,7 +134,7 @@
                 </div>
                 <div id="cartextra">
                     <div>
-                        <button class="buttoncheckout" style="background-color: rgb(235,235,235); color: black;"> CONTINUE SHOPPING</button>
+                        <button class="buttoncheckout" id="gotohomepageaman" style="background-color: rgb(235,235,235); color: black;"> CONTINUE SHOPPING</button>
                     </div>         
                     <div>
                         <button class="buttoncheckout" id="goforpayment">CHECKOUT SECURELY NOW</button>
@@ -398,8 +398,19 @@
         
     // <!-- eventlistener payment -->
     document.querySelector("#goforpayment").addEventListener("click" , Gopay);
+    document.querySelector("#goforpayment1").addEventListener("click" , Gopay);
+
     function Gopay(){
         window.location.href="./../../Na-SkinStore/Productpage/Paymentpage.html";
+    }
+
+
+    
+
+    document.querySelector("#gotohomepageaman").addEventListener("click" , Gotohome1);
+    
+    function Gotohome1(){
+        window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
     }
 
     </script>
