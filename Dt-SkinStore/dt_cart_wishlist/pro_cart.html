@@ -86,7 +86,7 @@
         <div id="carttitle">
             <!-- title -->
             <h1>Your Cart</h1>
-            <button class="buttoncheckout" style="height: 60px; margin-top: 9px; padding-right: -3px;"> CHECKOUT SECURELY NOW </button>
+            <button class="buttoncheckout" id="goforpayment" style="height: 60px; margin-top: 9px; padding-right: -3px;"> CHECKOUT SECURELY NOW </button>
             
         </div>
         <div id="cartnotify">
@@ -162,42 +162,48 @@
                 <br>
                 <div>
                     <p style="color: green;"> <bold>Qualified</bold><i class="fa-solid fa-circle-check" style="height: 10px;"></i></p>
-                    <p><span id="giftnumber">0</span>/1 free gifts selected</p>
+                    <p><span id="giftnumber">0</span>/6 free gifts selected</p>
                 </div>
-                <div class="gifts">
+                <div class="gifts" id="availgifts">
                     <div>
                         <img src="https://s1.thcdn.com//productimg/70/70/13349819-1014933208639550.jpg" alt="gift 1"> 
-                        <p title="Add to your cart">Verso- Night Cream with Retinol 8 (Worth $15.00)</p>
+                        <p id="ptag" title="Add to your cart">Verso- Night Cream with Retinol 8 (Worth $15.00)</p>
+                        <button onclick="press()">+</button>
                     </div>                    
                 </div>
                 <div class="gifts">
                     <div>
                         <img src="https://s1.thcdn.com//productimg/70/70/12932355-9254884444095754.jpg"  alt=" gift 2">
-                        <p title="Add to your cart">NEST Fragrances Bamboo Mini Votive Candle. Worth $6</p>
+                        <p id="ptag" title="Add to your cart">NEST Fragrances Bamboo Mini Votive Candle. Worth $6</p>
+                        <button onclick="press1()">+</button>
                     </div>
                 </div>
                 <div class="gifts">
                     <div>
                         <img src="https://s1.thcdn.com//productimg/70/70/12749763-1764835275242666.jpg" alt="gift 3">
-                        <p title="Add to your cart">Erborian Pink Primer & Care - MPP - 5ml. Worth $16</p>
+                        <p id="ptag" title="Add to your cart">Erborian Pink Primer & Care - MPP - 5ml. Worth $16</p>
+                        <button onclick="press2()">+</button>
                     </div>
                 </div>
                 <div class="gifts">
                     <div>
                         <img src="https://s1.thcdn.com//productimg/70/70/13148814-1744978317333738.jpg" alt="gift 4">
-                        <p title="Add to your cart">Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)</p> 
+                        <p id="ptag" title="Add to your cart">Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)</p> 
+                        <button onclick="press3()">+</button>
                     </div>
                 </div>
                 <div class="gifts">
                     <div>
                         <img src="https://s1.thcdn.com//productimg/70/70/13172028-1614875468446094.jpg" alt="gift 5">
-                        <p title="Add to your cart">First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)</p>
+                        <p id="ptag" title="Add to your cart">First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)</p>
+                        <button onclick="press4()">+</button>
                     </div>
                 </div>
                 <div class="gifts">
                     <div>
                         <img src="https://s1.thcdn.com/productimg/70/70/12063634-1714661296587924.jpg" alt="gift 6">
-                        <p title="Add to your cart">Rituals Beauty To Go - Ayurveda Pouch</p>  
+                        <p id="ptag" title="Add to your cart">Rituals Beauty To Go - Ayurveda Pouch</p>  
+                        <button onclick="press5()">+</button>
                     </div>
                 </div>
             </div>              

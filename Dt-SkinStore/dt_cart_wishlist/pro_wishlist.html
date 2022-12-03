@@ -8,27 +8,34 @@
     <script src="https://kit.fontawesome.com/cdc368d037.js" crossorigin="anonymous"></script>
     <style>
         #wishlisthead{
+            margin: auto;
             border: 4px solid red;
+            width: 90%;
+
         }
     </style>
+    <link rel="stylesheet" href="./wishlist.css">
 </head>
 <body>
     <div id="wishlisthead">
         <div>
             <h1>My Wishlist</h1>
-            <p><span>0</span>item(s)</p>
+            <p id="counting_pro"><span id="count">0</span> item(s)</p>
         </div>
-        <div>
-            <label for="sort">Sort by:</label>
+        <div class="sorting">
+            <label for="sort">Sort by :</label>
             <select name="filteredList" id="filteredList">
-                <option value="volvo">Default</option>
-                <option value="saab">Price: Low to high</option>
+                <option value="d">Default</option>
                 <option value="opel">Alphabeticlly</option>
-                <option value="audi">Discount: High to low</option>
+                <option value="saab">Price: Low to high</option>                
+                <option value="audi">Price: High to low</option>
             </select>
         </div>
-        
+        <div id="display">
+
+        </div>
     </div>
 
 </body>
 </html>
+<script src="./pro_wishlist.js"></script>
