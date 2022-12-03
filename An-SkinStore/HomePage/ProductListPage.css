@@ -256,6 +256,8 @@
     background-color: white;
     height: fit-content;
     /* z-index: 0; */
+    position: sticky;
+    top: 155px;
  }
 
  #Navgication-Section > div:first-child {
