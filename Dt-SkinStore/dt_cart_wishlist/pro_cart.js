@@ -1,5 +1,5 @@
-var Wishlst = localStorage.getItem("wishlist") || [];
-console.log(arr);
+var wishListItems = JSON.parse(localStorage.getItem("wishlist")) || [];
+// console.log(arr);
  var dataofaddedcart = JSON.parse(localStorage.getItem("cartdata")) || [];
 
 window.addEventListener("load", function(){
@@ -126,7 +126,7 @@ function displayData(dataofaddedcart){
    
 
 }
-
+// remove function with cross button
 function removeProduct(index){
     dataofaddedcart.splice(index, 1);
     localStorage.setItem("cartdata", JSON.stringify(dataofaddedcart));
@@ -134,7 +134,7 @@ function removeProduct(index){
 }
 
 
-// var q1;
+// increase function
 function increase_qty(q, sp, total, sub){
    console.log(q);
    console.log(q.textContent);
@@ -153,7 +153,7 @@ function increase_qty(q, sp, total, sub){
     
 
 }
-
+// decrease function
 function decrease_qty(q, sp, total, sub, index){
     // console.log(q);
     var qtemp = Number(q.textContent);
@@ -182,7 +182,7 @@ function decrease_qty(q, sp, total, sub, index){
 
 var count = 1;
 
-// console.log("apl", document.querySelector("#aplpmo"));
+// apply promo code
 function reducePrice(totally_total){
     event.preventDefault();
     // console.log("223");
@@ -238,6 +238,8 @@ function reducePrice(totally_total){
 //     }
 // ];
 
+
+// add to cart function for gifts
 var AddToCart = JSON.parse(localStorage.getItem("cartdata")) || [];
 var rs = -1;
 function addCart(elem) {
