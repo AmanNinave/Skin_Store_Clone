@@ -1,306 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Page</title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="Paymentpage.css" />
-    <div id="Pay_container">
-      <div id="parent_payment_lft">
-        <div id="parent_payment_lft_login">
-          <div>
-            <h2>Login or sign up</h2>
-            <p>
-              Checkout faster with saved details and get access to exclusive
-              offers
-            </p>
-          </div>
-          <div>
-            <button  id="GotoLogin">LOGIN/SIGNUP</button>
-          </div>
-        </div>
-        <div id="parent_payment_lft_guest">
-         
-          <h2>Checkout as a guest</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <style>
+
+  </style>
+
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="Paymentpage.css" />
+  <div id="Pay_container">
+    <div id="parent_payment_lft">
+      <div id="parent_payment_lft_login">
+        <div>
+          <h2>Login or sign up</h2>
           <p>
-            Complete your order without signing up, or sign up after payment.
+            Checkout faster with saved details and get access to exclusive
+            offers
           </p>
-          <h3>1.Email and delivery address</h3>
-          <form>
-            <p>*Email address</p>
-            <input id="EnterEmail" type="email" />
-            <p>We'll send the purchase receipt to this email.</p>
-            <p>*Country/Region</p>
-            <select name="Country" id="Choose_Country">
-              <option value="">India(India)</option>
-              <option value="india">India</option>
-              <option value="qatar">Qatar</option>
-              <option value="bhutan">Bhutan</option>
-              <option value="nepal">Nepal</option>
-              <option value="England">England</option>
-            </select>
-            <p>*Full Name</p>
-            <input id="FullName" type="text" />
-            <p>*Zip Code/Postcode</p>
-            <input  id="ZipCode" type="text" />
-            <p>Company name</p>
-            <input id="Compny" type="text" />
-            <p>*Address</p>
-            <input id="Addrs" type="text" />
-            <p>Address 2</p>
-            <input id="Addrs2" type="text" />
-            <p>*Apartment/Suite number</p>
-            <input id="Apprt" type="text" />
-            
-
-            <p>*Town/City</p>
-            <input id="Town" type="text" />
-            
-            <p>Contact Number</p>
-            <input id="ContactNo" type="text" />
-            <div id="parent_quest">
-              <button><a href="">Why do we need your number?</a></button>
-            </div>
-          </form>
         </div>
-        <div id="parent_payment_lft_delivery">
-          <h2>2. Select Delivery Option</h2>
-          <div>
-            <p><i class="fa-solid fa-circle-info"></i> enter your address so we can calculate your delivery options.</p>
+        <div>
+          <button id="GotoLogin">LOGIN/SIGNUP</button>
+        </div>
+      </div>
+      <div id="parent_payment_lft_guest">
+
+        <h2>Checkout as a guest</h2>
+        <p>
+          Complete your order without signing up, or sign up after payment.
+        </p>
+        <h3>1.Email and delivery address</h3>
+        <form>
+          <p>*Email address</p>
+          <input id="EnterEmail" type="email" />
+          <p>We'll send the purchase receipt to this email.</p>
+          <p>*Country/Region</p>
+          <select name="Country" id="Choose_Country">
+            <option value="">India(India)</option>
+            <option value="india">India</option>
+            <option value="qatar">Qatar</option>
+            <option value="bhutan">Bhutan</option>
+            <option value="nepal">Nepal</option>
+            <option value="England">England</option>
+          </select>
+          <p>*Full Name</p>
+          <input id="FullName" type="text" />
+          <p>*Zip Code/Postcode</p>
+          <input id="ZipCode" type="text" />
+          <p>Company name</p>
+          <input id="Compny" type="text" />
+          <p>*Address</p>
+          <input id="Addrs" type="text" />
+          <p>Address 2</p>
+          <input id="Addrs2" type="text" />
+          <p>*Apartment/Suite number</p>
+          <input id="Apprt" type="text" />
+
+
+          <p>*Town/City</p>
+          <input id="Town" type="text" />
+
+          <p>Contact Number</p>
+          <input id="ContactNo" type="text" />
+          <div id="parent_quest">
+            <button><a href="">Why do we need your number?</a></button>
           </div>
+        </form>
+      </div>
+      <div id="parent_payment_lft_delivery">
+        <h2>2. Select Delivery Option</h2>
+        <div>
+          <p><i class="fa-solid fa-circle-info"></i> enter your address so we can calculate your delivery options.</p>
         </div>
-        <div id="parent_payment_lft_paymentMethod">
+      </div>
+      <div id="parent_payment_lft_paymentMethod">
+        <div>
+          <h2>3. Select Payment Method</h2>
           <div>
-            <h2>3. Select Payment Method</h2>
-            <div>
-              <form id="border_select">
-                <h3>Credit/Debit Card</h3>
-                <div>
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/3c2e42cbf9d0b0df0d3b3bb81aa41d6a.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/0528692e7541ff3755880b3408793969.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg"
-                    alt="miss pic"
-                  />
-                  <img
-                    src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg"
-                    alt="miss pic"
-                  />
-                  <p>*Card Number</p>
-                  <input id="CardNO" type="text" />
+            <form id="border_select">
+              <h3>Credit/Debit Card</h3>
+              <div>
+                <img src="https://s1.thcdn.com/checkout/resources/images/3c2e42cbf9d0b0df0d3b3bb81aa41d6a.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/0528692e7541ff3755880b3408793969.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg"
+                  alt="miss pic" />
+                <img src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg"
+                  alt="miss pic" />
+                <p>*Card Number</p>
+                <input id="CardNO" type="text" />
 
-                  <p>*Name on card</p>
-                  <input id="NameonCard" type="text" />
-                  <p>*Expiry Date</p>
-                  <div id="expiry">
-                    <select name="Expiry" id="Expiry_Month">
-                      <option value="">Month</option>
-                      <option value="">01</option>
-                      <option value="">02</option>
-                      <option value="">03</option>
-                      <option value="">04</option>
-                      <option value="">05</option>
-                      <option value="">06</option>
-                      <option value="">07</option>
-                      <option value="">08</option>
-                      <option value="">09</option>
-                      <option value="">10</option>
-                      <option value="">12</option>
-                    </select>
-                    <select name="Expiry" id="Expiry_year">
-                      <option value="">Year</option>
-                      <option value="">22</option>
-                      <option value="">23</option>
-                      <option value="">24</option>
-                      <option value="">25</option>
-                      <option value="">26</option>
-                      <option value="">27</option>
-                      <option value="">28</option>
-                      <option value="">29</option>
-                      <option value="">30</option>
-                    </select>
-                  </div>
-                  <div>
-                    <p>*Security Code (CV2)</p>
-                    <input type="text" id="security_code"  />
-                    <button id="question_btn">?</button>
-                    </div>
-                    <div>
-                    <input type="checkbox" id="checkBox_method" />
-                    <label for="vehicle1"
-                      >Use my shipping address as my cardholder address</label
-                    >
-                  </div>
-                    
-                  </div>
+                <p>*Name on card</p>
+                <input id="NameonCard" type="text" />
+                <p>*Expiry Date</p>
+                <div id="expiry">
+                  <select name="Expiry" id="Expiry_Month">
+                    <option value="">Month</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">05</option>
+                    <option value="">06</option>
+                    <option value="">07</option>
+                    <option value="">08</option>
+                    <option value="">09</option>
+                    <option value="">10</option>
+                    <option value="">12</option>
+                  </select>
+                  <select name="Expiry" id="Expiry_year">
+                    <option value="">Year</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                  </select>
                 </div>
-              </form>
-              <div id="Method_card_image">
                 <div>
-                <h2>Use a different payment method</h2>
+                  <p>*Security Code (CV2)</p>
+                  <input type="text" id="security_code" />
+                  <button id="question_btn">?</button>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkBox_method" />
+                  <label for="vehicle1">Use my shipping address as my cardholder address</label>
+                </div>
+
               </div>
-              
-                <img
-                  src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg"
-                  alt=""
-                />
+          </div>
+          </form>
+         
+            <div id="PaymentOptionsAn">
              
-                <img
-                  src="https://s1.thcdn.com/checkout/resources/images/52c235cfc21b037c320712891df2cffc.svg"
-                  alt=""
-                />
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0My4xIDE2IiB3aWR0aD0iNDMiIGhlaWdodD0iMTYiPgogICAgPHRpdGxlPlppcFBheTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsPSIjQUE4RkZGIiBkPSJNMTQuNjcgNC45MjdsMS4zNDUgMTEuMDMyaDEzLjE1NkwyNy44MjUgNC45MjdIMTQuNjdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik0xOC40MjMuNzE4Yy44NC43OTQuOTU0IDIuMDQ1LjI1NyAyLjc5Mi0uNjk3Ljc0Ny0xLjk0Mi43MDktMi43ODEtLjA4NS0uODQtLjc5Ny0uOTU1LTIuMDQ2LS4yNTctMi43OTQuNjk3LS43NDYgMS45NDEtLjcwOSAyLjc4MS4wODdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik00Mi45NTkgOC44OTljLS4zMDMtMi40ODEtMi4yMzctMy45OC00Ljg2My0zLjk3MmgtOC43NDdsMS4zNDQgMTEuMDMxaDMuOTM3bC0uMjY4LTIuMjA1aDQuMTY3YzMuMjc1IDAgNC43NzYtMi4wNiA0LjQzLTQuODUzaDB2LS4wMDF6TTM4LjEgMTAuNjZsLTQuMTIuMDA0LS4zMjMtMi42NDYgNC4xNC4wMDRjLjk3My4wMTMgMS40Ny41NjIgMS41NTIgMS4zMi4wNTMuNDg0LS4xNjggMS4zMTgtMS4yNSAxLjMxOHoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiAgICA8cGF0aCBmaWxsPSIjMUEwODI2IiBkPSJNLjk2OSAxMi44NzZsLjM3NiAzLjA4M2gxMy4xNDNsLS40MzMtMy41MjhINy45M2wtLjA1Ny0uNDQgNS42NDctMy45NzItLjM3Ny0zLjA5MkgwbC40MjggMy41MzJoNi4xNGwuMDU1LjQ0LTUuNjU0IDMuOTc3aDB6Ii8+Cjwvc3ZnPgo="
-                  alt=""
-                />
-                <img
-                  src="https://s1.thcdn.com/checkout/resources/images/3c5574b5e1fe1470a49f46bc08828ef4.svg"
-                  alt=""
-                />
-                <img
-                  src="https://s1.thcdn.com/checkout/resources/images/61199182e45613b7932d163ec9ad823c.svg"
-                  alt=""
-                />
-             
-              </div>
+         
+
+              <button id="Payment-DropdownBtn"> <h2>Use a different payment method</h2>
+                <div></div>
+              </button>
+              <div id="Payment-Dropdown">
+                <button><input type="radio" name="aman" class="p30-50"> <img src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg" alt="" />
+
+                </button>
+                <button> <input type="radio" name="aman" value="50"> <img src="https://s1.thcdn.com/checkout/resources/images/52c235cfc21b037c320712891df2cffc.svg" alt="" />
+                </button>
+                <button> <input type="radio" name="aman" value="100"> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0My4xIDE2IiB3aWR0aD0iNDMiIGhlaWdodD0iMTYiPgogICAgPHRpdGxlPlppcFBheTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsPSIjQUE4RkZGIiBkPSJNMTQuNjcgNC45MjdsMS4zNDUgMTEuMDMyaDEzLjE1NkwyNy44MjUgNC45MjdIMTQuNjdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik0xOC40MjMuNzE4Yy44NC43OTQuOTU0IDIuMDQ1LjI1NyAyLjc5Mi0uNjk3Ljc0Ny0xLjk0Mi43MDktMi43ODEtLjA4NS0uODQtLjc5Ny0uOTU1LTIuMDQ2LS4yNTctMi43OTQuNjk3LS43NDYgMS45NDEtLjcwOSAyLjc4MS4wODdoMHoiLz4KICAgIDxwYXRoIGZpbGw9IiMxQTA4MjYiIGQ9Ik00Mi45NTkgOC44OTljLS4zMDMtMi40ODEtMi4yMzctMy45OC00Ljg2My0zLjk3MmgtOC43NDdsMS4zNDQgMTEuMDMxaDMuOTM3bC0uMjY4LTIuMjA1aDQuMTY3YzMuMjc1IDAgNC43NzYtMi4wNiA0LjQzLTQuODUzaDB2LS4wMDF6TTM4LjEgMTAuNjZsLTQuMTIuMDA0LS4zMjMtMi42NDYgNC4xNC4wMDRjLjk3My4wMTMgMS40Ny41NjIgMS41NTIgMS4zMi4wNTMuNDg0LS4xNjggMS4zMTgtMS4yNSAxLjMxOHoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiAgICA8cGF0aCBmaWxsPSIjMUEwODI2IiBkPSJNLjk2OSAxMi44NzZsLjM3NiAzLjA4M2gxMy4xNDNsLS40MzMtMy41MjhINy45M2wtLjA1Ny0uNDQgNS42NDctMy45NzItLjM3Ny0zLjA5MkgwbC40MjggMy41MzJoNi4xNGwuMDU1LjQ0LTUuNjU0IDMuOTc3aDB6Ii8+Cjwvc3ZnPgo=" alt="" />
+                </button>
+                <button> <input type="radio" name="aman" value="150">  <img src="https://s1.thcdn.com/checkout/resources/images/3c5574b5e1fe1470a49f46bc08828ef4.svg" alt="" />
+                </button>
+                <button> <input type="radio" name="aman" value="150"><img src="https://s1.thcdn.com/checkout/resources/images/61199182e45613b7932d163ec9ad823c.svg" alt="" />
+                </button>
             </div>
+
+          </div >
+        </div>
+
+        <div id="parent_payment_lft_submit">
+          <button id="Submit_my_Order">SUMBIT MY ORDER</button>
+        </div>
+        <div id="termCondition">
+          <p>
+            By placing this order, you are confirming that you agree to our
+            <a href=""> Terms and Conditions </a> and
+            <a href=""> Privacy Policy. </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="parent_payment_right">
+      <div class="flexdata">  <!--  1st div     -->
+        <div>Order Summary : &nbsp&nbsp&nbsp&nbsp</div>
+        <div> <span id="itemsspan">0</span>  Items</div>
+      </div>
+
+      <div class="flexdata" >Order Number  &nbsp&nbsp : &nbsp&nbsp <span id="orderNumber">477883027</span> </div>
+
+      <div id="cartdatainpaymentpage">
+
+
+     
         
-          <div id="parent_payment_lft_submit">
-            <button  id="Submit_my_Order">SUMBIT MY ORDER</button>
-          </div>
-          <div id="termCondition">
-            <p>
-              By placing this order, you are confirming that you agree to our
-              <a href=""> Terms and Conditions </a> and
-              <a href=""> Privacy Policy. </a>
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div id="parent_payment_right">
-        <div>
-          <div>Order Summary</div>
-          <div>2 items</div>
-        </div>
+<!-- <<<<<<<<<<<<<< bottom part of summary >>>>>>>>>>>>>>>>>> -->
 
-        <div>Order Number : 453949850</div>
-
-        <div >
-          <div id="payment_image">
-            <img
-              src="https://s1.thcdn.com/productimg/70/70/11649733-6254669919487285.jpg"
-              alt="miss pic"
-            />
-          </div>
-          <div>
-            <p>SkinCeuticals Resveratrol BE 4ml (Worth $21.00</p>
-            <p>Quantity: 1</p>
-            <p>$0.00</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="https://s1.thcdn.com//productimg/70/70/13547804-8725001921814146.jpg"
-              alt="miss pic"
-            />
-          </div>
-          <div>
-            <p>Anti-Aging Radiance Duo (Worth $305.00)</p>
-            <p>Quantity: 1</p>
-            <p>$259.25</p>
-          </div>
-        </div>
-        <div class="horizontal_lines"></div>
-        <div>
-          <div>Delivery</div>
-          <div>Calculated at next step</div>
-        </div>
-        <div class="horizontal_lines"></div>
-        <div ><button>Saving</button></div>
-        <div class="horizontal_lines"></div>
-        <div>
-          <div>Total to pay</div>
-          <div>$259.25</div>
-        </div>
+      <div class="horizontal_lines"></div>
+      
+      <div id="deliverydiv"  class="flexdata">
+        <div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Delivery : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp</div>
+        <div>Calculated at next step</div>
       </div>
+      <div class="horizontal_lines"></div>
+      <div id="savingdiv"  class="flexdata">
+        <button>Saving &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button> 
+         <button > $ <span id="savingvalue">0</span> </button> </div>
+      <div class="horizontal_lines"></div>
+      <div id="ammountDiv"   class="flexdata">
+        <button>Total to pay</button>
+        <button> $ <span id="totalamt">0</span></button>
+        
+      </div>
+  <!-- <<<<<<<<<<<<<< bottom part of summary >>>>>>>>>>>>>>>>>> -->  
     </div>
+  </div>
 
-    <hr />
-   <div id="down_tag">
+  <hr />
+  <div id="down_tag">
     <p>THGPP LLC</p>
-    
+
     <p>1209 Orange Street, Wilmington, New Castle, DE 19801. United States</p>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
 
 
 
 <script>
 
-    // for login page 
-    document.querySelector("#GotoLogin").addEventListener("click" , GoLogin);
-    function GoLogin(){
-        window.location.href="./../../As-SkinStore/final_product_page/login.html";
-    }
+  // for login page 
+  document.querySelector("#GotoLogin").addEventListener("click", GoLogin);
+  function GoLogin() {
+    window.location.href = "./../../As-SkinStore/final_product_page/login.html";
+  }
 
 
-    var JobData = JSON.parse(localStorage.getItem("paymentdetails")) || [];
+  var JobData = JSON.parse(localStorage.getItem("paymentdetails")) || [];
 
-document.querySelector("#Submit_my_Order").addEventListener("click", AddData);
+  document.querySelector("#Submit_my_Order").addEventListener("click", AddData);
 
-function AddData() {
+  function AddData() {
 
-  event.preventDefault();
-  var Email = document.getElementById("EnterEmail").value;
-  var  Country  = document.getElementById("Choose_Country").value;
-  var Fullnme = document.getElementById("FullName").value;
-  var Zip = document.getElementById("ZipCode").value;
-  var Compeny = document.getElementById("Compny").value;
-  var Adrs = document.getElementById("Addrs").value;
-  var Adrs2 = document.getElementById("Addrs2").value;
-  var Aprt = document.getElementById("Apprt").value;
-  var Twn = document.getElementById("Town").value;
-  var CntctNo = document.getElementById("ContactNo").value;
-  var CrdNo = document.getElementById("CardNO").value;
-  var Nmeoncard = document.getElementById("NameonCard").value;
-  var Expirymonth = document.getElementById("Expiry_Month").value;
-  var Expiryyear = document.getElementById("Expiry_year").value;
-  var Securitycode = document.getElementById("security_code").value;
-  
-  var obj = { pemail :Email , pcountry : Country , pfullname : Fullnme , pzip : Zip , pcompeny :  Compeny , paddress : Adrs , paddress2 : Adrs2 , pappartment : Aprt , ptown : Twn , pcontactno : CntctNo  , pcardno : CrdNo , pnameoncard : Nmeoncard , pexpmonth : Expirymonth  , pexpyear : Expiryyear  , psecuritycode : Securitycode   };
+    event.preventDefault();
+    var Email = document.getElementById("EnterEmail").value;
+    var Country = document.getElementById("Choose_Country").value;
+    var Fullnme = document.getElementById("FullName").value;
+    var Zip = document.getElementById("ZipCode").value;
+    var Compeny = document.getElementById("Compny").value;
+    var Adrs = document.getElementById("Addrs").value;
+    var Adrs2 = document.getElementById("Addrs2").value;
+    var Aprt = document.getElementById("Apprt").value;
+    var Twn = document.getElementById("Town").value;
+    var CntctNo = document.getElementById("ContactNo").value;
+    var CrdNo = document.getElementById("CardNO").value;
+    var Nmeoncard = document.getElementById("NameonCard").value;
+    var Expirymonth = document.getElementById("Expiry_Month").value;
+    var Expiryyear = document.getElementById("Expiry_year").value;
+    var Securitycode = document.getElementById("security_code").value;
+
+    var obj = { pemail: Email, pcountry: Country, pfullname: Fullnme, pzip: Zip, pcompeny: Compeny, paddress: Adrs, paddress2: Adrs2, pappartment: Aprt, ptown: Twn, pcontactno: CntctNo, pcardno: CrdNo, pnameoncard: Nmeoncard, pexpmonth: Expirymonth, pexpyear: Expiryyear, psecuritycode: Securitycode };
 
     JobData.push(obj);
     localStorage.setItem("paymentdetails", JSON.stringify(JobData));
-  
 
-  alert(" Your Order has been placed, Explore More ");
-//   location.reload();
-window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
-}
+
+    alert(" Your Order has been placed ");
+    //   location.reload();
+    window.location.href = "./../../An-SkinStore/HomePage/orderplacedpage.html";
+  }
+
+
+  document.querySelector("#Payment-DropdownBtn").addEventListener("click", callPrice);
+    function callPrice() {
+        var x = document.querySelector("#Payment-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Adding from cart >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+    var displayData = JSON.parse(localStorage.getItem("cartdata")) || [] ;
+
+    displayCart() ;
+
+    function displayCart () {
+     
+
+      var run = displayData.map (function ( elem , index ){
+        
+        var outDiv = document.createElement("div");
+
+        var image = document.createElement("img");
+        image.src = elem.img_url;
+        
+        var desDiv = document.createElement("div");
+
+            var desc = document.createElement("p");
+            desc.textContent = elem.name;
+            var quantity = document.createElement("p");
+            quantity.textContent = " Quantity : " + elem.qty ;
+
+            var pricebox = document.createElement("p");
+            pricebox.textContent = " $ " + elem.sellingPrice;
+
+        desDiv.append(desc,quantity, pricebox);
+
+        outDiv.append(image, desDiv);
+
+        document.querySelector("#cartdatainpaymentpage").append(outDiv);
+
+
+
+      })
+
+      document.querySelector("#itemsspan").textContent = displayData.length;
+      localStorage.setItem("totalsavings", 79);
+      localStorage.setItem("totalprice", 579);
+      document.querySelector("#savingvalue").textContent = localStorage.getItem("totalsavings");
+      document.querySelector("#totalamt").textContent = localStorage.getItem("totalprice");
+    }
+
 
 
 </script>
