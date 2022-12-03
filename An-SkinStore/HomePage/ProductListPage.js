@@ -1,7 +1,7 @@
 var amanninave =""
 var Wishlst = localStorage.getItem("wishlist") || [];
 
-localStorage.setItem("username" , amanninave);
+
 var userN = localStorage.getItem("username");
 
 document.querySelector("#userName").textContent = userN;
@@ -114,6 +114,22 @@ function addCart(elem) {
 }
 
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Redirecting form cart  to product page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+function GotoProductpage () {
+    
+    var x = document.querySelector("#AnAccount");
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+    x.style.zIndex = "10";
+
+}
 
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<       Applying Filter to price         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
