@@ -6,16 +6,13 @@ window.addEventListener("load", function(){
     displayData(dataofaddedcart);
 });
 
-
-
-
-
+// displayData(dataofaddedcart);
 var totally_total = 0;
 
-// displayData(dataofaddedcart);
+
 
 function displayData(dataofaddedcart){
-    console.log("eneteredfunction")
+    console.log("eneteredfunction");
     var sub = document.querySelector("#subtotal");
     console.log("check", sub);
     dataofaddedcart.map(function (elem, index){
@@ -102,12 +99,13 @@ function displayData(dataofaddedcart){
         cartdivs.append(imgdiv, desdiv, pricediv, decramtdiv, qtydiv, incramtdiv, ttldiv, crossdiv);
         
         var wishbtn = document.createElement("button");
+        // var heart_img = document.createElement("img");
         wishbtn.textContent =  "Add to Wishlist";
-         
-        // wishbtn.addEventListener("click", function(){
-        //     addToWishlist(index);
-        // })
+        wishbtn.addEventListener("click", function(){
+            addWishlist(elem);
+        });
         wishbtn.classList.add("wish_divs");
+        
 
         var line = document.createElement("hr");
         line.classList.add("linecls");
@@ -190,6 +188,16 @@ function reducePrice(totally_total){
     // console.log("cc", cc);
     
     if(cc.value == "Masai-DNA" ){
+        var save = 0.4 * totally_total;
+       var totally_total = (60/100) * (totally_total);
+        
+        var savings = document.querySelector("#tsaving");
+        savings.textContent = save.toFixed(2);
+        console.log(save);
+        document.querySelector("#subtotal").textContent = totally_total.toFixed(2);
+        // count++;
+        // console.log(typeof(totally_total));
+    }else if(cc.value == "JOY30" ){
         var save = 0.3 * totally_total;
        var totally_total = (70/100) * (totally_total);
         
@@ -199,55 +207,24 @@ function reducePrice(totally_total){
         document.querySelector("#subtotal").textContent = totally_total.toFixed(2);
         // count++;
         // console.log(typeof(totally_total));
-    }else{
+    }else {
         alert("Not valid Coupon");
     }
 }
 
-
-// var datafreegift = [
-//     {
-//         img_url : "https://s1.thcdn.com//productimg/70/70/13349819-1014933208639550.jpg",
-//         name : "Verso- Night Cream with Retinol 8 (Worth $15.00)",
-//         sellingPrice : "0",
-//     },
-//     {
-//         img_url : "https://s1.thcdn.com//productimg/70/70/12932355-9254884444095754.jpg",
-//         name : "NEST Fragrances Bamboo Mini Votive Candle. Worth $6",
-//         sellingPrice : "0",
-//     },
-//     {
-//         img_url : "https://s1.thcdn.com//productimg/70/70/12749763-1764835275242666.jpg",
-//         name : "Erborian Pink Primer & Care - MPP - 5ml. Worth $16",
-//         sellingPrice : "0",
-//     },
-//     {
-//         img_url = "https://s1.thcdn.com//productimg/70/70/13148814-1744978317333738.jpg",
-//         name : "Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)",
-//         sellingPrice : "0",
-//     },
-//     {
-//         img_url : "https://s1.thcdn.com//productimg/70/70/13172028-1614875468446094.jpg";
-//         name : "First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)",
-//         sellingPrice : "0",
-//     },
-//     {
-//         img_url : "https://s1.thcdn.com/productimg/70/70/12063634-1714661296587924.jpg",
-//         name : "Rituals Beauty To Go - Ayurveda Pouch",
-//         sellingPrice : "0",
-//     }
-// ];
+// apply promo joy code 
 
 
-// add to cart function for gifts
-var AddToCart = JSON.parse(localStorage.getItem("cartdata")) || [];
+
+// add to wishlist function
 var rs = -1;
-function addCart(elem) {
-    alert("Item Added to Cart");
+
+function addWishlist(elem) {
+    alert("Item Added to Wishlist");
     location.reload();
     var check = false;
     var idxc = -1;
-    AddToCart.map(function (ele, idx) {
+    wishListItems.map(function (ele, idx) {
 
         if (ele.name == elem.name) {
             check = true;
@@ -261,16 +238,124 @@ function addCart(elem) {
 
     if (check) {
         elem.qty = Number(elem.qty) + Number(1);
-        AddToCart.splice(idxc, 1);
+        wishListItems.splice(idxc, 1);
     } else {
         elem.qty = 1;
     }
 
-    AddToCart.push(elem);
+    wishListItems.push(elem);
 
-    localStorage.setItem("cartdata", JSON.stringify(AddToCart));
-
+    localStorage.setItem("wishlist", JSON.stringify(wishListItems));
     // location.reload();
 
-    console.log(rs);
+   // console.log(rs);
 }
+
+
+// {
+//     name : "By Terry Ombre Blackstar Eye Shadows 1 .64g (Various Shades)",
+//     img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11307158-4054925754510135.jpg",
+//     alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11307161-1564900075517358.jpg", 
+//     color : "black",
+//     strikedoffPrice : "38",
+//     sellingPrice : "26.6",
+//     rating : "4.9",
+//     link : "https://www.skinstore.com/by-terry-ombre-blackstar-eye-shadows-1-.64g-various-shades/11307158.html"
+// },
+var datafreegift = [
+    {
+        img_url : "https://s1.thcdn.com//productimg/70/70/13349819-1014933208639550.jpg",
+        name : "Verso- Night Cream with Retinol 8 (Worth $15.00)",
+        sellingPrice : "0",
+    },
+    {
+        img_url : "https://s1.thcdn.com//productimg/70/70/12932355-9254884444095754.jpg",
+        name : "NEST Fragrances Bamboo Mini Votive Candle. Worth $6",
+        sellingPrice : "0",
+    },
+    {
+        img_url : "https://s1.thcdn.com//productimg/70/70/12749763-1764835275242666.jpg",
+        name : "Erborian Pink Primer & Care - MPP - 5ml. Worth $16",
+        sellingPrice : "0",
+    },
+    {
+        img_url : "https://s1.thcdn.com//productimg/70/70/13148814-1744978317333738.jpg",
+        name : "Replenix Brightening Eye Cream 0.25 fl. oz (Worth $12.75)",
+        sellingPrice : "0",
+    },
+    {
+        img_url : "https://s1.thcdn.com//productimg/70/70/13172028-1614875468446094.jpg",
+        name : "First Aid Beauty Face Cleanser 28.3 g (Worth $7.00)",
+        sellingPrice : "0",
+    },
+    {
+        img_url : "https://s1.thcdn.com/productimg/70/70/12063634-1714661296587924.jpg",
+        name : "Rituals Beauty To Go - Ayurveda Pouch",
+        sellingPrice : "0",
+    }
+];
+
+// add to cart function for gifts
+var giftcounter = 0;
+function press(){
+    if(totally_total > 130 ){
+        var txt = document.querySelector("#availgifts button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+function press1(){
+    if(totally_total > 260 ){
+        var txt = document.querySelector("#availgifts + div button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+function press2(){
+    if(totally_total > 390){
+        var txt = document.querySelector("#availgifts + div + div button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+function press3(){
+    if(totally_total > 520){
+        var txt = document.querySelector("#availgifts  + div + div + div button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+        document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+function press4(){
+    if(totally_total > 650){
+        var txt = document.querySelector("#availgifts  + div + div + div + div button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+function press5(){
+    if(totally_total > 870){
+        var txt = document.querySelector("#availgifts  + div + div + div + div + div button");
+        txt.style.backgroundColor = "green";
+        txt.style.color = "white";
+        giftcounter++;
+document.querySelector("#giftnumber").textContent = giftcounter;
+    }
+}
+
+
+
