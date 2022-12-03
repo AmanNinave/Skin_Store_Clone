@@ -12,6 +12,7 @@
     /* overflow: hidden; */
     /* background-color: red; */
 }
+
 .cart_divs{
     width: 98%;
     display: flex;
@@ -33,14 +34,14 @@
     font-size: larger;
 }
 .p_cls{
-    width: 180px;
     /* border: 1px solid brown; */
-    width: 260px;
+    width: 200px;
     margin-top: 15px;
     /* font-weight: bold; */
 }
 .cart_divs div{
     border: 0px solid black;
+
 }
 .sp_cls{
     width: 80px;
@@ -63,7 +64,7 @@
 .q_cls{
     width: 30px;
     margin-top: 15px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     text-align: center;
 }
 .inc_cls{
@@ -85,4 +86,28 @@
     background-color: rgb(234, 59, 59);
     border: none;
     color: aliceblue;
+}
+.cross_cls:hover{
+    background-color: rgb(71, 3, 3);
+    color: white;
+}
+.wish_divs{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 200px;
+    margin-left: 170px;
+    font-weight: 400;
+    font-size: larger;
+    color: white;
+    background-color: rgb(47, 41, 43);
+    border-radius: 5px;
+    border: none;
+}
+.wish_divs:hover{
+    background-color : rgb(58,130,158);
+    color: wheat;
+}
+
+.linecls{
+    margin-top: 8px;
 }
