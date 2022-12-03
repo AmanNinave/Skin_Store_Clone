@@ -1,10 +1,3 @@
-var amanninave =""
-var Wishlst = localStorage.getItem("wishlist") || [];
-
-
-var userN = localStorage.getItem("username");
-
-document.querySelector("#userName").textContent = userN;
 
 
 
@@ -76,10 +69,9 @@ function orgImage(aama,baba) {
 
 var AddToCart = JSON.parse(localStorage.getItem("cartdata")) || [];
 
-// var MCart = JSON.parse(localStorage.getItem("MWCart")) || [];
-
 
 var rs = -1;
+
 function addCart(elem) {
     alert("Item Added to Cart");
     location.reload();
@@ -108,10 +100,48 @@ function addCart(elem) {
 
     localStorage.setItem("cartdata", JSON.stringify(AddToCart));
 
-    // location.reload();
+    location.reload();
 
-    console.log(rs);
+   // console.log(rs);
 }
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ---Used this below data for testing -- ?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+// var AddtoCart = JSON.parse(localStorage.getItem("cartdata")) || [] ;
+
+// function addCart(elem) {
+//     alert("Item Added to Cart");
+//         location. reload();
+//         var check = false;
+//         var idxc = -1;
+
+//         AddtoCart.map(function (ele, idx) {
+    
+//           if (ele.name == elem.name) {
+//             check = true;
+//             idxc = idx;
+//           }
+    
+//         });
+    
+//         if (check) {
+//           elem.qty = Number(elem.qty) + Number(1);
+//           AddtoCart.splice(idxc, 1);
+//         } else {
+//           elem.qty = 1;
+//         }
+    
+//         AddtoCart.push(elem);
+    
+//         localStorage.setItem("cartdata", JSON.stringify(AddtoCart));
+       
+//         location. reload();
+//         //console.log("aman");
+//       }
+    
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ---Used this Above data for testing -- ?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Redirecting form cart  to product page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
