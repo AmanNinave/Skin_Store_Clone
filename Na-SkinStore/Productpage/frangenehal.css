@@ -1,0 +1,210 @@
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---General section------>>>>>>>>>>>>>>>>>>>> */
+* {
+    margin: 0px;
+    /* font-family: sans-serif; */
+    /* cursor: pointer; */
+  }
+  #container {
+    padding: 20px 0px 20px 0px;
+    /* margin: auto; */
+  }
+  /* div {
+      border: 1px solid black;
+    } */
+  button {
+    border: none;
+  }
+  #container > div > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----macekupShop section----->>>>>>>>>>>>>>>> */
+  #macekupShop {
+    display: flex;
+    /* border: 1px dashed green; */
+    grid-template-columns: repeat(6, 1fr);
+    width: 97%;
+    margin: auto;
+    cursor: pointer;
+  }
+  #macekupShop img {
+    width: 80%;
+    cursor: pointer;
+  }
+  #macekupShop > div > h2 {
+    text-align: center;
+  }
+  
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----Na-MackupShop section----->>>>>>>>>>>>>>>> */
+  #Na-MackupShop {
+    display: flex;
+    /* border: 1px dashed black; */
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  #Na-MackupShop > div {
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: 10px;
+  }
+  #Na-MackupShop > div > p {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #Na-MackupShop > div > img {
+    width: 350px;
+    /* background-color: red; */
+    height: 350px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #Na-MackupShop > div > div > button {
+    background-color: white;
+    padding: 13px;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+  #Na-MackupShop > div > div > button:hover {
+    background-color: rgb(213, 237, 237);
+    cursor: pointer;
+  }
+
+
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----Eye-tools section ----->>>>>>>>>>>>>>>> */
+#Eye-tools {
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-evenly;
+    padding: 13px;
+    margin-top: 20px;
+    width: 97.5%;
+    font-family: sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  #Eye-tools > button {
+    width: 20%;
+    height: 45px;
+    border: none;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  #Eye-tools > button:hover {
+    background-color: rgb(143, 140, 140);
+    cursor: pointer;
+  }
+  
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----Best-Sellers section---->>>>>>>>>>>>>>>>>> */
+  
+  #Best-Sellers {
+    display: flex;
+    /* border: 1px dashed black; */
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  #Best-Sellers > div {
+    /* border: 1px dashed black; */
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #Best-Sellers > div > h2 {
+    text-align: center;
+    background-color: red;
+  }
+  #Best-Sellers > div > img {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    /* height: 60%; */
+    margin: auto;
+    cursor: pointer;
+  }
+  #Best-Sellers > div > div > button {
+    padding: 10px;
+    width: 100%;
+    border: 0px;
+    background-color: rgb(10, 2, 2);
+    color: white;
+  }
+  #Best-Sellers > div > div > button:hover {
+    background-color: rgb(5, 141, 141);
+    color: black;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #Best-Sellers > div > h3 {
+    margin-bottom: 10px;
+  }
+  #Best-Sellers > div > p {
+    margin-bottom: 5px;
+  }
+  
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----Na-BlogShop section----->>>>>>>>>>>>>>>>>> */
+  #Na-BlogShop {
+    display: flex;
+    /* border: 1px dashed green; */
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    cursor: pointer;
+  }
+  #Na-BlogShop > div {
+    /* border: 1px solid red; */
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+  #Na-BlogShop > div > img {
+    width: 350px;
+    height: 350px;
+    /* margin: auto; */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  #Na-BlogShop > div > div > button {
+    background-color: white;
+    padding: 13px;
+    /* margin: auto; */
+    border: 1px solid black;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+  }
+  #Na-BlogShop > div > div > button:hover {
+    background-color: rgb(213, 237, 237);
+    cursor: pointer;
+  }
+  #Na-BlogShop > div > p {
+    margin-top: 10px;
+  }
+  
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----MakeUp-captions section----->>>>>>>>>>>>>>>> */
+  #MakeUp-captions {
+    width: 96.5%;
+    padding: 0px 20px 0px 20px;
+  }
+  #MakeUp-captions > h1 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  #MakeUp-captions > p {
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    font-weight: normal;
+  }
+  

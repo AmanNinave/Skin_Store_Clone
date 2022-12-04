@@ -12,8 +12,12 @@
     </style>
     <link rel="stylesheet" href="productpage.css" />
     <script src="https://kit.fontawesome.com/99963d12d2.js" crossorigin="anonymous"></script>
+  
     <script>
-      var amanninave = "Aman"
+    
+      var Wishlst = localStorage.getItem("wishlist") || [];
+      var amanninave = ""
+  
       localStorage.setItem("username" , amanninave);
       var userN = localStorage.getItem("username");
   
@@ -22,11 +26,16 @@
   
       // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   
-      // for Home page
-      document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+       // for Home page
+       document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
       function BackToHome() {
-          window.location.href = "Afterlogin.html";
+          if (userN == "") {
+              window.location.href = "index.html";
+          } else {
+              window.location.href = "Afterlogin.html";
+          }
       }
+  
   
       // for cart page 
       document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
@@ -36,8 +45,8 @@
   
       // for login page 
       document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
-      function GoLogin() {
-          window.location.href = "./logout.html";
+      function GoLogin(){
+          window.location.href="./../../As-SkinStore/final_product_page/login.html";
       }
   
       // for Register page 
@@ -49,7 +58,17 @@
       // for Wishlist page
       document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
       function GoWishlist() {
-          window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+          if(Wishlst.length == 0){
+              
+              window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+              
+          }else{
+              
+              window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+              
+          }
+          
+          
       }
   
       //For Your orders page        NOt made
@@ -65,18 +84,18 @@
           window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
       }
   
-      //For Hair Page
-      document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click", GoHair);
-  
-      function GoHair() {
-          window.location.href = "./../../Na-SkinStore/Productpage/hair.html";
+       //For Hair Page
+       document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
+      
+      function GoHair(){
+          window.location.href="./../../Na-SkinStore/Productpage/hair.html";
       }
   
       //For MakeUp page
-      document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click", GoMakeUP);
-  
-      function GoMakeUP() {
-          window.location.href = "./../../Na-SkinStore/Productpage/makeup.html";
+      document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
+      
+      function GoMakeUP(){
+          window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
       }
   
       //From Search to product page for Skin medica
@@ -101,7 +120,7 @@
               x.style.display = "none";
           }
   
-          ANAccount.style.zIndex = "10";
+          x.style.zIndex = "10";
   
       }
   
@@ -109,6 +128,7 @@
   </script>
   </head>
   <body>
+   
     <div id="ANParent">
       <div id="TopHeader">
           <header id="MainSec">
