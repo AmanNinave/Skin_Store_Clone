@@ -77,8 +77,22 @@ function addProductLL(){
 
     alert("\" "+ selectedObj[0].name + " \"   is added to the cart!!")
 
-    var cartll = JSON.parse( localStorage.getItem("cartdata")) || []
-    cartll.push(selectedObj[0])
+    var cartll = JSON.parse( localStorage.getItem("cartdata")) || [] ;
+    
+    var check = false;
+    cartll.map(function (ele, idx) {
+
+        if (ele.name == selectedObj[0].name) {
+            check = true;
+            
+        }
+
+    });
+
+    if(!check){
+        cartll.push(selectedObj[0])
+    }
+    
     
     localStorage.setItem("cartdata" , JSON.stringify(cartll))
 
@@ -101,8 +115,25 @@ function addWishlistLL(){
     console.log(selectedObj[0])
     alert("\" " +selectedObj[0].name +" \"   is added to your WishList!!")
 
-    var wishlistll = JSON.parse( localStorage.getItem("wishlist")) || []
-    wishlistll.push(selectedObj[0])
+    var wishlistll = JSON.parse( localStorage.getItem("wishlist")) || [] ;
+
+    var check = false;
+    wishlistll.map(function (ele, idx) {
+
+        if (ele.name == selectedObj[0].name) {
+            check = true;
+            
+        }
+
+    });
+
+    if(!check){
+        wishlistll.push(selectedObj[0])
+    }
+
+
+
+    
 
     localStorage.setItem("wishlist" , JSON.stringify(wishlistll))
 }
