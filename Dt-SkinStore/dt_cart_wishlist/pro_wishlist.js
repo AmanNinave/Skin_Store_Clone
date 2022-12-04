@@ -6,7 +6,7 @@
 // button (add to cart)
 
 var wishList_Items = JSON.parse(localStorage.getItem("wishlist")) || [];
-console.log("q123");
+// console.log("q123");
 // window.addEventListener("load", function(){
 //     displayWishes(wishList_Items);
 // });
@@ -19,7 +19,7 @@ function displayWishes(volvo){
     document.getElementById("display").textContent = "";
     volvo.map(function (elem, index){
         totalCount++;
-        console.log(totalCount);
+        // console.log(totalCount);
 
         var wishdivs = document.createElement("div"); 
         wishdivs.classList.add("wish_divs");    
@@ -57,11 +57,7 @@ function displayWishes(volvo){
         price.classList.add("w_ssp_cls");
         pricediv.append(price);
 
-        // var qtydiv = document.createElement("div");
-        // var qty = document.createElement("p");
-        // qty.textContent = Number(1);
-        // qty.classList.add("q_cls");
-        // // qtydiv.append(qty);
+
         var add_div = document.createElement("div");
         var place = document.createElement("button");      
         place.textContent = "Add To Cart";
@@ -137,19 +133,20 @@ function sortName() {
    
 
     if (temp == "opel") {
+      console.log("12");
         wishList_Items.sort(function (a, b) {
         if (a.name > b.name) { return 1; }
         if (a.name < b.name) { return -1; }
         else { return 0; };
-
+       
       })
-
+      displayWishes(wishList_Items);
     } else if (temp == "d") {
 
       location.reload();
     }
-
-    displayWishes(wishList_Items);
+   
+   
 
 }
 
