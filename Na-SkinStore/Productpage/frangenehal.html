@@ -168,7 +168,7 @@
             Here’s a list of the scents that you and your loved ones can smell
             amazing through the holidays and beyond.
           </p>
-          <div><button>READ MORE</button></div>
+          <div><button>SHOP NOW</button></div>
         </div>
         <div>
           <img
@@ -181,7 +181,7 @@
             destination for all things beauty, including gorgeous fragrances and
             calming home scents.
           </p>
-          <div><button>READ MORE</button></div>
+          <div><button  id="BrandBox" >SHOP NOW</button></div>
         </div>
         <div>
           <img
@@ -195,7 +195,7 @@
             as your drift off into a deep slumber.
           </p>
 
-          <div><button>READ MORE</button></div>
+          <div><button>SHOP NOW</button></div>
         </div>
       </div>
     </div>
@@ -474,6 +474,13 @@
 
  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //For Fragrance Page   shopnow button 
+    document.querySelector("#BrandBox").addEventListener("click" , GoToFragrance);
+    
+    function GoToFragrance(){
+        window.location.href="./../../An-SkinStore/HomePage/fragrancepage.html";
+    }
+    
 
   //From Search to product page for Skin medica
   document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
