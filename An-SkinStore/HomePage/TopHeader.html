@@ -308,7 +308,7 @@
 
 <script>
     
-    var Wishlst = localStorage.getItem("wishlist") || [];
+    var Wishlst = JSON.parse( localStorage.getItem("wishlist") ) || [];
     var amanninave = ""
 
     var userN = localStorage.getItem("username");
