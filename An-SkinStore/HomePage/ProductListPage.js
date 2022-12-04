@@ -5,7 +5,7 @@ displayData(arr);
 
 function displayData(showdata) {
 
-    showdata.map(function (elem) {
+    showdata.map(function (elem, index) {
 
         var skbox = document.createElement("div");
 
@@ -16,6 +16,9 @@ function displayData(showdata) {
         });
         imgage.addEventListener("mouseout", function () {
             orgImage(elem.img_url,imgage);
+        });
+        imgage.addEventListener("click", function () {
+            GotoAsproduct(elem,index);
         });
 
         var namebox = document.createElement("div");
@@ -473,3 +476,72 @@ function sortName() {
     displayData(arr);
   }
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Fro redirecting to productpage >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+var STfinalPpage = [
+    {    
+    name : "SkinMedica TNS Advanced+ Serum 1oz",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-3594871019700125.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-7834775946032493.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "295"  ,
+    sellingPrice : "236" ,
+    Category : "Serum" ,
+    rating :  "4.7",
+    link : "https://www.skinstore.com/skinmedica-tns-advanced-serum-1oz/12596429.html"
+        },
+
+    {   name : "SkinMedica LYTERA 2.0 Pigment Correcting Serum and Retinol Complex 0.5 (Worth $231)",
+    img_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-6204494372463164.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-1364494372613290.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "226.5"  ,
+    sellingPrice : "181.2" ,
+    Category : "Serum" ,
+    rating :  "2.8",
+    link : "https://www.skinstore.com/skinmedica-lytera-2.0-pigment-correcting-serum-and-retinol-complex-0.5/11492784.html"
+        },
+
+    {   name : "SkinMedica TNS Eye Repair (0.5oz)",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289683-2074871019620370.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289683-1424866649587504.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "106"  ,
+    sellingPrice : "84.4" ,
+    Category : "Eyecare" ,
+    rating :  "3.5",
+    link : "https://www.skinstore.com/skinmedica-tns-eye-repair/11289683.html"
+        },
+        
+    {   name : "SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-7504876690381737.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "48"  ,
+    sellingPrice : "38.4" ,
+    Category : "Exfoliator" ,
+    rating :  "4.8",
+    link : "https://www.skinstore.com/skinmedica-aha-bha-exfoliating-cleanser/11289657.html"
+        }
+]
+
+
+
+function  GotoAsproduct(elem,index) {
+
+    
+            if( STfinalPpage[0].name == elem.name ){
+                window.location.href = "./../../As-SkinStore/final_product_page/final_product_page.html";
+            }
+            if(STfinalPpage[1].name == elem.name){
+                window.location.href = "./../../As-SkinStore/final_product_page/final_product_page.html";
+            }
+            if(STfinalPpage[2].name == elem.name){
+                window.location.href = "./../../As-SkinStore/final_product_page/final_product_page.html";
+            }
+            if(STfinalPpage[3].name == elem.name){
+                window.location.href = "./../../As-SkinStore/final_product_page/final_product_page_bha.html";
+            }
+            
+    
+}

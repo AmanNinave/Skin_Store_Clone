@@ -11,6 +11,17 @@ Moisturizer - 5
 */
 
 var arr = [ 
+    {   name : "SkinMedica TNS Advanced+ Serum 1oz",
+    img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-3594871019700125.jpg",
+    alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-7834775946032493.jpg",
+    gift : "20% off + $135 SkinMedica Gift",
+    StrikedoffPrice :  "295"  ,
+    sellingPrice : "236" ,
+    Category : "Serum" ,
+    rating :  "4.7",
+    link : "https://www.skinstore.com/skinmedica-tns-advanced-serum-1oz/12596429.html"
+    },
+
     {   name : "SkinMedica LYTERA 2.0 Pigment Correcting Serum and Retinol Complex 0.5 (Worth $231)",
     img_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-6204494372463164.jpg",
     alt_url : "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11492784-1364494372613290.jpg",
@@ -133,16 +144,7 @@ var arr = [
         rating :  "2.4",
         link : "https://www.skinstore.com/skinmedica-ha5-rejuvenating-hydrator-and-ha5-smooth-and-plump-lip-system/11492786.html"
     },
-    {   name : "SkinMedica TNS Advanced+ Serum 1oz",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-3594871019700125.jpg",
-        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-7834775946032493.jpg",
-        gift : "20% off + $135 SkinMedica Gift",
-        StrikedoffPrice :  "295"  ,
-        sellingPrice : "236" ,
-        Category : "Serum" ,
-        rating :  "4.7",
-        link : "https://www.skinstore.com/skinmedica-tns-advanced-serum-1oz/12596429.html"
-    },
+   
     {   name : "SkinMedica HA5 Rejuvenating Hydrator",
         img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290631-5864870995720591.jpg",
         alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290631-2134870995771630.jpg",
