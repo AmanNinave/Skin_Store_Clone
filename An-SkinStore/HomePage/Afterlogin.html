@@ -472,6 +472,58 @@
                 <p>Clean Bath & Body</p>
             </div>
         </div>
+
+        <div class="hair_containe">
+            <div>
+              <hr />
+              <h3>Popular Categories</h3>
+              <p>View All Hair Care</p>
+              <p>New In</p>
+              <p>Clean Hair Care</p>
+              <p>5* Rated Products</p>
+              <p>Gifts & Sets</p>
+              <p>Travel Sizes</p>
+              <p>Supersize & Duos</p>
+            </div>
+            <div>
+              <hr />
+              <h3>Product Type</h3>
+              <p>Shampoo</p>
+              <p>Conditioners</p>
+              <p>Hair Treatments</p>
+              <p>Hair Masks</p>
+              <p>Hair Oils</p>
+              <p>Hair Sprays</p>
+              <p>Hair Styling</p>
+              <p>Hair Thinning & Loss</p>
+              <p>Hair Color Treatments</p>
+              <p>Hair Supplements</p>
+              <p>Hair Brushes & Combs</p>
+            </div>
+            <div>
+              <hr />
+              <h3>Hair Type</h3>
+              <p>Anti-Dandruff & Scalp Care</p>
+              <p>Coarse & Textured Hair</p>
+              <p>Colored Hair</p>
+              <p>Curly & Wavy Hair</p>
+              <p>Damaged Hair</p>
+              <p>Dry Hair</p>
+              <p>Fine Hair</p>
+              <p>Oily Hair</p>
+            </div>
+            <div>
+              <hr />
+              <h3>Electrical</h3>
+              <p>Flat Irons</p>
+              <p>Hair Dryers</p>
+              <p>Rollers & Curling Tongs</p>
+              <p>Hair Removal</p>
+              <p>Hair Removal Devices</p>
+              <p>Hair Removal Products</p>
+              <p>Men's Shaving Products</p>
+            </div>
+          </div>
 <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Top header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
         <div id="other">
@@ -843,7 +895,7 @@
 <script>
 
 var amanninave =""
-var Wishlst = localStorage.getItem("wishlist") || [];
+var Wishlst = JSON.parse( localStorage.getItem("wishlist")) || [];
 
 
 var userN = localStorage.getItem("username");
@@ -1166,6 +1218,26 @@ document.querySelector("#userName").textContent = userN;
         
     }
 
+   
+
+    document.querySelector("#TopNav > button:nth-child(4)").addEventListener("mouseover", keho3);
+
+function keho3() {
+    
+    var shw = document.querySelector(".hair_containe");
+    shw.classList.remove("hair_containe");
+    shw.classList.add("hair_container");
+    
+}
+
+document.querySelector("#TopNav > button:nth-child(4)").addEventListener("mouseout", akeho4);
+
+function akeho4() {
+    var shw = document.querySelector(".hair_container");
+    shw.classList.remove("hair_container");
+    shw.classList.add("hair_containe");
+    
+}
 
 
 

@@ -306,6 +306,40 @@
             display: none;
         }
 
+
+        .hair_container {
+            display: flex;
+             justify-content: space-evenly;
+             font-family: sans-serif;
+             font-weight: lighter;
+            
+             z-index: 4;
+             background-color: white;
+             position: fixed;
+             height: fit-content;
+             margin-left: 20px;
+             width: 85%;
+             overflow: hidden;
+         }
+ 
+ 
+         .hair_container h3 {
+             margin: 10px;
+             font-size: 17px;
+         }
+ 
+         .hair_container p {
+             margin: 10px;
+         }
+ 
+         .hair_container div {
+             width: 20%;
+         }
+ 
+         .hair_containe {
+             
+             display: none;
+         }
         
 
 
