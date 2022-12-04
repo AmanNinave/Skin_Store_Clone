@@ -239,6 +239,10 @@
     margin-left: 20px;
  }
 
+ #NavigationTop a {
+    text-decoration: none;
+ }
+
  /* <<<<<<<<<<<<<---------------- Top Navigation ------------------------------>>>>>>>>>> */
 
  #PlistBox-MainBody {
