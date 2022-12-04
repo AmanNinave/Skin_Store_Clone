@@ -1,0 +1,517 @@
+
+
+
+    * {
+        margin: 0px;
+        font-family: sans-serif;
+        padding: 0px;
+    }
+
+    div {
+        border: 0px solid;
+    }
+
+    #ANParent {
+
+        /* border: 1px solid; */
+        width: 100%;
+    }
+
+
+    /* <<<<<<<<<<<<<----------------Main Section Top ------------------------------>>>>>>>>>> */
+
+    #TopHeader {
+        overflow: hidden;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        margin-top: -10px;
+        z-index: 3;
+    }
+
+    #TopHeader+div {
+        height: 170px;
+    }
+
+
+    #MainSec {
+        display: flex;
+        justify-content: space-between;
+        height: 105px;
+        border: 1px solid;
+        width: 100%;
+    }
+
+    #MainSec>div:first-child {
+        width: 16%;
+        margin-left: 33px;
+
+    }
+
+    #MainSec>div:first-child>h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 15px;
+
+    }
+
+    #MainSec>div:first-child>p {
+        text-align: center;
+        font-size: 12.8px;
+
+    }
+
+
+    #MainSec>div:first-child>p>span {
+        font-weight: 700;
+
+    }
+
+    #MainSec>div:nth-child(2) {
+        width: 40%;
+        padding-top: 34px;
+        margin: 0px 15%;
+        margin-left: 13%;
+        display: flex;
+
+    }
+
+    #MainSec>div:nth-child(2)>input {
+        width: 98%;
+        height: 38px;
+
+    }
+
+    #MainSec>div:nth-child(2)>img {
+        width: 33px;
+        height: 32px;
+        /* border: 1px solid; */
+        margin-left: -39px;
+        margin-top: 5px;
+    }
+
+    #MainSec>div:nth-child(3) {
+        width: 9%;
+        padding-top: 35px;
+        margin-right: 0%;
+
+    }
+
+    #MainSec>div:nth-child(3)>button {
+        width: 100%;
+        height: 35px;
+        font-size: 19px;
+        border: none;
+        background-color: white;
+        color: rgb(219, 32, 32);
+        font-weight: 545;
+    }
+
+    #MainSec>div:nth-child(3)>button:hover {
+        background-color: rgba(235, 226, 226, 0.418);
+    }
+
+    #MainSec>div:nth-child(4) {
+        width: 9%;
+        padding-top: 35px;
+        margin-right: 45px;
+    }
+
+    #MainSec>div:nth-child(4)>button {
+        width: 100%;
+        height: 35px;
+        font-size: 19px;
+        padding-left: 18px;
+        border: none;
+        background-color: white;
+        color: rgb(219, 32, 32);
+        font-weight: 545;
+    }
+
+    #MainSec>div:nth-child(4)>button:hover {
+        background-color: rgba(235, 226, 226, 0.418);
+    }
+
+    #MainSec>div:nth-child(4)>button>img {
+        height: 20px;
+        width: 20px;
+    }
+
+    #TopHeader>hr {
+        border: 1px solid;
+    }
+
+    #AnAccount {
+        z-index: 1;
+        width: 300px;
+        
+        border: 0px solid green;
+        margin-bottom: 30px;
+        margin-top: -38px;
+        margin-left: 66.5%;
+        position: fixed;
+        overflow: hidden;
+        display: none;
+        height: fit-content;
+    }
+
+    #AnAccount>div:first-child {
+        background-color: grey;
+        padding: 5px;
+        border: brown;
+    }
+
+    #AnAccount>div:first-child>button {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        padding: 15px;
+        border: 1px solid teal;
+        /* margin: 5px 0px 5px 0px; */
+    }
+
+
+    #AnAccount>div:last-child>button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        border: 1px solid grey;
+        margin-top: 5px;
+        margin: 5px 10px 5px 0px;
+    }
+
+    #AnAccount>div>button:hover {
+        background-color: brown;
+        color: white;
+    }
+
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    #TopNav {
+        border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+
+        padding-left: 16px;
+        height: 36px;
+
+    }
+
+    #TopNav>button {
+        height: 35px;
+        padding: 5px 12px;
+        font-size: 14.2px;
+        font-weight: 300;
+        padding-top: px;
+        padding-bottom: 6px;
+        border: none;
+        color: gray;
+        background-color: white;
+    }
+
+    #TopNav>button:hover {
+        background-color: black;
+    }
+
+/* <<<<<<<<<<<<<---------------- Top Header Navigation from index.html------------------------------>>>>>>>>>> */
+
+
+
+* {
+    font-family: sans-serif;
+}
+
+
+#dummy-Space {
+    width: 100%;
+    height: 320px;
+}
+ /* <<<<<<<<<<<<<---------------- Top Navigation ------------------------------>>>>>>>>>> */
+
+
+ #NavigationTop {
+    border: 0px solid;
+    margin-top: -165px;
+    margin-left: 20px;
+ }
+
+ /* <<<<<<<<<<<<<---------------- Top Navigation ------------------------------>>>>>>>>>> */
+
+ #PlistBox-MainBody {
+    display: flex;
+    justify-content: space-evenly;
+   background-color:  rgba(226, 207, 207, 0.178);
+   padding: 10px 0px 10px 0px;
+   
+ }
+
+ #Navgication-Section {
+    border: 1px solid thistle;
+    width: 22%;
+    padding: 10px;
+    background-color: white;
+    height: fit-content;
+    /* z-index: 0; */
+    position: sticky;
+    top: 155px;
+ }
+
+ #Navgication-Section > div:first-child {
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ #Navgication-Section > div >h2 {
+    padding-left: 10px;
+    color: grey;
+    height:40px;
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 10px;
+ }
+ 
+ #Navgication-Section > div:first-child  {
+    border-bottom: 1px solid grey;
+
+ }
+ 
+ #Navgication-Section > div:nth-child(2) {
+    background-color: gray;
+
+ }
+
+ #Price-DropdownBtn , #SkincareProuductsBtn,#SkinConsernBtn , #IngredinetsBtn ,#SavingsBtn, #RatingBtn {
+        width: 100%;
+        
+        font-size: 20px;
+        text-align: left;
+        border:0px solid ;
+        border-bottom: 1px solid grey;
+        display: flex;
+        padding: 0.9rem;
+        justify-content: space-between;
+        background-color: white;
+
+ }
+
+ /* .select-group {
+    position: relative;
+ } */
+
+ #Price-DropdownBtn > div ,  #SkincareProuductsBtn > div , #SkinConsernBtn > div, #IngredinetsBtn > div, #SavingsBtn > div, #RatingBtn > div{
+    border: solid black;
+    border-width: 0px 2px 2px 0px;
+    padding: 4px;
+    transform: rotate(45deg);
+    overflow: hidden;
+ }
+
+ #Price-Dropdown,  #Rating-Dropdown, #Savings-Dropdown,#Ingredients-Dropdown,#SkinConsern-Dropdown,#Skincare-Dropdown{
+    width: 100%;
+    /* padding: 5px; */
+    box-sizing: border-box;
+    border: 2px solid #d3d9f0;
+    border-radius: 0.3rem;
+    /* position: relative; */
+    display: none;
+ }
+
+ #Price-Dropdown > button  , #Rating-Dropdown > button , #Savings-Dropdown > button, #Ingredients-Dropdown > button, #SkinConsern-Dropdown > button ,#Skincare-Dropdown > button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 7px;
+    background-color: white;
+    border: none;
+    color: teal;
+    font-size: 16px;
+ }
+ #Price-Dropdown > button > label {
+    font-size: 16px;
+ }
+
+ #-p30-50 {
+    background-color: brown;
+ }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------Product Display Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#ProductsDisplaySec {
+    background-color: white;
+   
+    width: 72%;
+}
+
+#ProductsDisplaySec > div:nth-child(1) > h1 {
+ text-align: center;
+ /* background-color: ); */
+ font-family: sans-serif;
+ font-weight: 450;
+ font-size: 35px;
+ margin: 20px;
+}
+
+#ProductsDisplaySec > div:nth-child(1) > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ProductsDisplaySec > div:nth-child(1) > div > button {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid rgb(31, 24, 24);
+    color: rgb(34, 25, 25);
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#SelectSortDiv >label {
+   color: rgb(34, 26, 26);
+ }
+
+ #SortingProductsAn {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    color: rgb(54, 47, 47);
+    border: 1px solid grey;
+    
+    margin-top: 20px;
+    z-index: 2;
+ }
+
+ 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------Product info  Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+#ProductsDisplayGrid {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 0px solid;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#ProductsDisplayGrid > div {
+    border: 0px solid;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding: 5px; */
+}
+
+#ProductsDisplayGrid > div > img {
+    width: 100%;
+    height: 300px;
+}
+
+#ProductsDisplayGrid > div > img + div {
+    height: 60px;
+    /* background-color: rgb(255, 94, 0); */
+    
+}
+
+#ProductsDisplayGrid > div > img + div > h4{
+    height: 60px;
+    /* background-color: blue; */
+    font-weight: 547;
+    
+}
+
+#ProductsDisplayGrid > div > p {
+    color: teal;
+}
+
+#ProductsDisplayGrid > div > p + div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#ProductsDisplayGrid > div > p + div > p:first-child {
+    text-decoration: line-through;
+}
+
+#ProductsDisplayGrid > div > p + div > p:last-child {
+    font-size: 20px;
+    font-weight: 546;
+}
+
+#ProductsDisplayGrid > div > p + div + button {
+   width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------Product info  Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+#ProductsInfoSec {
+   margin: 15px;
+   border: 0px solid;
+   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+   padding: 15px;
+   
+}
+
+#ProductsInfoSec > h4 {
+     color: rgb(14, 39, 39);
+     font-weight: 550;
+     margin: 15px 0px;
+}
+
+#ProductsInfoSec > p {
+  color: rgb(28, 46, 28);
+  font-weight: 10;
+  font-size: 12px;
+  margin: 10px 10px;
+}
+
+#justforspace {
+  background-color: rgba(226, 207, 207, 0.178);
+  width: 100%;
+  height: 10px;
+}
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------Fotter space Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+footer {
+  
+    width: 99%;
+    height: 670px;
+    border: 0px solid;
+   /* margin: auto; */
+   margin-left: 8.5px;
+  
+   margin-top: 10px;
+   box-sizing: border-box;
+}
+
+
+#BottomFoot {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px ;
+}

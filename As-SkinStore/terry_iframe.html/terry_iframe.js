@@ -11,7 +11,7 @@
 
 // console.log(arr) YES able to  access arr
 
-var container = document.querySelector("#terry_container")
+var container = document.querySelector("#ProductsDisplayGrid")
 
 arr.forEach(elem => {
     var tcard = document.createElement("div")

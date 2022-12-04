@@ -22,6 +22,16 @@ var arr = [
         link : "https://www.skinstore.com/by-terry-ombre-blackstar-eye-shadows-1-.64g-various-shades/11307158.html"
     },
     {
+        name : "By Terry Hyaluronic Hydra Foundation 1 oz (Various Shades)",
+        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1004749452253981.jpg",
+        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1034749452359392.jpg", 
+        color : "black",
+        strikedoffPrice : "59",
+        sellingPrice : "41.3",
+        rating : "5",
+        link : "https://www.skinstore.com/by-terry-hyaluronic-hydra-foundation-1-oz-various-shades/12734195.html"
+    },
+    {
         name : "By Terry Terrybly Mascara 8ml (Various Shades)",
         img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11306998-2114934822977206.jpg",
         alt_url : "https://static.thcdn.com/images/small/webp//productimg/130/130/11306998-6274934822500413.jpg", 
@@ -222,16 +232,6 @@ var arr = [
         sellingPrice : "30.8",
         rating : "2.4",
         link : "https://www.skinstore.com/by-terry-terryfic-glow-stunning-eyes-cracker/13882305.html"
-    },
-    {
-        name : "By Terry Hyaluronic Hydra Foundation 1 oz (Various Shades)",
-        img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1004749452253981.jpg",
-        alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1034749452359392.jpg", 
-        color : "black",
-        strikedoffPrice : "59",
-        sellingPrice : "41.3",
-        rating : "5",
-        link : "https://www.skinstore.com/by-terry-hyaluronic-hydra-foundation-1-oz-various-shades/12734195.html"
     },
     {
         name : "By Terry Terryfic Glow Baume De Rose Lip Care Essentials",
