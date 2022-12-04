@@ -700,3 +700,126 @@
     
 </body>
 </html>
+
+<!--script for header -->
+<script>
+    
+    var Wishlst = JSON.parse(localStorage.getItem("wishlist")) || [];
+    var amanninave = ""
+
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     // for Home page
+     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+    function BackToHome() {
+        if (userN == "") {
+            window.location.href = "index.html";
+        } else {
+            window.location.href = "Afterlogin.html";
+        }
+    }
+
+
+    // for cart page 
+    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
+
+    var CartValue =JSON.parse( localStorage.getItem("cartdata") ) || [] ;
+    function Gocart() {
+        if(CartValue.length == 0){
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptycart.html";
+        }else{
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
+        }
+        
+    }
+
+    // for login page 
+    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
+    function GoLogin(){
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
+    }
+
+    // for Register page 
+    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click", GoRegister);
+    function GoRegister() {
+        window.location.href = "./../../amans_SkinStore/register.html";
+    }
+
+    // for Wishlist page
+    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
+    function GoWishlist() {
+        // console.log(Wishlst);
+        if(Wishlst.length == 0){
+            
+            window.location.href = "./pro_emptywishlist.html";
+            // console.log("1234");
+        }else{
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+            // console.log("000");
+        }
+        
+        
+    }
+
+    //For Your orders page        NOt made
+    // document.querySelector("#AnAccount > div:last-child > button:nth-child(2) ").addEventListener("click" , GoOrders);
+    // function GoOrders(){
+    //     window.location.href="./../../Dt-SkinStore/dt_cart_wishlist";
+    // }
+
+    //For Your Skincare page
+    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click", GoSkinCare);
+    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click", GoSkinCare);
+    function GoSkinCare() {
+        window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
+    }
+
+     //For Hair Page
+     document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
+    
+    function GoHair(){
+        window.location.href="./../../Na-SkinStore/Productpage/hair.html";
+    }
+
+    //For MakeUp page
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
+    
+    function GoMakeUP(){
+        window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
+    }
+
+    //From Search to product page for Skin medica
+    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
+    function GoToSkinMedica2() {
+        var ip = document.querySelector("#TopSearch").value;
+
+        if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
+            window.location.href = "ProductListPage.html";
+        }
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
+    function showAcc() {
+        var x = document.querySelector("#AnAccount");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        x.style.zIndex = "10";
+
+    }
+
+
+</script>

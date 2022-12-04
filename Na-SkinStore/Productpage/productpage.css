@@ -519,14 +519,15 @@ div {
     width: 49%;
     padding-left: 10px;
     margin-bottom: 10px;
+    /* padding-top: 10px; */
 }
 
 #footer2>div:first-child>h5 {
     font-size: 16px;
     color: brown;
     /* background-color: blue; */
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #footer2>div:first-child>div:first-child {
