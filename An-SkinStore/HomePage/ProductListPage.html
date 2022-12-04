@@ -119,7 +119,7 @@
                         </button>
                     </div>
 
-                    <button id="SkincareProuductsBtn"> <span>Skincare Products</span>
+                    <button id="SkincareProuductsBtn"> <span>Skincare Products</span>  
                         <div></div>
                     </button>
                     <div id="Skincare-Dropdown">
@@ -306,7 +306,7 @@
 
     document.querySelector("#userName").textContent = userN;
 
-    var Wishlst = localStorage.getItem("wishlist") || [];
+    var Wishlst =JSON.parse( localStorage.getItem("wishlist") ) || [];
 
     // for Home page
     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
