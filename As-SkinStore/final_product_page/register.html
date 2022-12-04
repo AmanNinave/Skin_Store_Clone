@@ -81,23 +81,43 @@ document.querySelector("#register-main-form").addEventListener("submit", AddData
 function AddData() {
 
   event.preventDefault();
+
+  var check = true;
+
   var Name = document.getElementById("name").value;
   var Desc = document.getElementById("email").value;
   var Start = document.getElementById("pass").value;
   var End = document.getElementById("mnum").value;
+    if (Name == "" || Name == null) {
+      check = false;
+      alert("Please Enter  Name");
+    }else
+    if (Desc == "" || Desc == null) {
+      check = false;
+      alert("Please Enter Email Address");
+    }else
+    if (Start == "" || Start == null) {
+      check = false;
+      alert("Please Enter Password");
+    }else
+    if (End == "" || End == null) {
+      check = false;
+      alert("Please Enter Mobile Number");
+    }
   
   var obj = { name: Name, email: Desc, password: Start, mnum: End  };
 
-  var check = true;
+  
 
   if (check) {
     JobData.push(obj);
     localStorage.setItem("userdetails", JSON.stringify(JobData));
+    alert("Registration Sucesful");
+//   location.reload();
+    window.location.href="./login.html";
   }
 
-  alert("Registration Sucesful");
-//   location.reload();
-window.location.href="./login.html";
+ 
 }
 
 // document.querySelector("#gotologin").addEventListener("click" , callLogin);
