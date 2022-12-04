@@ -10,7 +10,7 @@ body {
     background-color: white
 }
 
-#terry_container{
+#ProductsDisplayGrid{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap : 10px;
@@ -18,7 +18,8 @@ body {
     padding : 5px;
     /* border : 1px yellow solid; */
     background-color: rgb(248, 248, 245);
-    width : 80%;
+    width : 100%;
+    margin-top: 20px;
 }
 
 /* ------------- ------------  Terry Card section begins ------------------ --------- */
@@ -27,6 +28,7 @@ body {
     /* background-color: blue; */
     width:100%;
     margin-top : 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* ------------- ------------  Top section begins ------------------ --------- */
