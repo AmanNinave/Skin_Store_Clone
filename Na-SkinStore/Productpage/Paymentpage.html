@@ -42,7 +42,7 @@
           <p>We'll send the purchase receipt to this email.</p>
           <p>*Country/Region</p>
           <select name="Country" id="Choose_Country">
-            <option value="">India(India)</option>
+            <option value="">- Select Country -</option>
             <option value="india">India</option>
             <option value="qatar">Qatar</option>
             <option value="bhutan">Bhutan</option>
@@ -109,29 +109,30 @@
                 <div id="expiry">
                   <select name="Expiry" id="Expiry_Month">
                     <option value="">Month</option>
-                    <option value="">01</option>
-                    <option value="">02</option>
-                    <option value="">03</option>
-                    <option value="">04</option>
-                    <option value="">05</option>
-                    <option value="">06</option>
-                    <option value="">07</option>
-                    <option value="">08</option>
-                    <option value="">09</option>
-                    <option value="">10</option>
-                    <option value="">12</option>
+                    <option value="01">01</option>
+                    <option value="2">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                   <select name="Expiry" id="Expiry_year">
                     <option value="">Year</option>
-                    <option value="">22</option>
-                    <option value="">23</option>
-                    <option value="">24</option>
-                    <option value="">25</option>
-                    <option value="">26</option>
-                    <option value="">27</option>
-                    <option value="">28</option>
-                    <option value="">29</option>
-                    <option value="">30</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
                   </select>
                 </div>
                 <div>
@@ -199,7 +200,7 @@
         <div> <span id="itemsspan">0</span> Items</div>
       </div>
 
-      <div class="flexdata">Order Number &nbsp&nbsp : &nbsp&nbsp <span id="orderNumber">477883027</span> </div>
+      <div class="flexdata">Order Number &nbsp&nbsp : &nbsp&nbsp <span id="orderNumber">4946663456</span> </div>
 
       <div id="cartdatainpaymentpage">
 
@@ -317,11 +318,21 @@
     if (Nmeoncard == "" || Nmeoncard == null) {
       check = false;
       alert("Please Enter Correct Card Name");
-    }else
+    }else 
+    if (Expirymonth == "" || Expirymonth == null) {
+      check = false;
+      alert("Please Enter Expiry Month");
+    }else 
+    if (Expiryyear == "" || Expiryyear == null) {
+      check = false;
+      alert("Please Enter Expiry Year");
+    }
+    else
     if (Securitycode == "" || Securitycode == null) {
       check = false;
       alert("Please Enter Correct Security Code");
     }
+    else 
     if (Paymentmtd == "" || Paymentmtd == null) {
       check = false;
       alert("Please Enter Correct Payment Method");
