@@ -14,15 +14,15 @@
 
     <div id="login-body">
         <div id="login-body-left">
-                <form id="loginsucess" >
+                <form >
                     <h2> Existing Customers </h2>
 
                     <p> *Email Address</p>
-                    <input id="enteremail" type="text" />
+                    <input type="text" />
 
                     <p> *Password</p>
                     <div>
-                        <input id="enterPass" type="text"/>
+                        <input type="text"/>
                         <button>SHOW</button>
                     </div>
                     <p> <a href="" > FORGOT YOUR PASSWORD? </a></p>
@@ -43,53 +43,9 @@
         <div id="login-body-right">
             <div> 
                 <h2> New Customers </h2>
-                <input type="button" id="gotoregister" value="Continue"/>
-
-
-
+                <input type="button" value="Continue"/>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-<script>
-
-       // for Register page 
-       document.querySelector("#gotoregister").addEventListener("click" , GoRegister);
-    function GoRegister(){
-        window.location.href="./../../As-SkinStore/final_product_page/register.html";
-    }
-
-    var JData = JSON.parse(localStorage.getItem("userdetails")) || [];
-
-   
-
-    document.querySelector("form").addEventListener("submit" , callcheck);
-    function callcheck(){
-        event.preventDefault();
-        var temp1 = document.querySelector("#enteremail").value;
-        var temp3 = document.querySelector("#enterPass").value;
-        var check = false;
-        var temp = JData.map(function (elem) {
-
-
-            if(elem.email  == temp1 && elem.password == temp3){
-                localStorage.setItem("username", elem.name);
-                check = true;
-            }
-            
-        })
-        
-        if(!check){
-            alert("Wrong Id or Password")
-        }else {
-            alert("login sucessful");
-            window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
-        }
-
-
-    }
-
-    
-</script>

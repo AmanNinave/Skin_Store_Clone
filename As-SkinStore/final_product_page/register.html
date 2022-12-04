@@ -26,85 +26,47 @@
         </div>
 
         <hr>
-        <form action="login.html" method="POST" id ="register-main-form">
+        <form action="" id ="register-main-form">
             <h3>Or create an email account </h3> 
             <div id="register-main-name">
                 <p> Full Name * </p>
-                <input  id="name" type="text"/> 
+                <input type="text"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Email Address * </p>
-                <input id="email" type="email"/> 
+                <input type="email"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Confirm Email Address * </p>
-                <input id="email2" type="email"/> 
+                <input type="email"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Password * </p>
-                <input  id="pass" type="password"/> 
+                <input type="password"/> 
             </div>
 
             <div id="register-main-name">
                 <p> Cellphone Number (Optional) </p>
-                <input id="mnum" type="tel"/> 
+                <input type="tel"/> 
                 <p> We will use this number to send occasional promotional messages. </p>
             </div>
 
             <div id="register-main-refer">
                 <p> Referral Code (Optional) </p>
-                <input id="ref" type="text"/> 
+                <input type="text"/> 
                 <p> * Your referrals discount is automatically applied at cart </p>
             </div>
 
             <div id="register-main-submit">
-            <input id = "register-main-submit-button" type = "submit" value="Continue" />
+            <input id = "register-main-submit-button" type="submit" value="Continue" />
 
             <p> By proceeding, you are confirming that you agree to our Terms and Conditions and Privacy Policy </p>
             </div>
         </form>
-                    <!-- <button id="gotologin">Go to login page</button> -->
-        
     </div>
     
 </body>
 </html>
-
-<script>      
-  var JobData = JSON.parse(localStorage.getItem("userdetails")) || [];
-
-document.querySelector("#register-main-form").addEventListener("submit", AddData);
-
-function AddData() {
-
-  event.preventDefault();
-  var Name = document.getElementById("name").value;
-  var Desc = document.getElementById("email").value;
-  var Start = document.getElementById("pass").value;
-  var End = document.getElementById("mnum").value;
-  
-  var obj = { name: Name, email: Desc, password: Start, mnum: End  };
-
-  var check = true;
-
-  if (check) {
-    JobData.push(obj);
-    localStorage.setItem("userdetails", JSON.stringify(JobData));
-  }
-
-  alert("Registration Sucesful");
-//   location.reload();
-window.location.href="./login.html";
-}
-
-// document.querySelector("#gotologin").addEventListener("click" , callLogin);
-
-// function callLogin() {
-    
-//     window.location.href="./login.html";
-// }
-
-</script>
