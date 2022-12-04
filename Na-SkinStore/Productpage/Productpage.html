@@ -103,7 +103,7 @@
               when you spend $130 or more on the brand.
             </p>
             <div>
-              <button>SHOP NOW</button>
+              <button id="BrandBox">SHOP NOW</button>
             </div>
           </div>
           <div>
@@ -598,6 +598,12 @@
     }
 
  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ document.querySelector("#BrandBox").addEventListener("click" , GoToSkinMedica);
+    
+    function GoToSkinMedica(){
+        window.location.href="./../../An-SkinStore/HomePage/ProductListPage.html";
+    }
 
 
   //From Search to product page for Skin medica

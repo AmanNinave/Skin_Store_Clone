@@ -241,7 +241,7 @@ function careFilter1() {
     document.querySelector("#ProductsDisplayGrid").textContent = "";
 
     var Data1 = arr.filter(function (elem) {
-        var temp = "Clenser";
+        var temp = "Men";
 
         return temp == elem.Category;
 
@@ -252,13 +252,14 @@ function careFilter1() {
 
 
 document.querySelector("#Skincare-Dropdown > button:nth-child(2)").addEventListener("click", careFilter2)
+document.querySelector("#ProductsDisplaySec > div:nth-child(1) > div > button:nth-child(2) ").addEventListener("click", careFilter2)
 
 function careFilter2() {
 
     document.querySelector("#ProductsDisplayGrid").textContent = "";
 
     var Data1 = arr.filter(function (elem) {
-        var temp = "Exfoliator";
+        var temp = "Women";
 
         return temp == elem.Category;
 
@@ -274,7 +275,7 @@ function careFilter3() {
     document.querySelector("#ProductsDisplayGrid").textContent = "";
 
     var Data1 = arr.filter(function (elem) {
-        var temp = "Eyecare";
+        var temp = "Boys";
 
         return temp == elem.Category;
 
@@ -284,13 +285,14 @@ function careFilter3() {
 }
 
 document.querySelector("#Skincare-Dropdown > button:nth-child(4)").addEventListener("click", careFilter4)
+document.querySelector("#ProductsDisplaySec > div:nth-child(1) > div > button:nth-child(4) ").addEventListener("click", careFilter4)
 
 function careFilter4() {
 
     document.querySelector("#ProductsDisplayGrid").textContent = "";
 
     var Data1 = arr.filter(function (elem) {
-        var temp = "Gel";
+        var temp = "Girls";
 
         return temp == elem.Category;
 
@@ -299,55 +301,7 @@ function careFilter4() {
     displayData(Data1);
 }
 
-
-document.querySelector("#Skincare-Dropdown > button:nth-child(5)").addEventListener("click", careFilter5)
-document.querySelector("#ProductsDisplaySec > div:nth-child(1) > div > button:nth-child(5) ").addEventListener("click", careFilter5)
-
-function careFilter5() {
-
-    document.querySelector("#ProductsDisplayGrid").textContent = "";
-
-    var Data1 = arr.filter(function (elem) {
-        var temp = "Lipcare";
-
-        return temp == elem.Category;
-
-    })
-
-    displayData(Data1);
-}
-
-document.querySelector("#Skincare-Dropdown > button:nth-child(6)").addEventListener("click", careFilter6)
-document.querySelector("#ProductsDisplaySec > div:nth-child(1) > div > button:nth-child(2) ").addEventListener("click", careFilter6)
-function careFilter6() {
-
-    document.querySelector("#ProductsDisplayGrid").textContent = "";
-
-    var Data1 = arr.filter(function (elem) {
-        var temp = "Moisturizer";
-
-        return temp == elem.Category;
-
-    })
-
-    displayData(Data1);
-}
-
-document.querySelector("#Skincare-Dropdown > button:nth-child(7)").addEventListener("click", careFilter7)
-document.querySelector("#ProductsDisplaySec > div:nth-child(1) > div > button:nth-child(4) ").addEventListener("click", careFilter7)
-function careFilter7() {
-
-    document.querySelector("#ProductsDisplayGrid").textContent = "";
-
-    var Data1 = arr.filter(function (elem) {
-        var temp = "Serum";
-
-        return temp == elem.Category;
-
-    })
-
-    displayData(Data1);
-}
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Rating Filter >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 document.querySelector("#Rating-Dropdown > button:nth-child(1)").addEventListener("click", reFilter1)
 function reFilter1() {

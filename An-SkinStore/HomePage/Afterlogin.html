@@ -590,11 +590,11 @@
                 <button>SHOP NOW</button>
             </div>
             <div>
-                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/10/original-Shot_2_-_EltaMD-500x500-125610.jpg"
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/09/original-500x500-041909.jpeg"
                     alt="">
-                <h2>20% off EltaMD</h2>
+                <h2>25% off Fragrance & Home</h2>
                 <div>
-                    <p>Discover the #1 Dermatologist-recommended professional sunscreen brand, EltaMD.</p>
+                    <p>Save on the Ultimate Fragrance For You & Your Home</p>
                 </div>
                 <button>SHOP NOW</button>
             </div>
@@ -1033,8 +1033,16 @@ document.querySelector("#userName").textContent = userN;
     document.querySelector("#BrandBox > div:nth-child(2) > button ").addEventListener("click" , GoToSkinMedica);
     
     function GoToSkinMedica(){
-        window.location.href="ProductListPage.html";
+        window.location.href="./../../An-SkinStore/HomePage/ProductListPage.html";
     }
+
+    //For Fragrance Page   shopnow button 
+    document.querySelector("#BrandBox > div:nth-child(3) > button ").addEventListener("click" , GoToFragrance);
+    
+    function GoToFragrance(){
+        window.location.href="./../../An-SkinStore/HomePage/fragrancepage.html";
+    }
+
     //From Search to product page for Skin medica
     document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click" , GoToSkinMedica2);
     function GoToSkinMedica2(){
