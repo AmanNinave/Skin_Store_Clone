@@ -89,6 +89,11 @@ function displayData(arr){
                 changeImageOnOut(timg, elem.img_url )
             })
 
+            timg.addEventListener("click", function() {
+                goToNextPage(timg, elem )
+            })
+
+
         timgDiv.append(timg)
         timgDiv.classList.add("t-img-Top")
 
@@ -175,6 +180,56 @@ function changeImageOnOut(pimage, ogUrl){
     if(ogUrl != "" && ogUrl != " "){
         pimage.src = ogUrl
     }
+}
+
+    var objDataTerry = [
+        {
+            name : "By Terry Ombre Blackstar Eye Shadows 1 .64g (Various Shades)",
+            img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11307158-4054925754510135.jpg",
+            alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11307161-1564900075517358.jpg", 
+            color : "black",
+            strikedoffPrice : "38",
+            sellingPrice : "26.6",
+            rating : "4.9",
+            link : "https://www.skinstore.com/by-terry-ombre-blackstar-eye-shadows-1-.64g-various-shades/11307158.html"
+        },
+        {
+            name : "By Terry Hyaluronic Hydra Foundation 1 oz (Various Shades)",
+            img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1004749452253981.jpg",
+            alt_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12504932-1034749452359392.jpg", 
+            color : "black",
+            strikedoffPrice : "59",
+            sellingPrice : "41.3",
+            rating : "5",
+            link : "https://www.skinstore.com/by-terry-hyaluronic-hydra-foundation-1-oz-various-shades/12734195.html"
+        },
+        {
+            name : "By Terry Hyaluronic Tinted Hydra-Powder 10g (Various Shades)",
+            img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12262426-7534949835034527.jpg",
+            alt_url : "https://static.thcdn.com/images/small/webp//productimg/130/130/12262426-1624949835089913.jpg", 
+            color : "brown",
+            strikedoffPrice : "54",
+            sellingPrice : "37.8",
+            rating : "3.8",
+            link : "https://www.skinstore.com/by-terry-hyaluronic-tinted-hydra-powder-10g-various-shades/12262426.html"
+        }
+    
+    ]
+
+function goToNextPage(img, elem){
+    if(elem.name == objDataTerry[0].name){
+        window.location.href = "./terry_final_product_page2.html";
+    }
+
+    if(elem.name == objDataTerry[1].name){
+        window.location.href = "./terry_final_product_page1.html";
+    }
+
+
+    if(elem.name == objDataTerry[2].name){
+        window.location.href = "";
+    }
+
 }
 
 
