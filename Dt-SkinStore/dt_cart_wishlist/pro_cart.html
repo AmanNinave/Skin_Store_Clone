@@ -12,75 +12,295 @@
     
     <script src="https://kit.fontawesome.com/99963d12d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./addedcart.css">
-   
-   
+    <style>
+        * {
+            margin: 0px;
+            font-family: sans-serif;
+            padding: 0px;
+        }
+
+        div {
+            border: 0px solid;
+        }
+
+        #ANParent {
+
+            /* border: 1px solid; */
+            width: 100%;
+        }
+
+
+        /* <<<<<<<<<<<<<----------------Main Section Top ------------------------------>>>>>>>>>> */
+
+        #TopHeader {
+            overflow: hidden;
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            margin-top: -10px;
+            z-index: 3;
+        }
+
+        #TopHeader+div {
+            height: 160px;
+        }
+
+
+        #MainSec {
+            display: flex;
+            justify-content: space-between;
+            height: 105px;
+            border: 1px solid;
+            width: 100%;
+        }
+
+        #MainSec>div:first-child {
+            width: 16%;
+            margin-left: 33px;
+
+        }
+
+        #MainSec>div:first-child>h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-top: 15px;
+
+        }
+
+        #MainSec>div:first-child>p {
+            text-align: center;
+            font-size: 12.8px;
+
+        }
+
+
+        #MainSec>div:first-child>p>span {
+            font-weight: 700;
+
+        }
+
+        #MainSec>div:nth-child(2) {
+            width: 40%;
+            padding-top: 34px;
+            margin: 0px 15%;
+            margin-left: 13%;
+            display: flex;
+
+        }
+
+        #MainSec>div:nth-child(2)>input {
+            width: 98%;
+            height: 38px;
+
+        }
+
+        #MainSec>div:nth-child(2)>img {
+            width: 33px;
+            height: 32px;
+            /* border: 1px solid; */
+            margin-left: -39px;
+            margin-top: 5px;
+        }
+
+        #MainSec>div:nth-child(3) {
+            width: 9%;
+            padding-top: 35px;
+            margin-right: 0%;
+
+        }
+
+        #MainSec>div:nth-child(3)>button {
+            width: 100%;
+            height: 35px;
+            font-size: 19px;
+            border: none;
+            background-color: white;
+            color: rgb(219, 32, 32);
+            font-weight: 545;
+        }
+
+        #MainSec>div:nth-child(3)>button:hover {
+            background-color: rgba(235, 226, 226, 0.418);
+        }
+
+        #MainSec>div:nth-child(4) {
+            width: 9%;
+            padding-top: 35px;
+            margin-right: 45px;
+        }
+
+        #MainSec>div:nth-child(4)>button {
+            width: 100%;
+            height: 35px;
+            font-size: 19px;
+            padding-left: 18px;
+            border: none;
+            background-color: white;
+            color: rgb(219, 32, 32);
+            font-weight: 545;
+        }
+
+        #MainSec>div:nth-child(4)>button:hover {
+            background-color: rgba(235, 226, 226, 0.418);
+        }
+
+        #MainSec>div:nth-child(4)>button>img {
+            height: 20px;
+            width: 20px;
+        }
+
+        #TopHeader>hr {
+            border: 1px solid;
+        }
+
+        #AnAccount {
+            z-index: 1;
+            width: 300px;
+
+            border: 0px solid green;
+            margin-bottom: 30px;
+            margin-top: -38px;
+            margin-left: 66.5%;
+            position: fixed;
+            overflow: hidden;
+            display: none;
+            height: fit-content;
+        }
+
+        #AnAccount>div:first-child {
+            background-color: grey;
+            padding: 5px;
+            border: brown;
+        }
+
+        #AnAccount>div:first-child>button {
+            display: block;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid teal;
+            /* margin: 5px 0px 5px 0px; */
+        }
+
+
+        #AnAccount>div:last-child>button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border: 1px solid grey;
+            margin-top: 5px;
+            margin: 5px 10px 5px 0px;
+        }
+
+        #AnAccount>div>button:hover {
+            background-color: brown;
+            color: white;
+        }
+
+        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+        #TopNav {
+            border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+
+            padding-left: 16px;
+            height: 36px;
+
+        }
+
+        #TopNav>button {
+            height: 35px;
+            padding: 5px 12px;
+            font-size: 14.2px;
+            font-weight: 300;
+            padding-top: px;
+            padding-bottom: 6px;
+            border: none;
+            color: gray;
+            background-color: white;
+        }
+
+        #TopNav>button:hover {
+            background-color: black;
+        }
+
+
+
+
+
+    </style>
+
+
 
     <link rel="stylesheet" href="./pro_cart.css">
 </head>
 <body>
-    
-    <div id="ANParent"></div>
-    <div id="TopHeader">
-        <header id="MainSec">
-            <div>
-                <h1>SkinStore</h1>
-                <p>part of the <span> LOOK FANTASTIC </span> group</p>
+    <div id="ANParent">
+        <div id="TopHeader">
+            <header id="MainSec">
+                <div>
+                    <h1>SkinStore</h1>
+                    <p>part of the <span> LOOK FANTASTIC </span> group</p>
 
-            </div>
-            <div>
-                <input type="text" name="" id="TopSearch" placeholder="  Search for a product or brand...">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRngp-yntOGZZNWgGjLOfOqNV256nuT0kDaNMsdwpO4s_QUcBQ8QON7noh2id7kAkMJ4&usqp=CAU"
-                    alt="">
-            </div>
-            <div>
-                <button> <i class="fa-regular fa-user"></i> Account </button>
-            </div>
-            <div>
-                <button> <img
-                        src="data:image/png;base64,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"
-                        alt=""> Cart</button>
+                </div>
+                <div>
+                    <input type="text" name="" id="TopSearch" placeholder="  Search for a product or brand...">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRngp-yntOGZZNWgGjLOfOqNV256nuT0kDaNMsdwpO4s_QUcBQ8QON7noh2id7kAkMJ4&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <button> <i class="fa-regular fa-user"></i> Account </button>
+                </div>
+                <div>
+                    <button> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAkFBMVEX39/f/AAD2///3+/v3+vr5zc3+MjL7kpL8hYX+JSX5w8P5vr78i4v44+P37e38goL+Kir35+f38vL+QUH43d37oKD6qqr5yMj9U1P+OTn8fHz9Z2f7lJT9WVn42Nj6ubn8b2/8dXX6qKj9Y2P/Ghr7mpr+Ly/9TEz9Vlb6sLD+SEj/DQ3+QED40tL+HR39X18tUML7AAAMJUlEQVR4nO1daZfiKhCNEFtbTdRojPu+tPv//3ePJQsEutueQFCe98M7b5gzkhsqxXKrCsd544033njjjTf+Z4AIrumH0AgQLMJ1w4MAWMoThBWK3jiMuo59PMG4wuE0XkddF/G0hSZcVCTYHtqDyLeDJxzJGMY8h61BNYAvztP/nmCM86x+nPsAmn7Sf4Tb/ZUhRSd81YEMHmRYqYyC16QIZg9TPAHTD/tPcOcPM6w0X/NbBMeHGc5ecxAdcD09StF7zS/RcUE3CseP0Ky96CAijhBN6063EY4vPzK8vegYJqA8vUa4/Had03hNX8OD8HT7zZ2M5+ZlzVRAxvODo9h9cTvNg/DkJsydDWaaB2C9z80eM80AB+wgRjYOIrc4n9g4iGDFUgxMP44GuFeWYWijmYI9w3Bvo5nCkB3Eq2VTIgHna1Y2DiKY2O5rYJVluLbS13wyDC82mincsYM4t9DX8MeqYxsHEdxZiqafRgdgg2V4tNHXwBvDsGelmU7ZQexb72vqVg4iJ3BY+SE2WYYLKymyDIdWmmmLpfiqEsZPcD2WYcvKQTwwDM9WfohcYMqLyqW/gGX4qnLpjwB1631Nn2U4tXIQWaF4i2P8ErgxTD9hUUAuqmFVm4bhenBcNKOoer3O+57X9QMHiICv8yoejS86f+5Hp9Nwtlmuxu16axqu0Zs4LhoN9CrIm8CvwnGJevdcbyIfqlkQ59vn/uPSO8wmqzF+E9goQmwU8ZvoojfhB0EsZErfBFT8Jv4SX6QQ21tnP7pcTsP7khpFbbdDb6KJbCIxCmwTDlQwR4MfgjXNY1RzCnPk5dInxLwwxcdjGQ3BL/pJ8nLpE6KwcMTLpc+IggRzcmllNK23x6vlZHP/OvQ+bmdTtBgUDvmBa+73hCUMJIdyfa/fn8+vUWOxOA7W4W7aarUw/cNmNjyNOtvtEzPMxb4LUhs9dvTpPJxNzIg71q8azKyNpukg6HreCrUvk1ex29XqyCg299mQTEy3PIFfUVzeBEv29z7yH3bMUPLvMENh3+y6oF3BhyLcyyCIKjhqgIxI4Hc9ZBPVqNFoNsniuDVt1ennMTz0RqOP9Nv5LD7ru5xcKsj6f2SI2ilDoZ1IJZ2knbEJYkTd/NeRPM9BwaYOdliGealNE0MGhGFu/51tXVWEGfByad47m2EIo+RxagrWpi7va3JSmyGGg28e598ANizDnNRmiGEteRwloYW8XJqT2swwzBy8mgMyyE3YvNRmiGF6Wq0m2oeXS3lfY8hKk3AYBdMhRi7jjZPazDBMD6tVJWfxcik3yRphmKlGS0UMf/A1Zhim66yWKjnF5fZJ7PMZYZgd5A5UMeTl0rPpMYSp61OW1cPLpeyDG2GYna2oi4MBQ5YhI+ubYZg+jbrg11wef9ahGStNtodKpWmO4RQkQgPdvgWp8JAi3uOL7ZSh2E53wMIPxftDth2mD6MyHo2XS7fXagISd9OoCrjiA4nwKrbjJeVK0o7j5z/F9iqZqZpcUxrrozK5jpdLnwVKs1zBw+nDJUJpDDp8PAm8PCiOEOF++zb6iIH/9CGCHA52JH+Bt2I3SXvnmx8iHeyFnyBQG4LOy6Wj5NCLaDcyrRs/cUPSjpdHNUk79aUiSAc+15TGaKvNBcnJpVVqINrnQ1ecD9PpUHVUKC+XxpmJRmb85BmE8+mCyPkaqtwZYJhtyO+qY3x4uZR6ahMMU8WvrZohL5dSEzHAMFsjK0//zMmlRMIwwTDNj1QfnM37GiIZGGBIfoFAfUZWTi7Fs5EJhul0qKHkAy9h4EMSEwzTyhZFqHwDXi4dATMMk/4/NQSE8tml+Dson2GmhWmJW+ayS7FcaoDhnOlePfhMduRrymeYZfNoqbwiyKUGGKYOXU+uEp/JfgLlM8xOp6taAm4zBZ2gD8tnmL5jTekDICeX0tNELo6XhsnQ00SxHR/a1STtEWEo/AXdAXezdtDLvIAW8KEZ5x2xmVZNwA6/ieVUaJ9i+XYoaV+h9u1O/CHSQT37B2n/ugogPVwgVDtUBAtJ8YfymXqhrSYJn11qEFNtyWa8XEo2VO26ABJ9OZG045PlQ0v8C+wit5J2slcaZ/8+NSF9ZQJAjWVIXGsgOQXkoy8zUF8qP03sPHCamKqj+uqQ5eRS8gCS96BpPlQdLCQF+DLJUHGwkBRi2fMyGSZe4KYzqxUaZKg8WEgKPjSjVIaZE9BaokuQS8tjqDZ29nvk5dISGaoPFpIiL5eWyDBdeOsuAWyKoY5gISmyc+eyGQ5/6FMlcnKpZAGllmEXunHySaKObnXnDHPFeGVxLYUZ0oySeF3a96LFYFdffaXdai9elcsuFRMd/5FhkicEHd+rNo5ha/zNdlR/dVxeLhWVvEcZJkNF9xb9aBFOx5Nh79fEP/21q/jQDFFC+IVhnNEFnS4iNQhby9mHnMl30F+wMieXCmeXOYY0TSvZH64ax11rtel9Sh/+IZRQpZqXS4WQ8uQ0kQwV+qjmyP5q48nhQ1HiaQn1KnNyKZ2ekqGKz0traKiWX5e9/CELoYzCsbnQDDJU/WvzuKutZqe95hzhUiod5uTS8R9dRTGUcjFFLru0VJRU5xAUcIXFMCiHYF4u1Y/tx9ekPR1ExQt+PIicXKoHncNkXAuPjbnn01NZqKJoy6Pg5VJ1pHr3JSLVvPZ9B8akoJlSTFCZr/k8fS3bu3UzmuPrJmNW5utLQafIGG5HxP4WEbI/dqgMk2IB+n/1pefO6T5uIfurJlXCno4UCyC98FNkdUH2Fx4XUb8buDC1P9NP/zvc3EkNh9EM2d96EV09H4KnHyo5oN8TiSH7a1y9uEjdC5JiASROtOO9iv09ACBZzExKW2joB3Q2IsGwpJViGQCeZJKo2kRQkuF18u2xUBdKikW2X/XuYAlcR5KFuLDIQqHkE7z1bSIoyZS9WzRJoBEUCe4sGkDHCcTKeTZNErKYxJ5Fk4Qjy3QeWzRJYAi1Wo9WWagYJGTVJEGQG8KNTZMEQU5oet07yb8FHwRl4e1I/Om2jXd48cW+bLwukNNg7LwaiT06tPPaTlbutfKubo6hnqQ4w+CsVG/oqiFwnsbGySI3W7SAZbsKDH5Z2jt6gcNWG8lKqT0ASebP36H8HfO5Thjb7RlhG+NG8YnR+ezE2GMkdaMoLpdLD+FEcMAYsvj6mmHcETabzQRjibAiGCO0Cer1naf6WykjKOFvWKkuofR897GoXltxlwU+BxRXHCgleOZvUH0pIzRz+dNPUJ2BqC56RhWUb+Og9/crRLRCfVKJ66i9iK0gtGxUwfxZsvErus4aADg+wx1IGFp0SwhDht/sgFZeaAl2ueD1GFqZ7fedDlq2oeVbvJg7x9DAb6PlSBrMOYV0JkvDf2DRnEC4yTDg4CM4fGjZl9f1KBygw0SBUC+i+NV1v/SYD9z58KHGyy5l86HeO3Qli+GOzv6SPWK70e83V/T/RzoZJkmO21rVmy/iMCWVBa5ziPNT7wGuKg6BR8/5dcZCxdWE6g7tcU7XG9oyLeLKO0v0haOdPP4P3WzoG8Q4MR2HCmC35EAqs2s7JqJJ1LhUA6hOp3PguNRq9ZQUw6BHmGjh4sJGLUR7+njtryvFme4Pj9CBpOMWiE82VN2DIumR8Lm6TkA+iCOIq14qr8uagPTnu4mS2ITUEYx0MaSfxRmkCep9l8YS6CoXQTbAW5imHSKfRs1UG8NrbKSJD5/G7/RLJ0P0GSbVU3ClLb0MyfQ7A+khWBvQehzatC/SS5DmybTi/nQUESWgP98BaYHyI6RFuHRlcVPrbMCkrknyReqbgV3Sj+fGxcVGMM6u1lXUhIozB+yzkVe9ezC+Gkyfmki9dxu5mgZ6u6vAjQ/DIk2zRZy7vUbTEwgCNO/Ht5YUvlT5W8RRWBF6qcB3QBJ3pvqELUMcjrEGuAe0iKIhRPqmw8RMcUI46dGlK1Nt02FaWOjU9AHwF/uK5iHMKm5tqmgt3F1TJ67otjwpss1atmdXfElIvseV2KPWsjT8fUHxV6kV8J7vMdLbY37LrT+GHfL5Y+er7h5Bnym3NykjgBZETHGKegnxgi7o14hPHe48LWdBAiCo1jHJ833tlxNA4JLDMg0y8+89ltXhG2+88cYbb7zxxhtvvPE/xn9Sq+L99v7laAAAAABJRU5ErkJggg=="
+                            alt=""> Cart</button>
+                </div>
+
+            </header>
+            <hr>
+
+            <div id="AnAccount">
+                <div>
+                    <button>Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT</button>
+                    <button>My Account</button>
+                </div>
+                <div>
+                    <button>Wishlist</button>
+                    <button>Your Orders</button>
+                    <button>Your Refrals</button>
+                </div>
             </div>
 
-        </header>
-        <hr>
+            <nav id="TopNav">
+                <button>Black Friday Sale</button>
+                <button>Brands</button>
+                <button>Skin Care</button>
+                <button>Hair</button>
+                <button>Makeup</button>
+                <button>Bath & Body</button>
+                <button>Fragrance</button>
+                <button>Self-Care</button>
+                <button>Tools</button>
+                <button>New & Trending</button>
+                <button>Build a Routine</button>
+                <button>Blog</button>
 
-        <div id="AnAccount">
-            <div>
-                <button>LOGIN</button>
-                <button>REGISTER</button>
-            </div>
-            <div>
-                <button>Wishlist</button>
-                <button>Your Orders</button>
-                <button>Your Refrals</button>
-            </div>
+            </nav>
+
         </div>
-
-        <nav id="TopNav">
-            <button>Black Friday Sale</button>
-            <button>Brands</button>
-            <button>Skin Care</button>
-            <button>Hair</button>
-            <button>Makeup</button>
-            <button>Bath & Body</button>
-            <button>Fragrance</button>
-            <button>Self-Care</button>
-            <button>Tools</button>
-            <button>New & Trending</button>
-            <button>Build a Routine</button>
-            <button>Blog</button>
-
-        </nav>
-
     </div>
+
     <div></div>
     <!--this div is used for spacing  -->
 
 
-    
-
-    </div>
-
+   
     <!-- <<<<<<<<<<<<<<<<<<<<<  cart page starting  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <div id="cartparent">
         <div id="carttitle">
@@ -413,4 +633,127 @@
         window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
     }
 
-    </script>
+</script>
+
+<!--script for header -->
+<script>
+    
+    var Wishlst = JSON.parse(localStorage.getItem("wishlist")) || [];
+    var amanninave = ""
+
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     // for Home page
+     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+    function BackToHome() {
+        if (userN == "") {
+            window.location.href = "index.html";
+        } else {
+            window.location.href = "Afterlogin.html";
+        }
+    }
+
+
+    // for cart page 
+    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
+
+    var CartValue =JSON.parse( localStorage.getItem("cartdata") ) || [] ;
+    function Gocart() {
+        if(CartValue.length == 0){
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptycart.html";
+        }else{
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
+        }
+        
+    }
+
+    // for login page 
+    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
+    function GoLogin(){
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
+    }
+
+    // for Register page 
+    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click", GoRegister);
+    function GoRegister() {
+        window.location.href = "./../../amans_SkinStore/register.html";
+    }
+
+    // for Wishlist page
+    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
+    function GoWishlist() {
+        // console.log(Wishlst);
+        if(Wishlst.length == 0){
+            
+            window.location.href = "./pro_emptywishlist.html";
+            // console.log("1234");
+        }else{
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+            // console.log("000");
+        }
+        
+        
+    }
+
+    //For Your orders page        NOt made
+    // document.querySelector("#AnAccount > div:last-child > button:nth-child(2) ").addEventListener("click" , GoOrders);
+    // function GoOrders(){
+    //     window.location.href="./../../Dt-SkinStore/dt_cart_wishlist";
+    // }
+
+    //For Your Skincare page
+    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click", GoSkinCare);
+    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click", GoSkinCare);
+    function GoSkinCare() {
+        window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
+    }
+
+     //For Hair Page
+     document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
+    
+    function GoHair(){
+        window.location.href="./../../Na-SkinStore/Productpage/hair.html";
+    }
+
+    //For MakeUp page
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
+    
+    function GoMakeUP(){
+        window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
+    }
+
+    //From Search to product page for Skin medica
+    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
+    function GoToSkinMedica2() {
+        var ip = document.querySelector("#TopSearch").value;
+
+        if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
+            window.location.href = "ProductListPage.html";
+        }
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
+    function showAcc() {
+        var x = document.querySelector("#AnAccount");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        x.style.zIndex = "10";
+
+    }
+
+
+</script>
