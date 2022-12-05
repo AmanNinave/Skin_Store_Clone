@@ -3,6 +3,7 @@ console.log("hereeeeeeeeee")
 document.querySelector("#altimg1").addEventListener("click" , chnageImg)
 document.querySelector("#altimg2").addEventListener("click" , chnageImg)
 document.querySelector("#altimg3").addEventListener("click" , chnageImg)
+document.querySelector("#altimg4").addEventListener("click" , chnageImg)
 
 var mainMidImg = document.querySelector("#mainMidImg")
 var mainMidImg_src = mainMidImg.src

@@ -1,3 +1,15 @@
+/*
+Cleanser
+Serum
+Moisturisers
+Eyes Care
+Toners
+Exfloiators & Scrubs
+Masks
+
+*/
+
+
 var arr = [ 
     {   name : "SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
         img_url : "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-1174892770940184.jpg",
@@ -66,7 +78,7 @@ var arr = [
         gift : "$21 SkinCeuticals Gift",
         StrikedoffPrice :  ""  ,
         sellingPrice : "36.00" ,
-        Category : "Cleansers" ,
+        Category : "Cleanser" ,
         rating :  "4.7",
         link : "https://www.skinstore.com/skinceuticals-purifying-cleanser-200ml/11535233.html"
     }, 
@@ -76,7 +88,7 @@ var arr = [
         gift : "$21 SkinCeuticals Gift",
         StrikedoffPrice :  ""  ,
         sellingPrice : "42.00" ,
-        Category : "" ,
+        Category : "Cleanser" ,
         rating :  "5",
         link : "https://www.skinstore.com/skinceuticals-lha-cleansing-gel-200ml/11535234.html"
     }, 

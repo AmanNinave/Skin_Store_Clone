@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Medica</title>
+    <link rel="stylesheet" href="sk_ProductListPage.css">
+    <script src="https://kit.fontawesome.com/99963d12d2.js" crossorigin="anonymous"></script>
+    <script src="./../../Na-SkinStore/Productpage/Skincuticals.js"></script>
+    <META HTTP-EQUIV=”refresh” CONTENT=”15″>
+
+</head>
+
+<body>
+
+    <div id="ANParent">
+        <div id="TopHeader">
+            <header id="MainSec">
+                <div>
+                    <h1>SkinStore</h1>
+                    <p>part of the <span> LOOK FANTASTIC </span> group</p>
+
+                </div>
+                <div>
+                    <input type="text" name="" id="TopSearch" placeholder="  Search for a product or brand...">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRngp-yntOGZZNWgGjLOfOqNV256nuT0kDaNMsdwpO4s_QUcBQ8QON7noh2id7kAkMJ4&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <button> <i class="fa-regular fa-user"></i> Account </button>
+                </div>
+                <div>
+                    <button> <img
+                            src="data:image/png;base64,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"
+                            alt=""> Cart</button>
+                </div>
+
+            </header>
+            <hr>
+
+            <div id="AnAccount">
+                <div>
+                    <button>Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT</button>
+                    <button>My Account</button>
+                </div>
+                <div>
+                    <button>Wishlist</button>
+                    <button>Your Orders</button>
+                    <button>Your Refrals</button>
+                </div>
+            </div>
+
+            <nav id="TopNav">
+                <button>Black Friday Sale</button>
+                <button>Brands</button>
+                <button>Skin Care</button>
+                <button>Hair</button>
+                <button>Makeup</button>
+                <button>Bath & Body</button>
+                <button>Fragrance</button>
+                <button>Self-Care</button>
+                <button>Tools</button>
+                <button>New & Trending</button>
+                <button>Build a Routine</button>
+                <button>Blog</button>
+
+            </nav>
+
+
+        </div>
+    </div>
+    <div></div>
+    <!--this div is used for spacing  -->
+
+
+
+
+    </div>
+
+
+
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<------Top Header from index.html---------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    -->
+
+
+
+
+    <div id="dummy-Space"></div>
+    <div id="PlistBox">
+        <div>
+            <div id="NavigationTop">
+                <p><a href="index.html">Home</a> > <a href="./../../Na-SkinStore/Productpage/Productpage.html">Brands</a> > <a href="ProductListPage.html">Skin
+                        Medica</a></p>
+
+            </div>
+        </div>
+        <div id="PlistBox-MainBody">
+
+            <div id="Navgication-Section">
+                <div>
+                    <h2>Refine</h4>
+
+                </div>
+                <div class="select-group">
+                    <button id="Price-DropdownBtn"> <span>Price</span>
+                        <div></div>
+                    </button>
+                    <div id="Price-Dropdown">
+                        <button><input type="radio" name="aman" class="p30-50"> <label> $ 30 - $ 50 </label>
+                        </button>
+                        <button> <input type="radio" name="aman" value="50"> <label> $ 50 - $ 100 </label>
+                        </button>
+                        <button> <input type="radio" name="aman" value="100"> <label> $ 100 - $ 150 </label>
+                        </button>
+                        <button> <input type="radio" name="aman" value="150"> <label>More than $ 150 </label>
+                        </button>
+                    </div>
+
+                    <button id="SkincareProuductsBtn"> <span>Skincare Products</span>  
+                        <div></div>
+                    </button>
+                    <div id="Skincare-Dropdown">
+                        <button><input type="radio" name="aman" id="clenser"> <label for="clenser"> Serum </label>
+                        </button>
+                        <button> <input type="radio" name="aman" id="exfoliator"> <label for="exfoliator"> Moisturizer
+                            </label>
+                        </button>
+                        <button> <input type="radio" name="aman" id="eyecare"> <label for="eyecare"> Cleansers </label>
+                        </button>
+                        <button> <input type="radio" name="aman" id="gel"> <label for="gel"> Eye Care</label>
+                        </button>
+                        <button><input type="radio" name="aman" id="clenser"> <label for="clenser"> Toner</label>
+                        </button>
+                        <button> <input type="radio" name="aman" id="moisturizer"> <label for="exfoliator">
+                                Exfoliator & Scrubs </label>
+                        </button>
+                        <button> <input type="radio" name="aman" id="serum"> <label for="eyecare"> Masks </label>
+                        </button>
+
+                    </div>
+                    <button id="SkinConsernBtn"> <span>Skin Consern</span>
+                        <div></div>
+                    </button>
+                    <div id="SkinConsern-Dropdown">
+                        <button><input type="radio" id="allskintype"> <label for="-p30-50"> All Skin Type</label>
+                        </button>
+                        <button><input type="radio" id="antiageing"> <label for="-p30-50"> Anti Ageing </label>
+                        </button>
+                        <button> <input type="radio" id="combinationskin"> <label for="-p50-100"> Combination Skin
+                            </label>
+                        </button>
+                        <button> <input type="radio" id="darkcircles"> <label for="-p100-150"> Dark Circles </label>
+                        </button>
+                        <button> <input type="radio" id="-dry"> <label for="-p150More">Dry </label>
+                        </button>
+                        <button><input type="radio" id="-normal"> <label for="-p30-50"> Normal</label>
+                        </button>
+                        <button> <input type="radio" id="oilyshinyskin"> <label for="-p50-100"> Oily & Shiny Skin
+                            </label>
+                        </button>
+                        <button> <input type="radio" id="-sensitive"> <label for="-p100-150"> Sensitive </label>
+                        </button>
+
+
+                    </div>
+                    <button id="IngredinetsBtn"> <span>Key Ingredients</span>
+                        <div></div>
+                    </button>
+                    <div id="Ingredients-Dropdown">
+                        <button><input type="radio" id="antioxidants"> <label for="-p30-50"> Antioxidants </label>
+                        </button>
+                        <button> <input type="radio" id="castoroil"> <label for="-p50-100"> Castor Oil</label>
+                        </button>
+                        <button> <input type="radio" id="dimethicone"> <label for="-p100-150"> Dimethicone </label>
+                        </button>
+                        <button> <input type="radio" id="essentioloil"> <label for="-p150More"> Essentiol Oil </label>
+                        </button>
+                        <button><input type="radio" id="aloevera"> <label for="-p30-50"> Aloe Vera</label>
+                        </button>
+                        <button> <input type="radio" id="-p50-100"> <label for="-p50-100"> Amino Acids </label>
+                        </button>
+                        <button> <input type="radio" id="-p100-150"> <label for="-p100-150"> Antioxidants </label>
+                        </button>
+                        <button> <input type="radio" id="-p150More"> <label for="-p150More"> Caffeine </label>
+                        </button>
+                    </div>
+                    <button id="SavingsBtn"> <span> Savings</span>
+                        <div></div>
+                    </button>
+                    <div id="Savings-Dropdown">
+                        <button><input type="radio" id="-p30-50"> <label for="-p30-50"> Up to 20% OFF </label>
+                        </button>
+                        <button> <input type="radio" id="-p50-100"> <label for="-p50-100"> Up to 25% OFF </label>
+                        </button>
+                        <button> <input type="radio" id="-p100-150"> <label for="-p100-150"> Up to 35% OFF </label>
+                        </button>
+                        <button> <input type="radio" id="-p150More"> <label for="-p150More">Up to 50% OFF </label>
+                        </button>
+                    </div>
+                    <button id="RatingBtn"> <span>Average Reviews</span>
+                        <div></div>
+                    </button>
+                    <div id="Rating-Dropdown">
+                        <button><input type="radio" name="ed" id="-p30-50"> <label for="-p30-50"> 2 - 3 </label>
+                        </button>
+                        <button> <input type="radio" name="ed" id="-p50-100"> <label for="-p50-100"> 3 - 4 </label>
+                        </button>
+                        <button> <input type="radio" name="ed" id="-p100-150"> <label for="-p100-150"> 4 - 5 </label>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="ProductsDisplaySec">
+                <div>
+
+                    <h1>SkinCeuticals Skincare</h1>
+                    <div>
+                        <button>&nbsp&nbsp Serum &nbsp&nbsp</button>
+                        <button> Moisturizer </button>
+                        <button> &nbsp&nbsp Cleanser &nbsp&nbsp</button>
+                        <button>&nbsp&nbsp Eyecare &nbsp&nbsp</button>
+                        <button>&nbsp Toners &nbsp</button>
+                        <button>Exfloiators & Scrubs</button>
+                        <button>Masks</button>
+                    </div>
+                </div>
+                <div id="SelectSortDiv">
+                    <label for="">&nbsp&nbsp &nbsp&nbsp Sort By &nbsp&nbsp </label>
+                    <select name="" id="SortingProductsAn">
+
+                        <option value="d"> &nbsp Default</option>
+                        <option value="Rating"> Rating</option>
+                        <option value="PLH">Price: Low to High</option>
+                        <option value="PHL">Price: High to Low</option>
+                        <option value="ATZ">A - Z</option>
+                        <option value="Disc">Discount</option>
+
+                    </select>
+                </div>
+                <div id="ProductsDisplayGrid">
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- <div id="NavigationTop">
+            <p><a href="index.html">Home</a> > <a href="">Brands</a> > <a href="ProductListPage.html">Skin Medica</a></p>
+
+        </div> -->
+
+    </div>
+
+    <div id="ProductsInfoSec">
+        <h4>Skin Medica</h4>
+        <p>The SkinCeuticals story began with Dr. Sheldon Pinnell’s groundbreaking research on vitamin C in 1992, long before the company was established in 1997. In the years since, SkinCeuticals has remained committed to using evidence-based research to develop new antioxidant and cosmeceutical formulations, and has grown to become the #1 Medical Skincare Brand in the U.S."[1].
+
+        </p>
+
+        <p> 
+            At SkinCeuticals, the formulation philosophy is driven by the physician-based skincare prescription for optimal skin health: prevent future signs of aging with antioxidants, correct visible concerns advanced corrective products and protect healthy skin with sunscreen. An effective skincare regimen must contain these three fundamental elements before being further customized and tailored for every unique skin need.
+        </p>
+   
+        <p>
+            At SkinCeuticals, the formulation philosophy is driven by the physician-based skincare prescription for optimal skin health: prevent future signs of aging with antioxidants, correct visible concerns advanced corrective products and protect healthy skin with sunscreen. An effective skincare regimen must contain these three fundamental elements before being further customized and tailored for every unique skin need.
+        </p>
+        
+    </div>
+
+    <div id="justforspace"></div>
+
+    <footer>
+        <iframe id="BottomFoot" src="BottomFooter.html" frameborder="0"></iframe>
+    </footer>
+</body>
+
+</html>
+
+<script src="sk_ProductListPage.js"></script>
+
+<script>
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    var amanninave = ""
+
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
+    var Wishlst =JSON.parse( localStorage.getItem("wishlist") ) || [];
+
+    // for Home page
+    document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+    function BackToHome() {
+        if (userN == "") {
+            window.location.href = "./../../An-SkinStore/HomePageindex.html";
+        } else {
+            window.location.href = "./../../An-SkinStore/HomePageAfterlogin.html";
+        }
+    }
+
+
+    // for cart page 
+    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
+
+    var CartValue =JSON.parse( localStorage.getItem("cartdata") ) || [] ;
+    function Gocart() {
+        if(CartValue.length == 0){
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptycart.html";
+        }else{
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
+        }
+        
+    }
+
+
+    // for login page 
+    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
+    function GoLogin() {
+        window.location.href = "./../../As-SkinStore/final_product_page/login.html";
+    }
+
+    // for Register page 
+    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click", GoRegister);
+    function GoRegister() {
+        window.location.href = "./../../amans_SkinStore/register.html";
+    }
+
+    // for Wishlist page
+    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
+    function GoWishlist() {
+        if (Wishlst.length == 0) {
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptywishlist.html";
+
+        } else {
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+
+        }
+
+
+    }
+
+    //For Your orders page        NOt made
+    // document.querySelector("#AnAccount > div:last-child > button:nth-child(2) ").addEventListener("click" , GoOrders);
+    // function GoOrders(){
+    //     window.location.href="./../../Dt-SkinStore/dt_cart_wishlist";
+    // }
+
+    //For Your Skincare page
+    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click", GoSkinCare);
+    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click", GoSkinCare);
+    function GoSkinCare() {
+        window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
+    }
+
+    //For Hair Page
+    document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click", GoHair);
+
+    function GoHair() {
+        window.location.href = "./../../Na-SkinStore/Productpage/hair.html";
+    }
+
+    //For MakeUp page
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click", GoMakeUP);
+
+    function GoMakeUP() {
+        window.location.href = "./../../Na-SkinStore/Productpage/makeup.html";
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     //For Bath & Body  page
+     document.querySelector("#TopNav > button:nth-child(6) ").addEventListener("click" , GoBody);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(2) ").addEventListener("click" , GoBody);
+   
+    function GoBody(){
+        window.location.href="./../../Na-SkinStore/Productpage/bodyandbath.html";
+    }
+
+     //For Fragrance page
+     document.querySelector("#TopNav > button:nth-child(7) ").addEventListener("click" , GoFragrance);
+    // document.querySelector("#CategoryDiv > div:nth-child(1) > img:nth-child(3) ").addEventListener("click" , GoFragrance);
+   
+    function GoFragrance(){
+        window.location.href="./../../Na-SkinStore/Productpage/frangenehal.html";
+    }
+
+     //For Self Care page
+     document.querySelector("#TopNav > button:nth-child(8) ").addEventListener("click" , GoSelf);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(3) ").addEventListener("click" , GoSelf);
+   
+    function GoSelf(){
+        window.location.href="./../../Na-SkinStore/Productpage/selfcare.html";
+    }
+
+    document.querySelector("#TopNav > button:nth-child(9) ").addEventListener("click" , GoTools);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(3) ").addEventListener("click" , GoSelf);
+   
+    function GoTools(){
+        window.location.href="./../../Na-SkinStore/Productpage/tools.html";
+    }
+
+ // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+    //From Search to product page for Skin medica
+    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
+    function GoToSkinMedica2() {
+        var ip = document.querySelector("#TopSearch").value;
+
+        if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
+            window.location.href = "ProductListPage.html";
+        }
+        if (ip == "Terry" || ip == "terry" || ip == "TERRY") {
+            window.location.href = "./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+        }
+
+        if(ip == "Fragrance" || ip == "fragrance" || ip == "FRAGRANCE"  || ip == "fRAGRANCE"){
+            window.location.href = "./../../An-SkinStore/HomePage/fragrancepage.html";
+        }
+
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
+    function showAcc() {
+        var x = document.querySelector("#AnAccount");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        x.style.zIndex = "10";
+
+    }
+
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --For Dropdown Button -- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    document.querySelector("#Price-DropdownBtn").addEventListener("click", callPrice);
+    function callPrice() {
+        var x = document.querySelector("#Price-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+    document.querySelector("#SkincareProuductsBtn").addEventListener("click", callSkincare);
+    function callSkincare() {
+        var x = document.querySelector("#Skincare-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+    document.querySelector("#SkinConsernBtn").addEventListener("click", callSkinConsern);
+    function callSkinConsern() {
+        var x = document.querySelector("#SkinConsern-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+    document.querySelector("#IngredinetsBtn").addEventListener("click", callIngredinets);
+    function callIngredinets() {
+        var x = document.querySelector("#Ingredients-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+    document.querySelector("#SavingsBtn").addEventListener("click", callSavings);
+    function callSavings() {
+        var x = document.querySelector("#Savings-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+    document.querySelector("#RatingBtn").addEventListener("click", callRating);
+    function callRating() {
+        var x = document.querySelector("#Rating-Dropdown");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+    }
+
+</script>
