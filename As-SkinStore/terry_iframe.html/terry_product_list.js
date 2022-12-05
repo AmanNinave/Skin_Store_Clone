@@ -163,6 +163,7 @@ var cartdataArray = JSON.parse(localStorage.getItem("cartdata")) || [];
             cartdataArray.push(elem);
         
         localStorage.setItem("cartdata", JSON.stringify(cartdataArray));
+        location.reload();
     }
 
 /* function to change image on mouse over if image present */

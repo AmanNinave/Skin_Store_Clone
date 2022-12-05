@@ -75,8 +75,8 @@ function addProductLL(){
     if(!check)
         cartll.push(selectedObj[0])
     
-    localStorage.setItem("cartdata" , JSON.stringify(cartll))
-
+    localStorage.setItem("cartdata" , JSON.stringify(cartll))   
+    location.reload();
 }
 /* ------------------ add to cart */
 
@@ -107,7 +107,9 @@ function addWishlistLL(){
     if(!check)
         wishlistll.push(selectedObj[0])
 
-    localStorage.setItem("wishlist" , JSON.stringify(wishlistll))
+    localStorage.setItem("wishlist" , JSON.stringify(wishlistll));
+
+    location.reload();
 }
 
 /* radio button hide and un hide functionality ---------*/
