@@ -10,7 +10,7 @@ p{
 }
 #pp-main{
     width: 98%;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     margin : auto;
     margin-top: 70px;
     padding-top: 100px;
@@ -19,7 +19,7 @@ p{
 #pp-main-top-h{
     display : flex;
     overflow: none;
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     justify-content: space-between;
 }
@@ -28,13 +28,13 @@ p{
 
 #pp-main-top-h-left-img{
     display : flex;
-    background-color: orange;
+    /* background-color: orange; */
     width : 100%;
     padding : 15px
 }
 
 #pp-main-top-h-left-img-list {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #pp-main-top-h-left-img-list > ul{
@@ -55,7 +55,7 @@ p{
     align-items: center;
     padding-left : 30px;
     width : 60%;
-    border : 1px solid black;
+    /* border : 1px solid black; */
     margin-left: 30px;
     height : 500px;
 }
@@ -73,7 +73,7 @@ p{
 
 #pp-main-top-h-left-img-slide > img {
     width : 500px;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
 }
 
@@ -124,7 +124,7 @@ p{
 
 #pp-main-top-left-desc{
     margin-top : 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin-left: 10px;
     margin-bottom : 10px;
     padding-bottom : 5px;
@@ -216,11 +216,11 @@ p{
 /* ----------------- main top hotizontal right side - > product logo + pricing + quantity + add to cart */ 
 
 #pp-main-top-h-right {
-   background-color: bisque;
+   background-color: rgb(247, 244, 240);
    width : 158%;
    padding : 20px;
    margin-left : 30px;
-   border: 2px blue solid; 
+   /* border: 2px blue solid;  */
 }
 
 #pp-main-top-h-right-pLogo > img{
@@ -457,7 +457,7 @@ p{
     display : flex;
     justify-content: space-evenly;
     margin-top : 10px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #pp-main-top-h-right-cart-gift > div:nth-child(2) > img {
@@ -526,7 +526,7 @@ p{
 }
 
 #pp-main-mid-left-bundle > div > div:nth-child(1)  {
-    background-color: red;
+    /* background-color: red; */
     width : 20%;
     margin: 10px;
     padding-left : 10px;
@@ -559,6 +559,11 @@ p{
     font-weight: 550;
     font-size: 21px;
 }
+
+#pp-main-mid-left-bundle > div:nth-child(2){
+    background-color: rgb(221, 205, 205);
+}
+
 
 /* --------------- bundle price for frqently bought products --------------*/ 
 
@@ -612,7 +617,7 @@ p{
     display : flex;
     justify-content: space-between;
     width : 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #pp-main-mid-customer-bought-images > div {
@@ -621,7 +626,7 @@ p{
 
 #pp-main-mid-customer-bought-images > div > img {
     width : 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #pp-main-mid-customer-bought-images > div > h3 {
@@ -683,7 +688,7 @@ p{
 
 #pp-main-bottom-customer-reviews{
     width: 90%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin:auto;
 
 }
@@ -715,7 +720,7 @@ p{
     position : sticky;
     top : 0;
     margin-right: 20px;
-    background-color: beige;
+    /* background-color: rgb(245, 245, 237); */
     height : 250px;
 }
 
