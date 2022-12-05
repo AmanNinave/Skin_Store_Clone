@@ -932,6 +932,80 @@ div {
 
 
 @media only screen and (min-width:571px) and (max-width:868px) {
+
+    #MainSec > div:first-child > h1 {
+        text-align: center;
+        font-size: 25px;
+         margin-top: 15px;
+     
+     }
+
+     #MainSec > div:nth-child(2) {
+        width: 40%;
+        padding-top: 34px;
+        margin: 0px 10%;
+        margin-left: 13%;
+        display: flex;
+        
+    }
+
+    #MainSec > div:nth-child(3) {
+        width: 9%;
+        padding-top: 35px;
+        margin-right:5%;
+        
+    }
+
+    #AnAccount {
+        z-index: 1;
+        width: 300px;
+        
+        border: 0px solid green;
+        margin-bottom: 30px;
+        margin-top: -38px;
+        margin-left: 16.5%;
+        position: fixed;
+        overflow: hidden;
+        display: none;
+        height: fit-content;
+        
+    }
+
+    #other {
+        width: 100%;
+        height: 530px;
+        padding: 0px;
+        display: none;
+    }
+    
+    #slidingFrame {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        border: 0px ;
+    }
+
+    
+#SlidingImageButtons {
+    display: flex;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#BrandBox {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    border: 0px solid ;
+    margin-top: 30px;
+    gap: 8px;
+    padding: 10px;
+}
+    
+
    
 #CategoryDiv {
     border: 0px solid;
@@ -958,20 +1032,202 @@ div {
 }
 
 
+#TrendingBox > div {
+    display: flex;
+    justify-content: space-evenly;
+    border: 0px solid;
+
+}
+#TrendingBox > div > div {
+    border: 0px solid;
+    width: 23%;
+    text-align: center;
+}
+
+#TrendingBox > div > div >img {
+    
+    border: 0px solid;
+    height: 150px;
+    width: 150px;
+}
+
+#TrendingBox > div > div > p {
+    font-size: 17px;
+    border: 0px solid;
+    margin: 10px 0px 10px 0px;
+}
+
+#DiscBrands + div {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+
 }
 
 @media only screen and  (max-width:570px) {
+
+
+
+     #MainSec > div:first-child > h1 {
+        text-align: center;
+        font-size: 25px;
+         margin-top: 15px;
+     
+     }
+
+     #MainSec > div:nth-child(2) {
+        width: 40%;
+        padding-top: 34px;
+        margin: 0px 10%;
+        margin-left: 13%;
+        display: flex;
+        
+    }
+
+    #MainSec > div:nth-child(3) {
+        width: 9%;
+        padding-top: 35px;
+        margin-right:5%;
+        
+    }
+
+    #AnAccount {
+        z-index: 1;
+        width: 300px;
+        
+        border: 0px solid green;
+        margin-bottom: 30px;
+        margin-top: -38px;
+        margin-left: 16.5%;
+        position: fixed;
+        overflow: hidden;
+        display: none;
+        height: fit-content;
+        
+    }
+
+    #other {
+        width: 100%;
+        height: 530px;
+        padding: 0px;
+        display: none;
+    }
+    
+    #slidingFrame {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        border: 0px ;
+    }
+
+    
+#SlidingImageButtons {
+    display: flex;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: none;
+}
 
        
 #CategoryDiv {
     border: 0px solid;
     width: 99.8%;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
     margin: 15px 0px 10px 1px;
     
+}
+
+#CategoryDiv > div {
+    display: block;
+}
+
+#CategoryDiv > div >div {
+    display: block;
+}
+
+#BrandBox {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+    border: 0px solid ;
+    margin-top: 30px;
+    gap: 8px;
+    padding: 10px;
+}
+    
+#TrendingBox > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 545;
+    font-size: 30px;
+}
+
+#TrendingBox > div {
+    display: block;
+    justify-content: space-evenly;
+    border: 0px solid;
+    margin: auto;
+    text-align: center;
+
+}
+
+#TrendingBox > div > div {
+    border: 0px solid;
+    width: 80%;
+    text-align: center;
+}
+
+#DiscBrands + div {
+    display: block;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+#footer1 {
+    display: block;
+    padding-top: 20px ;
+}
+
+
+
+#footer2 {
+    display: block;
+    padding-top: 20px ;
+    margin-bottom: 100px;
+}
+
+#footer2 > div {
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#footer2 > div:last-child > div{
+    border: 0px solid;
+    width: 500px;
+    
+}
+
+#footer3 {
+    display: block;
+    padding-top: 20px ;
+    border-top: 1px solid;
+    margin-top: 300px;
+}
+
+#footer3 >div:first-child {
+    margin-bottom: 30px;
 }
     
 }
