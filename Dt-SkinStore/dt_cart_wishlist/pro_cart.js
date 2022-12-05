@@ -121,7 +121,7 @@ function displayData(dataofaddedcart){
         }); 
     });
     
-    sub.textContent = totally_total;
+    sub.textContent = totally_total.toFixed(2);
     // console.log("sub", sub);  
     
    localStorage.setItem("totalcartvalue" , totally_total);
