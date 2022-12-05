@@ -570,11 +570,11 @@
 
         <div id="BrandBox">
             <div>
-                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/13/original-Shot_1_-_SkinCeuticals-500x500-073213.jpg"
+                <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/19/original-original-SS_subpanels__%2826%29-102648-014119.jpg"
                     alt="">
-                <h2>SkinCeuticals Gift</h2>
+                <h2>20% off By Terry</h2>
                 <div>
-                    <p>Receive a SkinCeuticals Resveratrol BE 4ml (Worth $21) when you spend $220 or more on the brand.
+                    <p>Discover the best-selling makeup range from By Terry and let your inner beauty shine.
                     </p>
                 </div>
                 <button>SHOP NOW</button>
@@ -1028,6 +1028,13 @@ document.querySelector("#userName").textContent = userN;
 
  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //For STerry Page   shopnow button 
+    document.querySelector("#BrandBox > div:nth-child(1) > button ").addEventListener("click" , GoToTerry);
+    
+    function GoToTerry(){
+        window.location.href="./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+    }
+    
 
     //For SkinMedica Page   shopnow button 
     document.querySelector("#BrandBox > div:nth-child(2) > button ").addEventListener("click" , GoToSkinMedica);
@@ -1050,6 +1057,14 @@ document.querySelector("#userName").textContent = userN;
           
         if(ip == "skin medica" ||ip == "Skin Medica" || ip == "skin Medica" ||ip == "SKIN MEDICA" || ip == "skinmedica" ||ip == "SKIN MEDICA" || ip == "SkinMedica") {
             window.location.href="./../../An-SkinStore/HomePage/ProductListPage.html";
+        }
+
+        if (ip == "Terry" || ip == "terry" || ip == "TERRY") {
+            window.location.href = "./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+        }
+
+        if(ip == "Fragrance" || ip == "fragrance" || ip == "FRAGRANCE"  || ip == "fRAGRANCE"){
+            window.location.href = "./../../An-SkinStore/HomePage/fragrancepage.html";
         }
     }
 

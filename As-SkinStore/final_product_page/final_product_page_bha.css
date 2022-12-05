@@ -13,6 +13,7 @@ p{
     border: 1px dotted black;
     margin : auto;
     margin-top: 70px;
+    padding-top: 100px;
 }
 
 #pp-main-top-h{
@@ -84,9 +85,9 @@ p{
     
 }
 
-#pp-main-top-h-left-img-magnify > p > i {
+/* #pp-main-top-h-left-img-magnify > p > i {
 
-}
+} */
 
 /* ------------------- EMI Section - top / left / emi --------------*/
 
@@ -100,7 +101,7 @@ p{
 
 #pp-main-top-left-emi > ul {
     list-style-type: none;
-    background-color: ;
+    /* background-color: ; */
 }
 
 #pp-main-top-left-emi > ul li{
@@ -163,7 +164,7 @@ p{
 #pp-main-top-left-deets{
     margin-left : 5px;
     padding : 5px;
-    background-color: ;
+    /* background-color: ; */
 }
 
 #pp-main-top-left-deets > p {
@@ -269,9 +270,9 @@ p{
     width : 30px;
 }
 
-#pp-main-top-h-right-pOffer > ul > li > span {
+/* #pp-main-top-h-right-pOffer > ul > li > span {
     
-}
+} */
 
 #pp-main-top-h-right-phidden{
     display : none;
@@ -532,7 +533,7 @@ p{
 }   
 
 #pp-main-mid-left-bundle > div > div:nth-child(2) {
-    background-color: ;
+    /* background-color: ; */
     width : 70%;
     margin: 10px;
 }

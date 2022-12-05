@@ -188,7 +188,7 @@
             inner beauty shine.
           </p>
           <div>
-            <button>SHOP NOW</button>
+            <button id="BrandBox">SHOP NOW</button>
           </div>
         </div>
         <div>
@@ -586,6 +586,12 @@
 
  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+ document.querySelector("#BrandBox").addEventListener("click" , GoToTerry);
+    
+    function GoToTerry(){
+        window.location.href="./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+    }
+
 
   //From Search to product page for Skin medica
   document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
@@ -595,6 +601,13 @@
       if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
           window.location.href = "./../../An-SkinStore/HomePage/ProductListPage.html";
       }
+      if (ip == "Terry" || ip == "terry" || ip == "TERRY") {
+            window.location.href = "./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+        }
+
+        if(ip == "Fragrance" || ip == "fragrance" || ip == "FRAGRANCE"  || ip == "fRAGRANCE"){
+            window.location.href = "./../../An-SkinStore/HomePage/fragrancepage.html";
+        }
   }
 
   // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

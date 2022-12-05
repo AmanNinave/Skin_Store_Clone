@@ -661,6 +661,7 @@ div {
 
 #BrandBox > div > img {
     width: 100%;
+    border-radius: 500px;
 }
 
 #BrandBox > div > h2 {
