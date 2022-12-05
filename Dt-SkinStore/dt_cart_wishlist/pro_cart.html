@@ -756,6 +756,14 @@
         window.location.href="./../../Na-SkinStore/Productpage/selfcare.html";
     }
 
+    document.querySelector("#TopNav > button:nth-child(9) ").addEventListener("click" , GoTools);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(3) ").addEventListener("click" , GoSelf);
+   
+    function GoTools(){
+        window.location.href="./../../Na-SkinStore/Productpage/tools.html";
+    }
+
+
  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -766,6 +774,13 @@
 
         if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
             window.location.href = "./../../An-SkinStore/HomePage/ProductListPage.html";
+        }
+        if (ip == "Terry" || ip == "terry" || ip == "TERRY") {
+            window.location.href = "./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+        }
+
+        if(ip == "Fragrance" || ip == "fragrance" || ip == "FRAGRANCE"  || ip == "fRAGRANCE"){
+            window.location.href = "./../../An-SkinStore/HomePage/fragrancepage.html";
         }
     }
 
