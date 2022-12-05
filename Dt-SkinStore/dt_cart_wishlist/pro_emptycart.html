@@ -523,7 +523,7 @@
             <h1>There are currently no items in your cart.</h1>
         </div>
         <div id="continue shopping">
-            <button class="buttoncheckout" > CONTINUE SHOPPING</button>
+            <button class="buttoncheckout"  id="gotohomepageaman"> CONTINUE SHOPPING</button>
         </div>
         <div id="cartcategoryprefer">
             <div>
@@ -703,6 +703,12 @@
 
 <!--script for header -->
 <script>
+
+    document.querySelector("#gotohomepageaman").addEventListener("click" , Gotohome1);
+    
+    function Gotohome1(){
+        window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
+    }
     
     var Wishlst = JSON.parse(localStorage.getItem("wishlist")) || [];
     var amanninave = ""
