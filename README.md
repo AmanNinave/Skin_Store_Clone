@@ -38,40 +38,40 @@ Register > Login > Homepage > Category > Product Listing  > Product Page > Cart 
 
 ### **Functionalities Implemented**
 
-<ins>Signup/Login</ins> 
+<ins>Signup/Login</ins>   
 Authenticate users and log them into the homepage. If a new user is encountered, sign them up. 
 
-<ins>Add to cart</ins> 
+<ins>Add to cart</ins>  
 Checks if the cart already contains the product. If no, adds the product to the cart, if yes, increase the quantity.
 
-<ins>Add to Wishlist</ins> 
+<ins>Add to Wishlist</ins>   
 Adds the favorite product to a wishlist for quick access in the future.
 
-<ins>Product Filtering</ins> 
+<ins>Product Filtering</ins>   
 Filter products on gender, color, product category, price, and ratings for easy access.
 
-<ins>Product Sorting</ins> 
+<ins>Product Sorting</ins>   
 Sort products on price, rating, and lexicographical order.
 
-<ins>Search Product Brand</ins> 
+<ins>Search Product Brand</ins>   
 Find the product from the universal search field in the navigation bar.
 
-<ins>Delete from Cart/Wishlist</ins> 
+<ins>Delete from Cart/Wishlist</ins>   
 Delete the product from the cart or wishlist.
 
-<ins>Discount Coupon Code</ins>
+<ins>Discount Coupon Code</ins>  
 Add a discount code on the payment page to avail of seasonal offers. We have implemented two codes - JOY30 and Masai-DNA.
 
-<ins>Payment Page</ins>
+<ins>Payment Page</ins>  
 Input payment details from the user and validate them before placing the order.
 
-<ins>My orders</ins> 
+<ins>My orders</ins>   
 Display history of successfully placed orders.
 
 
 ### **Learning Summary** 
 
-* **Data collection** forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc. 
+* **Data collection** forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc.   
 &emsp; We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
 
 * **Event listeners** are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
