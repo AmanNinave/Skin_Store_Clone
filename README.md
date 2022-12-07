@@ -1,19 +1,19 @@
-# Masai Construct Week-1 Project: SkinStore clone 
+# Masai Construct Week-1 Project: [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/) 
 
 ## Team: Masai-School-DNA2 
 
-/*  begin  */ 
+/   *begin*   / 
 
-**Project Goal**
+### **Project Goal**
 
 To clone SkinStore.com, across user experience and backend functionality with HTML, JS, and CSS, while displaying the use of Local Storage and DOM manipulation.
 
-**About SkinStore** 
-SkinStore is an online marketplace that offers a vast catalog of beauty products comprising skincare, haircare, self-care, makeup, and body categories.
+### **About SkinStore** 
 
+SkinStore is an online marketplace that offers a vast catalog of beauty products comprising skincare, haircare, self-care, makeup, and body categories.
 Customers can shop for premium beauty brands like SkinMedica, By Terry, Fragrance, SkinCeuticals, etc.
 
-**Pages Cloned**
+### **Pages Cloned**
 
 Home Page
 Product Listing page 
@@ -26,11 +26,11 @@ My Order Page
 Login Page
 Register Page
 
-**Main User Path**
+### **Main User Path**
 
 Register > Login > Homepage > Category > Product Listing  > Product Page > Cart > Payment Page > Order Placed > My Orders
 
-**Functionalities Implemented**
+### **Functionalities Implemented**
 
 <ins>Signup/Login</ins> 
 Authenticate users and log them into the homepage. If a new user is encountered, sign them up. 
@@ -62,26 +62,26 @@ Input payment details from the user and validate them before placing the order.
 <ins>My orders</ins> 
 Display history of successfully placed orders.
 
-**Learning Summary** 
+### **Learning Summary** 
 
-*Data collection forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc. 
+* **Data collection** forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc. 
 
-*We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
+    We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
 
-*Event listeners are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
+* **Event listeners** are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
 
-***Grid and Flex layouts** are used extensively throughout the website to draw complex div layouts and page structures. Both these layouts enable us to add media queries to the pages to create a responsive web layout.  
+* **Grid and Flex layouts** are used extensively throughout the website to draw complex div layouts and page structures. Both these layouts enable us to add media queries to the pages to create a responsive web layout.  
 
-* **CSS Selectors** and Combinators used in the site have simplified navigating through the long nested divs structures without adding separate ids for every Html element or tag.     
+* **CSS Selectors and Combinators** used in the site have simplified navigating through the long nested divs structures without adding separate ids for every Html element or tag.     
 
-***Creating HTML** through JavaScript helped us in populating the pages from JSON data objects with map and forEach function in javascript. We also learned how to attach CSS classes with JS.  
+* **Creating HTML through JavaScript** helped us in populating the pages from JSON data objects with map and forEach function in javascript. We also learned how to attach CSS classes with JS.  
 
 
-**Final Website** 
+### **Final Website** 
 
-Netlify link - SkinStore clone
+Netlify link - [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/)
  
-**Our Team: Masai-School-DNA2**  
+### **Our Team: Masai-School-DNA2**  
 
 Dilasa Thapa: pw08-425
 Nehal Ahmad: pw06-113
@@ -89,5 +89,5 @@ Aman Ninave: pa04-045
 Aman Singh: pw08-329
 
 
-/*   End   */
+/   *End*   /
 
