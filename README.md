@@ -17,16 +17,16 @@ Customers can shop for premium beauty brands like SkinMedica, By Terry, Fragranc
 
 ### **Pages Cloned**
 
-Home Page
-Product Listing page 
-Brand Page 
-Product Individual Page
-Cart Page
-Wishlist Page
-Payment Page 
-My Order Page 
-Login Page
-Register Page
+1. Home Page
+2. Product Listing page 
+3. Brand Page 
+4. Product Individual Page
+5. Cart Page
+6. Wishlist Page
+7. Payment Page 
+8. My Order Page 
+9. Login Page
+10. Register Page
 
 
 
@@ -39,53 +39,40 @@ Register > Login > Homepage > Category > Product Listing  > Product Page > Cart 
 ### **Functionalities Implemented**
 
 <ins>Signup/Login</ins> 
-
 Authenticate users and log them into the homepage. If a new user is encountered, sign them up. 
 
 <ins>Add to cart</ins> 
-
 Checks if the cart already contains the product. If no, adds the product to the cart, if yes, increase the quantity.
 
 <ins>Add to Wishlist</ins> 
-
 Adds the favorite product to a wishlist for quick access in the future.
 
 <ins>Product Filtering</ins> 
-
 Filter products on gender, color, product category, price, and ratings for easy access.
 
 <ins>Product Sorting</ins> 
-
 Sort products on price, rating, and lexicographical order.
 
 <ins>Search Product Brand</ins> 
-
 Find the product from the universal search field in the navigation bar.
 
 <ins>Delete from Cart/Wishlist</ins> 
-
 Delete the product from the cart or wishlist.
 
 <ins>Discount Coupon Code</ins>
-
 Add a discount code on the payment page to avail of seasonal offers. We have implemented two codes - JOY30 and Masai-DNA.
 
 <ins>Payment Page</ins>
-
 Input payment details from the user and validate them before placing the order.
 
 <ins>My orders</ins> 
-
 Display history of successfully placed orders.
-
-
 
 
 ### **Learning Summary** 
 
 * **Data collection** forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc. 
-
-    We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
+&emsp; We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
 
 * **Event listeners** are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
 
@@ -106,13 +93,10 @@ Netlify link - [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-s
 
 ### **Our Team: Masai-School-DNA2**  
 
-Dilasa Thapa: pw08-425
-
-Nehal Ahmad: pw06-113
-
-Aman Ninave: pa04-045
-
-Aman Singh: pw08-329
+Dilasa Thapa: pw08-425  
+Nehal Ahmad: pw06-113  
+Aman Ninave: pa04-045  
+Aman Singh: pw08-329  
 
 
 
