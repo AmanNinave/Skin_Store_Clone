@@ -1,12 +1,12 @@
 # Masai Construct Week-1 Project: [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/) 
 
-## Team: Masai-School-DNA2 
+## Team: Masai-School-DNA^2 
 
 /   * *begin* *   / 
 
 ### **Project Goal**
 
-To clone SkinStore.com, across user experience and backend functionality with HTML, JS, and CSS, while displaying the use of Local Storage and DOM manipulation.
+To clone [SkinStore.com](https://www.skinstore.com/), across user experience and backend functionality with HTML, JS, and CSS, while displaying the use of Local Storage and DOM manipulation.
 
 ### **About SkinStore** 
 
@@ -71,16 +71,16 @@ Display history of successfully placed orders.
 
 ### **Learning Summary** 
 
-* **Data collection** forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc.   
+* /**Data collection**/ forms the backbone of our project. We have used Javascript objects to store product data with different fields - product URL, name, image, product price, offer, etc.   
 &emsp; We have utilized Local Storage to store cart data, wishlist data, and user data during the user browsing session. We use these data to populate the wishlist page and cart page with appropriate products. 
 
-* **Event listeners** are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
+* /**Event listeners**/ are crucial in making the website dynamic and responsive. mouseover, mouseout, click, change  
 
-* **Grid and Flex layouts** are used extensively throughout the website to draw complex div layouts and page structures. Both these layouts enable us to add media queries to the pages to create a responsive web layout.  
+* /**Grid and Flex layouts**/ are used extensively throughout the website to draw complex div layouts and page structures. Both these layouts enable us to add media queries to the pages to create a responsive web layout.  
 
-* **CSS Selectors and Combinators** used in the site have simplified navigating through the long nested divs structures without adding separate ids for every Html element or tag.     
+* /**CSS Selectors and Combinators**/ used in the site have simplified navigating through the long nested divs structures without adding separate ids for every Html element or tag.     
 
-* **Creating HTML through JavaScript** helped us in populating the pages from JSON data objects with map and forEach function in javascript. We also learned how to attach CSS classes with JS.  
+* /**Creating HTML through JavaScript**/ helped us in populating the pages from JSON data objects with map and forEach function in javascript. We also learned how to attach CSS classes with JS.  
 
 
 
@@ -100,5 +100,5 @@ Aman Singh: pw08-329
 
 
 
-/  * *End* *   /
+/  * *end* *   /
 
