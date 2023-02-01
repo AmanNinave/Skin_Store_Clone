@@ -58,9 +58,9 @@ function displayData(dataofaddedcart){
         var qtydiv = document.createElement("div");
         var qty = document.createElement("p");
                                             // Please Dont Delete below three commented lines need for future
-                                            // var Local_storage_Qty = elem.qty ;                    // Added by aman at 3.42
-                                            // console.log(Local_storage_Qty );                      // Added by aman at 3.42   
-                                            // qty.textContent = Number(Local_storage_Qty);          // Added by aman at 3.42
+                                            // var Local_storage_Qty = elem.qty ;                    // Added at 3.42
+                                            // console.log(Local_storage_Qty );                      // Added at 3.42   
+                                            // qty.textContent = Number(Local_storage_Qty);          // Added at 3.42
         qty.textContent = Number(1);                       // Removed at 3.45  
         qty.classList.add("q_cls");
         qtydiv.append(qty);

@@ -150,6 +150,7 @@
         .blogHover_container>div>img {
             width: 100%;
             /* margin: 20px; */
+            border: 2px solid green;
             height: 82%;
             margin-top: -8px;
         }
