@@ -90,12 +90,13 @@ var AddToCart = JSON.parse(localStorage.getItem("cartdata")) || [];
 var rs = -1;
 
 function addCart(elem) {
-    alert("Item Added to Cart");
-    location.reload();
+  
+  
+    // location.reload();
     var check = false;
     var idxc = -1;
     AddToCart.map(function (ele, idx) {
-
+      // alert("Item Added to Cart");
         if (ele.name == elem.name) {
             check = true;
             idxc = idx;
@@ -109,15 +110,23 @@ function addCart(elem) {
     if (check) {
         elem.qty = Number(elem.qty) + Number(1);
         AddToCart.splice(idxc, 1);
+        // location.reload();
     } else {
+      console.log("ele")
+      // alert("item already")
         elem.qty = 1;
     }
 
     AddToCart.push(elem);
 
     localStorage.setItem("cartdata", JSON.stringify(AddToCart));
+    if(rs === -1){
+      alert("Item Added to Cart");
+    }else{
+      alert("item already")
+    }
 
-    location.reload();
+    // location.reload();
 
    // console.log(rs);
 }
